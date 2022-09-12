@@ -356,6 +356,7 @@
     {
       "name": "contained",
       "file": "contained.json",
+      "version" : "4.0",
       "java": {
         "errorCount": 0,
         "output": [
@@ -383,6 +384,7 @@
     {
       "name": "icd-9-condition",
       "file": "icd-9-condition.xml",
+      "version" : "4.0",
       "java": {
         "errorCount": 0
       }
@@ -733,16 +735,12 @@
       "allowed-extension-domain": "https://api-v8-r4.hspconsortium.org/DrugFormulary0/open",
       "java": {
         "errorCount": 0,
-        "warningCount": 4,
+        "warningCount": 3,
         "infoCount": 1,
         "output": [
           "WARNING: Medication.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided",
           "WARNING: Medication.extension[1].value.ofType(CodeableConcept).coding[0]: Internal error: The display \"Barbiturates and derivatives\" is not a valid display for the code {http://www.whocc.no/atc}N02AA - should be one of [\"Natural opium alkaloids\"] (from http://tx.fhir.org/r4)",
           "INFORMATION: Medication.extension[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://api-v8-r4.hspconsortium.org/DrugFormulary0/open/CodeSystem/usdrugformulary-DrugTierCS' is unknown so the code cannot be validated",
-          "WARNING: Medication.code.coding[0]: Internal error: The display \"Acetaminophen 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet [Percocet]\" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}1049640 - should be one of [\"Percocet 5 MG / 325 MG Oral Tablet",
-          "Percocet 5/325 Oral Tablet",
-          "Percocet 5/325 (oxycodone hydrochloride / APAP) Oral Tablet",
-          "APAP 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet [Percocet]\"] (from http://local.fhir.org:960/r4)",
           "WARNING: Medication.meta.profile[0]: Profile reference 'https://api-v8-r4.hspconsortium.org/DrugFormulary0/open/StructureDefinition/usdrugformulary-FormularyDrug' could not be resolved, so has not been checked"
         ]
       }
@@ -1515,6 +1513,16 @@
       "file": "code-correct.xml",
       "tx-dependent": true,
       "java": {
+        "errorCount": 1,
+        "output": ["ERROR: Basic.code.coding[0]: Version 'http://snomed.info/sct/731000124108/version/20210401' of the code system 'http://snomed.info/sct' is not known (encountered paired with code = '132037003'). ValidVersions = [http://snomed.info/sct/11000201108/version/20170306,http://snomed.info/sct/20611000087101/version/20210331,http://snomed.info/sct/32506021000036107/version/20210630,http://snomed.info/sct/731000124108/version/20210901,http://snomed.info/sct/900000000000207008/version/20190731,http://snomed.info/sct/900000000000207008/version/20200131,http://snomed.info/sct/900000000000207008/version/20200731,http://snomed.info/sct/900000000000207008/version/20210731]; The code provided (http://snomed.info/sct#132037003) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#132037003'"]
+      }
+    },
+    {
+      "name": "code-correct-2",
+      "file": "code-correct.xml",
+      "default-version" : true,
+      "tx-dependent": true,
+      "java": {
         "errorCount": 0,
         "output": []
       }
@@ -1660,7 +1668,7 @@
     {
       "name": "reference-good",
       "file": "reference-good.xml",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 0,
         "output": []
@@ -1669,7 +1677,7 @@
     {
       "name": "reference-bad",
       "file": "reference-bad.xml",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 1,
         "output": [
@@ -1680,7 +1688,7 @@
     {
       "name": "reference-good-contained",
       "file": "reference-good-contained.xml",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 0,
         "output": []
@@ -1689,7 +1697,7 @@
     {
       "name": "reference-good-typed",
       "file": "reference-good-typed.xml",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 0,
         "output": []
@@ -1698,7 +1706,7 @@
     {
       "name": "reference-good-logical",
       "file": "reference-good-logical.xml",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 0,
         "output": []
@@ -1707,7 +1715,7 @@
     {
       "name": "reference-bad-logical",
       "file": "reference-bad-logical.xml",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 1,
         "output": [
@@ -1718,7 +1726,7 @@
     {
       "name": "reference-bad-typed",
       "file": "reference-bad-typed.xml",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 1,
         "output": [
@@ -1998,6 +2006,7 @@
     {
       "name": "document-good",
       "file": "document-good.xml",
+      "version" : "4.0.1",
       "profiles": [
         "document-section-library.xml"
       ],
@@ -2016,6 +2025,7 @@
     {
       "name": "document-bad-no-sections",
       "file": "document-bad-no-sections.xml",
+      "version" : "4.0.1",
       "profiles": [
         "document-section-library.xml"
       ],
@@ -2037,6 +2047,7 @@
     {
       "name": "document-bad-bad-sections",
       "file": "document-bad-bad-sections.xml",
+      "version" : "4.0.1",
       "profiles": [
         "document-section-library.xml"
       ],
@@ -2523,6 +2534,7 @@
     {
       "name": "loinc-lang-nl-1",
       "file": "loinc-lang-nl-1.xml",
+      "language": "en",
       "java": {
         "errorCount": 0,
         "warningCount": 1,
@@ -2764,6 +2776,7 @@
     {
       "name": "q-bp",
       "file": "q-bp.xml",
+      "version" : "4.0",
       "explanation": "all related to extensions",
       "java": {
         "errorCount": 17,
@@ -2792,9 +2805,34 @@
     {
       "name": "demo-example-1",
       "file": "demo-example-1.xml",
+      "java": {
+        "errorCount": 3,
+        "warningCount": 1,
+        "output": [
+          "ERROR: Composition.type: Version 'current' of the code system 'http://loinc.org' is not known (encountered paired with code = '56445-0'). ValidVersions = [2.71]; The code provided (http://loinc.org#56445-0) is not valid in the value set 'FHIRDocumentTypeCodes' (from http://local.fhir.org:960/r4)",
+          "ERROR: Composition.type.coding[0]: Version 'current' of the code system 'http://loinc.org' is not known (encountered paired with code = '56445-0'). ValidVersions = [2.71]; The code provided (http://loinc.org#56445-0) is not valid in the value set 'All codes known to the system' (from http://local.fhir.org:960/r4) for 'http://loinc.org#56445-0'",
+          "ERROR: Composition.section[0].code.coding[0]: Version 'current' of the code system 'http://loinc.org' is not known (encountered paired with code = '48765-2'). ValidVersions = [2.71]; The code provided (http://loinc.org#48765-2) is not valid in the value set 'All codes known to the system' (from http://local.fhir.org:960/r4) for 'http://loinc.org#48765-2'",
+          "WARNING: Composition.meta.profile[0]: Profile reference 'http://example.org/fhir/StructureDefinition/demo-profile-1' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles"
+        
+        ]
+      }
+    },
+    {
+      "name": "demo-example-2",
+      "file": "demo-example-2.xml",
+      "java": {
+        "errorCount": 0,
+        "output": [
+        ]
+      }
+    },
+    {
+      "name": "demo-example-3",
+      "file": "demo-example-1.xml",
+      "default-version" : true,
       "profile": {
         "source": "demo-profile-1.xml",
-        "explanation": "test | version | display in 2 places",
+        "explanation": "test | version | display in 2 places, and override invalid version (must be last of these three because it loads the profile)",
         "java": {
           "errorCount": 6,
           "output": [
@@ -2811,8 +2849,6 @@
       "java": {
         "errorCount": 0,
         "output": [
-          "WARNING: Composition.meta.profile[0]: StructureDefinition reference \"http://example.org/fhir/StructureDefinition/demo-profile-1\" could not be resolved",
-          "WARNING: Composition.section[0].code.coding[0]: The display \"Allergies and adverse reactions\" is not a valid display for the code {http://loinc.org}48765-2 - should be one of [\"Allergies and adverse reactions Document\",\"Allergies &or adverse reactions Doc\"]"
         ]
       }
     },
@@ -2873,9 +2909,10 @@
     {
       "name": "japanese-utf8-ok",
       "file": "japanese-utf8-ok.xml",
+      "version" : "4.0",
       "explanation": "bundle related errors; number doesn't matter (it's > 1)",
       "java": {
-        "errorCount": 72,
+        "errorCount": 74,
         "output": [
           "ERROR: /f:Bundle: Text should not be present ('�@')",
           "ERROR: Device: Undefined element 'code'",
@@ -2939,6 +2976,8 @@
           "ERROR: Bundle.entry[4]: Entry '13083ac1-7956-496b-a8bf-e6057a9f2add' isn't reachable by traversing from first Bundle entry",
           "ERROR: Bundle.entry[5]: Entry '1c46f165-cb84-4931-9e34-318f459d9782' isn't reachable by traversing from first Bundle entry",
           "ERROR: Bundle.entry[6]: Entry 'ca645ab4-0a86-4bed-b5a8-78937f835a8a' isn't reachable by traversing from first Bundle entry",
+          "ERROR: Bundle.entry[6].resource.ofType(Location).type[0].coding[0]: The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType')",
+          "ERROR: Bundle.entry[6].resource.ofType(Location).type[0].coding[0]: Invalid System URI: http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType - cannot use a value set URI as a system",
           "ERROR: Bundle.entry[7]: Entry 'a55bc205-1dbc-4652-924d-3db21d6d6c02' isn't reachable by traversing from first Bundle entry",
           "ERROR: Bundle.entry[8]: Entry '50b36085-27a7-4f9d-a45c-05349ce457bc' isn't reachable by traversing from first Bundle entry",
           "ERROR: Bundle.entry[9]: Entry '73ce0386-82d1-4db6-8ec7-71c1bcc0fdfe' isn't reachable by traversing from first Bundle entry",
@@ -3321,13 +3360,40 @@
       }
     },
     {
-      "name": "patient-xver",
-      "file": "patient-xver.xml",
+      "name": "patient-animal",
+      "file": "patient-animal.xml",
       "version": "4.0",
       "java": {
         "errorCount": 0,
         "output": [
-          "WARNING: Patient.identifier[0].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)"
+          "INFORMATION: Patient.extension[0].extension[1].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://example.org/fhir/animal-breed' is unknown so the code cannot be validated",
+          "WARNING: Patient.identifier[0].type: No code provided, and a code should be provided from the value set \"IdentifierType\" (http://hl7.org/fhir/ValueSet/identifier-type)"
+        ]
+      },
+      "firely-sdk-current": {
+        "errorCount": 0,
+        "warningCount": 0,
+        "output": [
+        ]
+      },
+      "firely-sdk-wip": {
+        "errorCount": 0,
+        "warningCount": 0,
+        "output": [
+        ]
+      }
+    },
+    {
+      "name": "patient-xver",
+      "file": "patient-xver.xml",
+      "version": "4.0",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 1,
+        "output": [
+          "ERROR: Patient.extension[0][url='http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.animal']: The Extension 'http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.animal' must not be used as an extension (it's a modifierExtension)",
+          "INFORMATION: Patient.extension[0].extension[1].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://example.org/fhir/animal-breed' is unknown so the code cannot be validated",
+          "WARNING: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type)"
         ]
       },
       "firely-sdk-current": {
@@ -3351,11 +3417,14 @@
       "version": "4.0",
       "explanation": "one of the inner extensions is renamed and not valid",
       "java": {
-        "errorCount": 1,
+        "errorCount": 2,
+        "warningCount": 1,
         "output": [
-          "INFORMATION: Patient.extension[0].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.animal",
+          "ERROR: Patient.extension[0][url='http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.animal']: The Extension 'http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.animal' must not be used as an extension (it's a modifierExtension)",
+          "INFORMATION: Patient.extension[0].extension[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.animal",
           "ERROR: Patient.extension[0].extension[1][url='x-breed']: Sub-extension url 'x-breed' is not defined by the Extension http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.animal",
-          "WARNING: Patient.identifier[0].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)"
+          "INFORMATION: Patient.extension[0].extension[1].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://example.org/fhir/animal-breed' is unknown so the code cannot be validated",
+          "WARNING: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type)"
         ]
       },
       "firely-sdk-current": {
@@ -3950,7 +4019,7 @@
       "name": "patient-circle1-bad-linked1",
       "file": "patient-circle1-bad-linked1.xml",
       "version": "4.0",
-      "validate": "CHECK_VALID",
+      "validateReference": "CHECK_VALID",
       "profile": {
         "source": "patient-circle1-profile.xml",
         "java": {
@@ -3992,7 +4061,7 @@
       "name": "patient-circle1-bad-linked2",
       "file": "patient-circle1-bad-linked2.xml",
       "version": "4.0",
-      "validate": "CHECK_VALID",
+      "validateReference": "CHECK_VALID",
       "profile": {
         "source": "patient-circle1-profile.xml",
         "java": {
@@ -4075,7 +4144,7 @@
       "name": "patient-circle1-bad-source1",
       "file": "patient-circle1-bad-source1.xml",
       "version": "4.0",
-      "validate": "CHECK_VALID",
+      "validateReference": "CHECK_VALID",
       "profile": {
         "source": "patient-circle1-profile.xml",
         "java": {
@@ -4116,7 +4185,7 @@
       "name": "patient-circle1-bad-source2",
       "file": "patient-circle1-bad-source2.xml",
       "version": "4.0",
-      "validate": "CHECK_VALID",
+      "validateReference": "CHECK_VALID",
       "profile": {
         "source": "patient-circle1-profile.xml",
         "java": {
@@ -4283,7 +4352,7 @@
       "name": "patient-circle2-bad-linked",
       "file": "patient-circle2-bad-linked.xml",
       "version": "4.0",
-      "validate": "CHECK_VALID",
+      "validateReference": "CHECK_VALID",
       "profiles": [
         "patient-circle2-profile2.xml"
       ],
@@ -4412,7 +4481,7 @@
       "name": "patient-circle2-bad-source1",
       "file": "patient-circle2-bad-source1.xml",
       "version": "4.0",
-      "validate": "CHECK_VALID",
+      "validateReference": "CHECK_VALID",
       "profiles": [
         "patient-circle2-profile2.xml"
       ],
@@ -4457,7 +4526,7 @@
       "name": "patient-circle2-bad-source2",
       "file": "patient-circle2-bad-source2.xml",
       "version": "4.0",
-      "validate": "CHECK_VALID",
+      "validateReference": "CHECK_VALID",
       "profiles": [
         "patient-circle2-profile2.xml"
       ],
@@ -4973,8 +5042,8 @@
       "version": "4.0",
       "examples": false,
       "java": {
-        "errorCount": 0,
-        "warningCount": 1,
+        "errorCount": 1,
+        "warningCount": 0,
         "output": [
           "WARNING: DocumentReference.content[0].attachment.url: URL value 'http://repository.example.org/fhir/DocumentReference/example' does not resolve"
         ]
@@ -5102,9 +5171,8 @@
       "version": "4.0",
       "java": {
         "errorCount": 3,
-        "warningCount": 2,
+        "warningCount": 1,
         "output": [
-          "WARNING: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]",
           "ERROR: StructureDefinition: Profile http://hl7.org/fhir/StructureDefinition/StructureDefinition, Element 'StructureDefinition.name': minimum required = 1, but only found 0",
           "ERROR: StructureDefinition.differential.element[0]: eld-19: Element names cannot include some special characters [path.matches('[^\\s\\.,:;\\'\"\\/|?!@#$%&*()\\[\\]{}]{1,64}(\\.[^\\s\\.,:;\\'\"\\/|?!@#$%&*()\\[\\]{}]{1,64}(\\[x\\])?(\\:[^\\s\\.]+)?)*')]",
           "WARNING: StructureDefinition.differential.element[0]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]",
@@ -5840,6 +5908,7 @@
     {
       "name": "mr-single-good",
       "file": "mr-single-good.xml",
+      "version" : "4.0",
       "supporting": [
         "mr-m-simple.xml"
       ],
@@ -5850,6 +5919,7 @@
     {
       "name": "mr-single-two-groups",
       "file": "mr-single-two-groups.xml",
+      "version" : "4.0",
       "supporting": [
         "mr-m-simple.xml"
       ],
@@ -5866,6 +5936,7 @@
     {
       "name": "mr-single-bad-2",
       "file": "mr-single-bad-2.xml",
+      "version" : "4.0",
       "supporting": [
         "mr-m-simple.xml"
       ],
@@ -5879,6 +5950,7 @@
     {
       "name": "mr-single-subj-list",
       "file": "mr-single-subj-list.xml",
+      "version" : "4.0",
       "supporting": [
         "mr-m-simple.xml"
       ],
@@ -5892,6 +5964,7 @@
     {
       "name": "mr-single-not-subj-list",
       "file": "mr-single-not-subj-list.xml",
+      "version" : "4.0",
       "supporting": [
         "mr-m-simple.xml"
       ],
@@ -7456,7 +7529,7 @@
       "name": "parameters-reference",
       "file": "parameters-reference.json",
       "version": "4.0",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 0,
         "warningCount": 1,
@@ -7489,7 +7562,7 @@
       "name": "parameters-reference-bad",
       "file": "parameters-reference-bad.json",
       "version": "4.0",
-      "validate": "CHECK_EXISTS_AND_TYPE",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "java": {
         "errorCount": 1,
         "warningCount": 1,
@@ -7645,8 +7718,10 @@
       "version": "4.0",
       "java": {
         "errorCount": 0,
-        "warningCount": 0,
-        "output": []
+        "warningCount": 1,
+        "output": [
+          "WARNING: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly"
+        ]
       },
       "firely-sdk-current": {
         "errorCount": 0,
@@ -7752,10 +7827,11 @@
       ],
       "java": {
         "errorCount": 0,
-        "warningCount": 1,
+        "warningCount": 2,
         "output": [
           "INFORMATION: Bundle.entry[0].resource.ofType(Composition).type: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#440545006)",
-          "WARNING: Bundle.entry[3].resource.ofType(MedicationRequest).reasonCode[0].coding[0]: Internal error: The display \"Traveller's Diarrhea (disorder)\" is not a valid display for the code {http://snomed.info/sct}11840006 - should be one of [\"Traveler's diarrhea\",Turista,\"Traveler's diarrhea (disorder)\"]"
+          "WARNING: Bundle.entry[3].resource.ofType(MedicationRequest).reasonCode[0].coding[0]: Internal error: The display \"Traveller's Diarrhea (disorder)\" is not a valid display for the code {http://snomed.info/sct}11840006 - should be one of [\"Traveler's diarrhea\",Turista,\"Traveler's diarrhea (disorder)\"]",
+          "WARNING: Bundle.entry[6].resource.ofType(Binary).data: Base64 encoded values SHOULD not contain any whitespace (per RFC 4648). Note that non-validating readers are encouraged to accept whitespace anyway"
         ]
       },
       "firely-sdk-current": {
@@ -7798,10 +7874,11 @@
       ],
       "java": {
         "errorCount": 1,
-        "warningCount": 1,
+        "warningCount": 2,
         "output": [
           "INFORMATION: Bundle.entry[0].resource.ofType(Composition).type: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#440545006)",
-          "WARNING: Bundle.entry[3].resource.ofType(MedicationRequest).reasonCode[0].coding[0]: Internal error: The display \"Traveller's Diarrhea (disorder)\" is not a valid display for the code {http://snomed.info/sct}11840006 - should be one of [\"Traveler's diarrhea\",Turista,\"Traveler's diarrhea (disorder)\"]"
+          "WARNING: Bundle.entry[3].resource.ofType(MedicationRequest).reasonCode[0].coding[0]: Internal error: The display \"Traveller's Diarrhea (disorder)\" is not a valid display for the code {http://snomed.info/sct}11840006 - should be one of [\"Traveler's diarrhea\",Turista,\"Traveler's diarrhea (disorder)\"]",
+          "WARNING: Bundle.entry[6].resource.ofType(Binary).data: Base64 encoded values SHOULD not contain any whitespace (per RFC 4648). Note that non-validating readers are encouraged to accept whitespace anyway"
         ]
       },
       "firely-sdk-current": {
@@ -7869,6 +7946,7 @@
       "name": "obs-hgvs",
       "file": "obs-hgvs.json",
       "version": "4.0",
+      "validateReference": "IGNORE",
       "packages": [
         "hl7.fhir.us.core#3.1.0",
         "hl7.fhir.us.mcode#1.0.0"
@@ -7909,16 +7987,15 @@
       ],
       "java": {
         "errorCount": 2,
-        "warningCount": 3,
+        "warningCount": 2,
         "infoCount": 2,
         "output": [
           "INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.genenames.org/geneId' is unknown so the code cannot be validated",
           "INFORMATION: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.ncbi.nlm.nih.gov/clinvar' is unknown so the code cannot be validated",
-          "ERROR: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Expected end of text (at char 24), (line:1, col:25); The code \"NC_000019.8:g.1171707G>AXXX\" is not valid in the system http://varnomen.hgvs.org; The code provided (http://varnomen.hgvs.org#NC_000019.8:g.1171707G>AXXX) is not valid in the value set 'All codes known to the system' (from http://local.fhir.org:960/r4) for 'http://varnomen.hgvs.org#NC_000019.8:g.1171707G>AXXX'",
+          "ERROR: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Expected end of text (at char 24), (line:1, col:25); The code \"NC_000019.8:g.1171707G>AXXX\" is not valid in the system http://varnomen.hgvs.org; The code provided (http://varnomen.hgvs.org#NC_000019.8:g.1171707G>AXXX) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://varnomen.hgvs.org#NC_000019.8:g.1171707G>AXXX'",
           "WARNING: Observation.component[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/mcode/ValueSet/mcode-hgnc-vs because the value set or code system is not known to the validator]",
           "WARNING: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/mcode/ValueSet/mcode-clinvar-vs because the value set or code system is not known to the validator]",
-          "WARNING: Observation.component[2].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/mcode/ValueSet/mcode-hgvs-vs because the value set or code system is not known to the validator]",
-          "ERROR: Observation.component[2].value.ofType(CodeableConcept): Expected end of text (at char 24), (line:1, col:25); The code \"NC_000019.8:g.1171707G>AXXX\" is not valid in the system http://varnomen.hgvs.org; The code provided (http://varnomen.hgvs.org#NC_000019.8:g.1171707G>AXXX) is not valid in the value set 'HGVSVS' (from http://local.fhir.org:960/r4)"
+          "ERROR: Observation.component[2].value.ofType(CodeableConcept): Expected end of text (at char 24), (line:1, col:25); The code \"NC_000019.8:g.1171707G>AXXX\" is not valid in the system http://varnomen.hgvs.org; The code provided (http://varnomen.hgvs.org#NC_000019.8:g.1171707G>AXXX) is not valid in the value set 'HGVSVS' (from http://tx.fhir.org/r4)"
         ]
       },
       "firely-sdk-current": {
@@ -8695,6 +8772,7 @@
       "file": "qr-bad-ref2.json",
       "description": "",
       "fetcher": "standalone",
+      "validateReference": "CHECK_EXISTS_AND_TYPE",
       "version": "4.0",
       "java": {
         "errorCount": 1,
@@ -8775,10 +8853,11 @@
       "description": "Supplement can't define new codes",
       "version": "4.0",
       "java": {
-        "errorCount": 1,
+        "errorCount": 2,
         "warningCount": 0,
         "infoCount": 0,
         "output": [
+          "ERROR: CodeSystem.content: CodeSystem Supplements SHALL have a content value of 'supplement'",
           "ERROR: CodeSystem.concept[0]: The code 'test' is not declared in the base CodeSystem http://loinc.org so is not valid in the supplement"
         ]
       },
@@ -8872,8 +8951,8 @@
       "fetcher": "standalone",
       "version": "4.0",
       "java": {
-        "errorCount": 8,
-        "warningCount": 1,
+        "errorCount": 7,
+        "warningCount": 2,
         "output": [
           "ERROR: MedicationRequest.extension[0]: The extension http://fkcfhir.org/fhir/StructureDefinition/medEpisodeOfCare is unknown, and not allowed here",
           "ERROR: MedicationRequest.extension[1]: The extension http://fkcfhir.org/fhir/StructureDefinition/orderSource is unknown, and not allowed here",
@@ -8882,7 +8961,7 @@
           "ERROR: MedicationRequest.extension[4]: The extension http://fkcfhir.org/fhir/StructureDefinition/eccStatusDate is unknown, and not allowed here",
           "ERROR: MedicationRequest.extension[5]: The extension http://fkcfhir.org/fhir/StructureDefinition/MedRequestPriorAuth is unknown, and not allowed here",
           "ERROR: MedicationRequest.extension[6]: The extension http://fkcfhir.org/fhir/StructureDefinition/MedRequestPriorAuthStart is unknown, and not allowed here",
-          "ERROR: MedicationRequest.reasonCode[0].coding[0]: Code \"C12\" not found; The code \"C12\" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#C12) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#C12'",
+          "WARNING: MedicationRequest.reasonCode[0].coding[0]: The display 'Malignant neoplasm of pyriform sinus' is not a valid display for the code {http://hl7.org/fhir/sid/icd-10}C12 - should be one of [Malignant neoplasm of piriform sinus] (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#C12'",
           "WARNING: MedicationRequest.meta.profile[0]: Profile reference 'http://fkcfhir.org/fhir/StructureDefinition/FreseniusMirceraMedRequest' has not been checked because it is unknown, and fetching it resulted in the error Error parsing response message: This does not appear to be a FHIR resource (wrong namespace 'http://www.w3.org/1999/xhtml') (@ /)"
         ]
       },
@@ -9000,6 +9079,1443 @@
       "java": {
         "errorCount": 0,
         "output": []
+      }
+    },
+    {
+      "name": "bundle-ref-2",
+      "file": "bundle-ref-2.xml",
+      "description": "Any kind of URL is allowed for internal resolution within a bundle",
+      "version": "3.0",
+      "java": {
+        "errorCount": 1,
+        "output": [
+          "ERROR: Bundle.entry[5].resource.ofType(MedicationRequest).dosageInstruction[0].dose.ofType(Quantity): Error processing Unit: 'tbl': The unit \"tbl\" is unknown at character 1; The code \"tbl\" is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#tbl) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://unitsofmeasure.org#tbl'",
+          "INFORMATION: Bundle.entry[7].resource.ofType(AllergyIntolerance).reaction[0].manifestation[0].coding[0]: Code System URI 'http://example.org/system' is unknown so the code cannot be validated"
+        ]
+      }
+    },
+    {
+      "name": "us-cond",
+      "file": "us-cond.json",
+      "description": "Reported issue with http://hl7.org/fhir/us/core/CodeSystem/condition-category - but doesn't appear to be an issue",
+      "version": "4.0",
+       "packages": [
+        "hl7.fhir.us.core#3.1.1"
+      ],
+      "java": {
+        "errorCount": 0,
+        "warningCount": 1,
+        "output": [
+          "WARNING: Condition.code: No code provided, and a code should be provided from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code (http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code)"
+        ]
+      }
+    },
+    {
+      "name": "line-pattern-card-test",
+      "file": "linePatternTestPatient.json",
+      "version": "4.0",
+      "profiles": [
+        "linePatternProfile.json"
+      ],
+      "java": {
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "condition-with-extensions-on-pattern",
+      "file": "condition-extensions-on-pattern.json",
+      "description": "Extensions should be allowed even if a pattern on the same element does not contain them",
+      "version": "4.0",
+      "packages": [
+        "de.medizininformatikinitiative.kerndatensatz.diagnose#1.0.4"
+      ],
+      "java": {
+        "errorCount": 2,
+        "output": [
+            "ERROR: Condition.code.coding[0]: Unknown Code http://fhir.de/CodeSystem/dimdi/icd-10-gm#A54.4† M73.04* in http://fhir.de/CodeSystem/dimdi/icd-10-gm for 'http://fhir.de/CodeSystem/dimdi/icd-10-gm#A54.4† M73.04*'",
+            "ERROR: Condition: Condition.recordedDate: minimum required = 1, but only found 0 (from https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose)"
+        ]
+      }
+    },
+    {
+      "name": "pat-example-extensions",
+      "file": "pat-example-ext.json",
+      "version": "4.0",
+      "examples" : false,
+      "java": {
+        "errorCount": 2,
+        "output" : [
+          "ERROR: Patient.birthDate.extension[0]: The extension http://example.org/fhir/StructureDefinition/something is unknown, and not allowed here",
+          "ERROR: Patient.birthDate.extension[0].url: Example URLs are not allowed in this context (http://example.org/fhir/StructureDefinition/something)"
+        ]
+      }
+    },
+    {
+      "name": "inv-checks",
+      "file": "inv-check.xml",
+      "version": "4.0",
+      "java": {
+        "errorCount": 0
+      },
+      "profiles": [
+        "inv-check-profile-patient.xml",
+        "inv-check-profile-name1.xml",
+        "inv-check-profile-name2.xml"
+      ],
+      "profile": {
+        "source": "inv-check-profile-patient.xml",
+        "java": {
+          "errorCount": 3,
+          "output": [
+            "ERROR: Patient.name[0]: Unable to find a match for the specified profile among choices: ; [http://example.org/StructureDefinition/inv-profile-name1, http://example.org/StructureDefinition/inv-profile-name2]",
+            "ERROR: Patient.name[0].given[0]: test1: 'Always fail' Rule 'Always fail' Failed (validating against http://example.org/StructureDefinition/inv-profile-name2|0.1.0 [InvariantProfileName2]) (validating against http://example.org/StructureDefinition/inv-profile-name1|0.1.0 [InvariantProfileName1])",
+            "ERROR: Patient.name[0].given[0]: test2: 'Always fail' Rule 'Always fail' Failed (validating against http://example.org/StructureDefinition/inv-profile-name2|0.1.0 [InvariantProfileName2]) (validating against http://example.org/StructureDefinition/inv-profile-name1|0.1.0 [InvariantProfileName1])"
+          ]
+        }
+      }    
+    },
+    {
+      "name": "pat-id-type-check",
+      "file": "pat-id-type-check.json",
+      "version": "3.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    },
+    {
+      "name": "resource-invalid-id-0",
+      "file": "resource-invalid-id-0.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    },
+    {
+      "name": "resource-invalid-id-1",
+      "file": "resource-invalid-id-1.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 0,
+        "output" : ["ERROR: Location.id: Invalid Resource id"]
+      }
+    },
+    {
+      "name": "resource-invalid-id-2",
+      "file": "resource-invalid-id-2.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 0,
+        "output" : ["ERROR: Location.id: Invalid Resource id"]
+      }
+    },
+    {
+      "name": "resource-invalid-id-3",
+      "file": "resource-invalid-id-3.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 0,
+        "output" : ["Location.contained[0].ofType(Organization).id: Invalid Resource id"]
+      }
+    },
+    {
+      "name": "resource-invalid-eid-0",
+      "file": "resource-invalid-eid-0.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    },
+    {
+      "name": "resource-invalid-eid-1",
+      "file": "resource-invalid-eid-1.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    },
+    {
+      "name": "resource-invalid-eid-1b",
+      "file": "resource-invalid-eid-1.json",
+      "version": "1.0",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 0,
+        "output" : ["ERROR: Location.position.id: id value '/foobar==' is not valid"]
+      }
+    },
+    {
+      "name": "resource-invalid-eid-2",
+      "file": "resource-invalid-eid-2.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 0,
+        "output" : ["ERROR: Location.position.id: value is longer than permitted maximum length of 1 MB (1048576 bytes)"]
+      }
+    },  
+    {
+      "name" : "document-manifest",
+      "file" : "document-manifest-4.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 1
+      }
+    }, 
+    {
+      "name" : "document-manifest-r3",
+      "file" : "document-manifest.json",
+      "version": "3.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 1
+      }
+    }, 
+    {
+      "name" : "params-empty-r4",
+      "file" : "params-empty.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    }, 
+    {
+      "name" : "params-empty-r3",
+      "file" : "params-empty.json",
+      "version": "3.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    }, 
+    {
+      "name" : "params-empty-r2",
+      "file" : "params-empty.json",
+      "version": "1.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    }, 
+    {
+      "name" : "shc",
+      "file" : "shc.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      },
+      "profile" : {
+        "packages" : ["hl7.fhir.uv.shc-vaccination#0.6.2"],
+        "source" : "http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-vaccination-bundle-dm",
+        "java": {
+          "errorCount": 0,
+          "warningCount" : 2,
+          "explanation" : "Still working on getting these to validate on the server",
+          "output" : [
+            "INFORMATION: Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats' is unknown so the code cannot be validated",
+            "WARNING: Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1 not found by validator",
+            "INFORMATION: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats' is unknown so the code cannot be validated",
+            "WARNING: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1 not found by validator"            
+          ]
+        }
+      }
+    }, 
+    {
+      "name" : "shc-bad-1",
+      "file" : "shc-bad-1.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 2,
+        "warningCount" : 0,
+        "output" : [
+          "ERROR: Bundle.entry[1].resource.ofType(Immunization).status: The value provided ('Completed') is not in the value set http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 (http://hl7.org/fhir/ValueSet/immunization-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/event-status#Completed in http://hl7.org/fhir/event-status)",
+          "ERROR: Bundle.entry[2].resource.ofType(Immunization).status: The value provided ('COMPLETED') is not in the value set http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 (http://hl7.org/fhir/ValueSet/immunization-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/event-status#COMPLETED in http://hl7.org/fhir/event-status)"        
+        ]
+      },
+      "profile" : {
+        "packages" : ["hl7.fhir.uv.shc-vaccination#0.6.2"],
+        "source" : "http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-vaccination-bundle-dm",
+        "java": {
+          "errorCount": 4,
+          "warningCount" : 2,
+          "explanation" : "Still working on getting these to validate no the server",
+            "output" : [
+              "ERROR: Bundle.entry[1].resource.ofType(Immunization).status: The value provided ('Completed') is not in the value set http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 (http://hl7.org/fhir/ValueSet/immunization-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/event-status#Completed in http://hl7.org/fhir/event-status)",
+              "ERROR: Bundle.entry[1].resource.ofType(Immunization).status: Value is 'Completed' but must be 'completed'",
+              "INFORMATION: Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats' is unknown so the code cannot be validated",
+              "WARNING: Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1 not found by validator",
+              "ERROR: Bundle.entry[2].resource.ofType(Immunization).status: The value provided ('COMPLETED') is not in the value set http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 (http://hl7.org/fhir/ValueSet/immunization-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/event-status#COMPLETED in http://hl7.org/fhir/event-status)",
+              "ERROR: Bundle.entry[2].resource.ofType(Immunization).status: Value is 'COMPLETED' but must be 'completed'",
+              "INFORMATION: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats' is unknown so the code cannot be validated",
+              "WARNING: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1 not found by validator"
+          ]
+        }
+      }
+    }, 
+    {
+      "name" : "shc-cvx",
+      "file" : "shc-cvx.json",
+      "version": "4.0",
+      "java": {
+        "errorCount": 2,
+        "warningCount" : 0,
+          "output" : [
+            "ERROR: Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0]: The code \"209\" is not valid in the system http://hl7.org/fhir/sid/cvx; The code provided (http://hl7.org/fhir/sid/cvx#209) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#209'",
+            "ERROR: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: The code \"209\" is not valid in the system http://hl7.org/fhir/sid/cvx; The code provided (http://hl7.org/fhir/sid/cvx#209) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#209'"            
+          ]
+      },
+      "profile" : {
+        "packages" : ["hl7.fhir.uv.shc-vaccination#0.6.2"],
+        "source" : "http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-vaccination-bundle-dm",
+        "java": {
+          "errorCount": 2,
+          "warningCount" : 0,
+          "output" : [
+            "ERROR: Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0]: The code \"209\" is not valid in the system http://hl7.org/fhir/sid/cvx; The code provided (http://hl7.org/fhir/sid/cvx#209) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#209'",
+            "ERROR: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: The code \"209\" is not valid in the system http://hl7.org/fhir/sid/cvx; The code provided (http://hl7.org/fhir/sid/cvx#209) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#209'"            
+          ]
+        }
+      }
+    }, 
+    {
+      "name" : "shc.jwt",
+      "file" : "shc.jwt",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 12,
+        "warningCount" : 0,
+        "output" : [
+          "INFORMATION: JWT: The FHIR Validator does not check the JWT signature (see https://demo-portals.smarthealth.cards/VerifierPortal.html or https://github.com/smart-on-fhir/health-cards-dev-tools)",
+          "ERROR: Bundle.entry[1]: This element does not match any known slice  defined in the profile http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm and slicing is CLOSED: Bundle.entry[1]: Does not match slice 'patient', Bundle.entry[1]: Does not match slice 'labResult'",
+          "ERROR: Bundle.entry[2]: This element does not match any known slice  defined in the profile http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm and slicing is CLOSED: Bundle.entry[2]: Does not match slice 'patient', Bundle.entry[2]: Does not match slice 'labResult'",
+          "ERROR: Bundle: Bundle.entry:labResult: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[0]: Bundle.entry:patient.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[0]: Bundle.entry.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[1]: Bundle.entry.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[1]: Bundle entry missing fullUrl",
+          "ERROR: Bundle.entry[2]: Bundle.entry.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[2]: Bundle entry missing fullUrl",
+          "ERROR: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry",
+          "ERROR: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry",
+          "ERROR: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry"
+        ]
+      }
+    }, 
+    {
+      "name" : "shc-qr",
+      "file" : "shc-qr.txt",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 12,
+        "warningCount" : 0,
+        "output" : [
+          "INFORMATION: JWT: The FHIR Validator does not check the JWT signature (see https://demo-portals.smarthealth.cards/VerifierPortal.html or https://github.com/smart-on-fhir/health-cards-dev-tools)",
+          "ERROR: Bundle.entry[1]: This element does not match any known slice  defined in the profile http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm and slicing is CLOSED: Bundle.entry[1]: Does not match slice 'patient', Bundle.entry[1]: Does not match slice 'labResult'",
+          "ERROR: Bundle.entry[2]: This element does not match any known slice  defined in the profile http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm and slicing is CLOSED: Bundle.entry[2]: Does not match slice 'patient', Bundle.entry[2]: Does not match slice 'labResult'",
+          "ERROR: Bundle: Bundle.entry:labResult: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[0]: Bundle.entry:patient.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[0]: Bundle.entry.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[1]: Bundle.entry.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[1]: Bundle entry missing fullUrl",
+          "ERROR: Bundle.entry[2]: Bundle.entry.fullUrl: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-covid19-laboratory-bundle-dm)",
+          "ERROR: Bundle.entry[2]: Bundle entry missing fullUrl",
+          "ERROR: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry",
+          "ERROR: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry",
+          "ERROR: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry"
+        ]
+      }
+    }, 
+    {
+      "name" : "shc-file",
+      "file" : "shc-file.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 2,
+        "output" : [
+          "INFORMATION: JWT: The FHIR Validator does not check the JWT signature (see https://demo-portals.smarthealth.cards/VerifierPortal.html or https://github.com/smart-on-fhir/health-cards-dev-tools)",
+          "WARNING: verifiableCredential[0].payload.vc.credentialSubject.Bundle.entry[1].resource.ofType(Immunization).performer[0].actor.display: vc-should-be-under-30-chars: 'Length SHOULD be <30 for data minimization.' Rule 'Length SHOULD be <30 for data minimization.' Failed",
+          "WARNING: verifiableCredential[0].payload.vc.credentialSubject.Bundle.entry[2].resource.ofType(Immunization).performer[0].actor.display: vc-should-be-under-30-chars: 'Length SHOULD be <30 for data minimization.' Rule 'Length SHOULD be <30 for data minimization.' Failed"
+        ]
+      }
+    }, 
+    {
+      "name" : "shc-bundle",
+      "file" : "shc-bundle.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0,
+        "output" : [
+        ]
+      },
+      "profile" : {
+        "packages" : ["hl7.fhir.uv.shc-vaccination#0.6.2"],
+        "source" : "http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-vaccination-bundle-dm",
+        "java": {
+          "errorCount": 0,
+          "warningCount" : 2,
+          "output" : [
+            "WARNING: Bundle.entry[1].resource.ofType(Immunization).performer[0].actor.display: vc-should-be-under-30-chars: 'Length SHOULD be <30 for data minimization.' Rule 'Length SHOULD be <30 for data minimization.' Failed",
+            "WARNING: Bundle.entry[2].resource.ofType(Immunization).performer[0].actor.display: vc-should-be-under-30-chars: 'Length SHOULD be <30 for data minimization.' Rule 'Length SHOULD be <30 for data minimization.' Failed"
+
+          ]
+        }
+      }
+    }, 
+    {
+      "name" : "bundle-with-contained",
+      "file" : "bundle-with-contained.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 1,
+        "output" : [
+"WARNING: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): The display 'NDC labeler code request' is not a valid display for the code {http://loinc.org}51726-8 - should be one of ['FDA product label NDC labeler code request', 'FDA label NDC labeler code request', 'FDA 药品标签 National Drug Code' (zh-CN), 'NDC' (zh-CN), '国家药品验证号' (zh-CN), '国家药品代码' (zh-CN), '美国国家药品代码' (zh-CN), '全国药品代码' (zh-CN), 'NDC labeler code' (zh-CN), 'NDC 标识者识别代码' (zh-CN), 'NDC 厂家号' (zh-CN), 'NDC 贴签厂商代码请求' (zh-CN), 'NDC 标签号申请 叙述' (zh-CN), '叙述性文字' (zh-CN), '报告' (zh-CN), '报告型' (zh-CN), '文字叙述' (zh-CN), '文本叙述型' (zh-CN), '文本描述' (zh-CN), '文本描述型 监管类文档' (zh-CN), 'Documentazione normativa Etichetta di prodotto della Food and Drug Administ' (it-IT), 'Описательный' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#51726-8'",
+"INFORMATION: Bundle.entry[1].resource.ofType(Organization).contained[0].ofType(OrganizationAffiliation).code[0].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated",
+"INFORMATION: Bundle.entry[1].resource.ofType(Organization).contained[1].ofType(Organization).type[0].coding[0]: Code System URI 'http://example.org/fhir/us/spl/CodeSystem/codesystem-organizationTypes' is unknown so the code cannot be validated",
+"INFORMATION: Bundle.entry[1].resource.ofType(Organization).contained[2].ofType(HealthcareService).type[0].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated",
+"INFORMATION: Bundle.entry[1].resource.ofType(Organization).contained[2].ofType(HealthcareService).serviceProvisionCode[0].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated",
+"INFORMATION: Bundle.entry[1].resource.ofType(Organization).type[0].coding[0]: Code System URI 'http://example.org/fhir/us/spl/CodeSystem/codesystem-organizationTypes' is unknown so the code cannot be validated"
+        ]
+      }
+    }, 
+    {
+      "name" : "sct-version-issue",
+      "file" : "sct-version-issue.json",
+      "version" : "4.0",
+      "description" : "The version in this example is not valid - was neve released",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 0,
+        "output" : [
+          "ERROR: Observation.code.coding[0]: Version 'http://snomed.info/sct/900000000000207008/version/20210731' of the code system 'http://snomed.info/sct' is not known (encountered paired with code = '459231000124102'); The code provided (http://snomed.info/sct#459231000124102) is not valid in the value set 'All codes known to the system' (from http://local.fhir.org:960/r4) for 'http://snomed.info/sct#459231000124102'"
+        ]
+      }
+    },
+    {
+      "name" : "risk-assessment-probability",
+      "file" : "risk-assessment-probability.json",
+      "version" : "3.0",
+      "java" : {
+        "errorCount" : 0,
+        "output" : [
+        ]
+      }
+    },
+    {
+      "name" : "risk-assessment-probability-range",
+      "file" : "risk-assessment-probability-range.json",
+      "version" : "4.0",
+      "java" : {
+        "errorCount" : 1,
+        "output" : [
+          "ERROR: RiskAssessment.prediction[0]: ras-2: 'Must be <= 100' failed"
+        ]
+      }
+    },
+    {
+      "name" : "vs-canonical-good",
+      "file" : "vs-canonical-good.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 1,
+        "output" : [
+          "WARNING: ValueSet.contained[0].ofType(CodeSystem): HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly "
+        ]
+      }
+    },
+    {
+      "name" : "vs-canonical-bad",
+      "file" : "vs-canonical-bad.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 2,
+        "warningCount" : 0,
+        "output" : [
+          "ERROR: ValueSet.contained[0].ofType(CodeSystem).url: Canonical URLs must be tokens for fragment references if they are in contained resources (http://hl7.org/fhir/CodeSystem/c1)",
+          "ERROR: ValueSet.url: Canonical URLs must be absolute URLs if they are not fragment references (ValueSet/vs-canonical-bad)"
+        ]
+      }
+    },
+    {
+      "name" : "vs-canonical-urn",
+      "file" : "vs-canonical-urn.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0,
+        "output" : [
+        ]
+      }
+    },
+    {
+      "name" : "vs-canonical-urn-bad",
+      "file" : "vs-canonical-urn-bad.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 2,
+        "warningCount" : 0,
+        "output" : [
+          "ERROR: ValueSet.contained[0].ofType(CodeSystem).url: UUIDs must be valid (Error at index 0 in: \":f3b2bd36\")",
+          "ERROR: ValueSet.url: UUIDs must be valid (Error at index 0 in: \":6a2ee390\")"
+        ]
+      }
+    },
+    {
+      "name" : "uk-msg",
+      "file" : "uk-msg.json",
+      "version" : "4.0",
+      "allowed-extension-domain" : "https://fhir.nhs.uk/StructureDefinition",
+      "java": {
+        "errorCount": 2,
+        "warningCount" : 3,
+        "output" : [
+          "WARNING: Bundle.entry[4].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: The display \"Paracetamol 500mg tablets\" is not a valid display for the code {http://snomed.info/sct}322236009 - should be one of ['Acetaminophen 500 mg oral tablet', 'Paracetamol 500 mg oral tablet', 'Product containing precisely paracetamol 500 milligram/1 each conventional release oral tablet (clinical drug)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#322236009'",
+          "ERROR: Bundle.entry[5].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Unable to find code 35901911000001104 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"35901911000001104\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#35901911000001104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#35901911000001104'",
+          "WARNING: Bundle.entry[6].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: The display \"Ibuprofen 200mg tablets\" is not a valid display for the code {http://snomed.info/sct}329652003 - should be one of ['Ibuprofen 200 mg oral tablet', 'Product containing precisely ibuprofen 200 milligram/1 each conventional release oral tablet (clinical drug)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#329652003'",
+          "ERROR: Bundle.entry[7].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Unable to find code 39695211000001102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"39695211000001102\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#39695211000001102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#39695211000001102'",
+          "WARNING: Bundle.entry[10]: Entry 'urn:uuid:c7d942f2-3c1d-4d93-9ba8-ba57db83cdc0' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere"
+        ]
+      }
+    },
+    {
+      "name" : "ext-xver-modifier-1",
+      "file" : "ext-xver-modifier-1.json",
+      "version" : "4.0",
+      "supporting" : [ "ext-xver-modifier-definition.json" ],
+      "description": "check modifier extensions are checked correctly",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 1,
+        "output" : [
+          "WARNING: DeviceRequest.extension[0].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/us/qicore/ValueSet/qicore-negation-reason not found by validator"
+        ]
+      }
+    },
+    {
+      "name" : "ext-xver-modifier-2",
+      "file" : "ext-xver-modifier-2.json",
+      "version" : "4.0",
+      "profiles" : [ "ext-xver-modifier-definition.json" ],
+      "description" : "flip the extensions - both are wrong",
+      "java": {
+        "errorCount": 2,
+        "warningCount" : 1,
+        "output" : [
+          "ERROR: DeviceRequest.extension[0][url='http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform']: The Extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform' must not be used as an extension (it's a modifierExtension)",
+          "ERROR: DeviceRequest.modifierExtension[0][url='http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason']: The Extension 'http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason' must not be used as a modifierExtension (it's a regular extension)",
+          "WARNING: DeviceRequest.modifierExtension[0].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/us/qicore/ValueSet/qicore-negation-reason not found by validator"
+        ]
+      }
+    },
+    {
+      "name" : "contained-resource-bad-id",
+      "file" : "contained-resource.json",
+      "version" : "4.0",
+      "validateContains": "CHECK_VALID",
+      "description" : "65 character long ID on contained resource, set validateContains to CHECK_VALID should yield 2 errors",
+      "java": {
+        "errorCount": 2,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Condition: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 12345678901234567890123456789012345678901234567890123456789012345))",
+          "ERROR: Condition.contained[0].ofType(Practitioner).id: Invalid Resource id"
+        ]
+      }
+    },
+    {
+      "name" : "contained-resource-bad-id-ignore",
+      "file" : "contained-resource.json",
+      "version" : "4.0",
+      "validateContains": "IGNORE",
+      "description" : "65 character long ID on contained resource, set validateContains to IGNORE should yield no errors",
+      "java": {
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Condition: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 12345678901234567890123456789012345678901234567890123456789012345))",
+        ]
+      }
+    },
+    {
+      "name" : "type-subtype-slicing1",
+      "file" : "type-subtype-slicing1.json",
+      "version" : "4.0",
+      "profile": {
+        "source": "type-subtype-slicing-sd.json",
+        "java": {
+          "errorCount": 0,
+          "warningCount" : 0
+        }
+      },
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    },
+    {
+      "name" : "type-subtype-slicing2",
+      "file" : "type-subtype-slicing2.json",
+      "version" : "4.0",
+      "profile": {
+        "source": "type-subtype-slicing-sd.json",
+        "java": {
+          "errorCount": 2,
+          "warningCount" : 0,
+          "output" : [
+            "INFORMATION: Observation.referenceRange[0]: This element does not match any known slice defined in the profile http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef",
+            "INFORMATION: Observation.referenceRange[1]: This element does not match any known slice defined in the profile http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef",
+            "ERROR: Observation: Observation.referenceRange:Slice1: minimum required = 1, but only found 0 (from http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef)",
+            "ERROR: Observation: Observation.referenceRange:Slice2: minimum required = 1, but only found 0 (from http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef)"
+          ]
+        }
+      },
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    },
+    {
+      "name" : "type-subtype-slicing3",
+      "file" : "type-subtype-slicing3.json",
+      "version" : "4.0",
+      "profile": {
+        "source": "type-subtype-slicing-sd.json",
+        "java": {
+          "errorCount": 3,
+          "warningCount" : 0,
+          "output" : [
+            "INFORMATION: Observation.referenceRange[0]: This element does not match any known slice defined in the profile http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef",
+            "ERROR: Observation: Observation.referenceRange:Slice1: minimum required = 1, but only found 0 (from http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef)",
+            "ERROR: Observation: Observation.referenceRange:Slice2: minimum required = 1, but only found 0 (from http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef)",
+            "ERROR: Observation: Observation.referenceRange:Slice3: max allowed = 1, but found 2 (from http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef)"
+          ]
+        }
+      },
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0
+      }
+    },
+    {
+      "name": "bundle-conformsto",
+      "file": "bundle-conformsto.json",
+      "version" : "4.0",
+      "profiles" : [ "bundle-conformsto-patient.json", "bundle-conformsto-bundle.json", "bundle-conformsto-composition.json" ],
+      "java": {
+        "errorCount": 1,
+        "output" : [
+          "ERROR: Bundle.entry:Composition: minimum required = 1, but only found 0 (from http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo)",
+          "INFORMATION: Bundle.entry[0].resource.ofType(Composition).type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#721912009)",
+          "INFORMATION: Bundle.entry[1]: This element does not match any known slice defined in the profile http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo",
+          "INFORMATION: Bundle.entry[0].resource.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#721912009)"
+       ]
+      }
+    },
+    {
+      "name" : "no.gastronet",
+      "file" : "no.gastronet.json",
+      "version"  : "4.0",
+       "packages": [
+        "colonoscopyreport.no#0.7.4"
+      ],
+      "java": {
+        "errorCount": 17,
+        "warningCount" : 3,
+        "output" : [
+          "ERROR: Bundle.entry[1].resource.ofType(Procedure).extension[6].value.ofType(CodeableConcept).coding[0]: Unable to find code 10821000202101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"10821000202101\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#10821000202101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#10821000202101'",
+          "WARNING: Bundle.entry[1].resource.ofType(Procedure).category.coding[0]: The display \"Diagnostisk med biopsi\" is not a valid display for the code {http://snomed.info/sct}446745002 - should be one of ['Colonoscopy and biopsy of colon (procedure)', 'Colonoscopy and biopsy of colon'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#446745002'",
+          "ERROR: Bundle.entry[1].resource.ofType(Procedure).performer[0].function.coding[0]: Unable to find code 8921000202108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"8921000202108\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#8921000202108) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#8921000202108'",
+          "ERROR: Bundle.entry[1].resource.ofType(Procedure).performer[1].function.coding[0]: Unable to find code 8951000202101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"8951000202101\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#8951000202101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#8951000202101'",
+          "INFORMATION: Bundle.entry[1].resource.ofType(Procedure).report[0]: Details for http://testdata.no/fhir/DiagnosticReport/1 matching against Profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+          "ERROR: Bundle.entry[1].resource.ofType(Procedure).extension[6].value.ofType(CodeableConcept): Unable to find code 10821000202101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"10821000202101\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#10821000202101) is not valid in the value set 'no-colonoscopy-sedation-level' (from http://tx.fhir.org/r4)",
+          "WARNING: Bundle.entry[1].resource.ofType(Procedure).category: The display \"Diagnostisk med biopsi\" is not a valid display for the code {http://snomed.info/sct}446745002 - should be one of ['Colonoscopy and biopsy of colon (procedure)', 'Colonoscopy and biopsy of colon'] (from http://tx.fhir.org/r4)",
+          "ERROR: Bundle.entry[1].resource.ofType(Procedure).performer[0].function: Unable to find code 8921000202108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"8921000202108\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#8921000202108) is not valid in the value set 'No-procedure-performer-function' (from http://tx.fhir.org/r4)",
+          "ERROR: Bundle.entry[1].resource.ofType(Procedure).performer[1].function: Unable to find code 8951000202101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"8951000202101\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#8951000202101) is not valid in the value set 'No-procedure-performer-function' (from http://tx.fhir.org/r4)",
+          "ERROR: Bundle.entry[1].resource.ofType(Procedure).report[0]: Unable to find a match for profile http://testdata.no/fhir/DiagnosticReport/1 among choices: http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet",
+          "INFORMATION: Bundle.entry[1].resource.ofType(Procedure).report[0]: Details for http://testdata.no/fhir/DiagnosticReport/1 matching against Profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet",
+          "INFORMATION: Bundle.entry[2].resource.ofType(DiagnosticReport).code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#73761001)",
+          "INFORMATION: Bundle.entry[2].resource.ofType(DiagnosticReport).result[0]: Details for http://testdata.no/fhir/Observation/lesion-1 matching against Profile http://hl7.org/fhir/StructureDefinition/Observation",
+          "INFORMATION: Bundle.entry[2].resource.ofType(DiagnosticReport).result[1]: Details for http://testdata.no/fhir/Observation/bbps matching against Profile http://hl7.org/fhir/StructureDefinition/Observation",
+          "INFORMATION: Bundle.entry[2].resource.ofType(DiagnosticReport).result[3]: Details for http://testdata.no/fhir/Observation/lumen matching against Profile http://hl7.org/fhir/StructureDefinition/Observation",
+          "ERROR: Bundle.entry[2].resource.ofType(DiagnosticReport).result[0]: Unable to find a match for profile http://testdata.no/fhir/Observation/lesion-1 among choices: http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet",
+          "INFORMATION: Bundle.entry[2].resource.ofType(DiagnosticReport).result[0]: Details for http://testdata.no/fhir/Observation/lesion-1 matching against Profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet",
+          "ERROR: Bundle.entry[2].resource.ofType(DiagnosticReport).result[1]: Unable to find a match for profile http://testdata.no/fhir/Observation/bbps among choices: http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet",
+          "INFORMATION: Bundle.entry[2].resource.ofType(DiagnosticReport).result[1]: Details for http://testdata.no/fhir/Observation/bbps matching against Profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet",
+          "ERROR: Bundle.entry[2].resource.ofType(DiagnosticReport).result[3]: Unable to find a match for profile http://testdata.no/fhir/Observation/lumen among choices: http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet",
+          "INFORMATION: Bundle.entry[2].resource.ofType(DiagnosticReport).result[3]: Details for http://testdata.no/fhir/Observation/lumen matching against Profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet",
+          "ERROR: Bundle.entry[4].resource.ofType(Observation).component[0].code.coding[0]: Unable to find code 10291000202102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"10291000202102\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#10291000202102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#10291000202102'",
+          "ERROR: Bundle.entry[5].resource.ofType(Observation).component[0].code.coding[0]: Unable to find code 8901000202102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"8901000202102\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#8901000202102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#8901000202102'",
+          "ERROR: Bundle.entry[5].resource.ofType(Observation).component[1].code.coding[0]: Unable to find code 8911000202100 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"8911000202100\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#8911000202100) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#8911000202100'",
+          "ERROR: Bundle.entry[5].resource.ofType(Observation).component[2].code.coding[0]: Unable to find code 8891000202103 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"8891000202103\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#8891000202103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#8891000202103'",
+          "ERROR: Bundle.entry[6].resource.ofType(Observation).code.coding[0]: Unable to find code 15991000202102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"15991000202102\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#15991000202102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#15991000202102'",
+          "WARNING: Bundle.entry[12].resource.ofType(Location).managingOrganization: Found multiple matching profiles for http://testdata.no/fhir/Organization/1 among choices: http://hl7.org/fhir/StructureDefinition/Organization, http://hl7.no/fhir/StructureDefinition/no-basis-Organization",
+          "INFORMATION: Bundle.entry[1]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[2]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[4]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[5]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[6]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[8]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[9]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[10]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[11]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[12]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "INFORMATION: Bundle.entry[13]: This element does not match any known slice defined in the profile http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet",
+          "ERROR: Bundle: Bundle.entry:Colonoscopy: minimum required = 1, but only found 0 (from http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet)",
+          "ERROR: Bundle: Bundle.entry:DiagnosticReport: minimum required = 1, but only found 0 (from http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet)"
+        ]
+      }     
+    },
+    {
+      "name": "nested-questionnaire-nested-valueset",
+      "file": "nested-questionnaire-nested-valueset.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 10,
+        "warningCount" : 10,
+        "output" : [
+          "ERROR: QuestionnaireResponse.contained[0].ofType(Questionnaire).extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-questionnaireAdaptive is unknown, and not allowed here",
+          "WARNING: QuestionnaireResponse.contained[1].ofType(ValueSet).compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked",
+          "WARNING: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[1].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[3].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[4].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[5].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[7].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "WARNING: QuestionnaireResponse.item[0].item[8].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::Not-at-all) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::Not-at-all) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::Not-at-all) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::Several-days) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::More than half the days) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::Several-days) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::Nearly every day) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::More than half the days) is not in the options value set in the questionnaire",
+          "ERROR: QuestionnaireResponse.item[0].item[0].answer[0]: The value provided (http://hl7.org/fhir/uv/sdc/CodeSystem/CSPHQ9::Several-days) is not in the options value set in the questionnaire"
+        ]
+      }
+    },
+    {
+      "name": "encounter-period",
+      "file": "encounter-period.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 1,
+        "warningCount" : 1,
+        "output" : [
+          "INFORMATION: Encounter.class: Code System URI 'urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260' is unknown so the code cannot be validated",
+          "WARNING: Encounter.class: The Coding provided (urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260#1) is not in the value set http://terminology.hl7.org/ValueSet/v3-ActEncounterCode, and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = Not in value set http://terminology.hl7.org/ValueSet/v3-ActEncounterCode)",
+          "ERROR: Encounter.period: per-1: 'If present, start SHALL have a lower value than end' Rule 'If present, start SHALL have a lower value than end' Failed"
+        ]
+      }
+    },
+    {
+      "name": "obs-value-min",
+      "file": "obs-value-min.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0,
+        "output" : [
+        ]
+      },
+      "profile" : {
+        "source" : "obs-value-min-profile.json",
+        "java": {
+          "errorCount": 1,
+          "warningCount" : 0,
+          "output" : [
+            "ERROR: Observation.value.ofType(Quantity): The value in the instance (-1) is less than the specified minimum value (0)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "obs-value-min-g",
+      "file": "obs-value-min-g.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0,
+        "output" : [
+        ]
+      },
+      "profile" : {
+        "source" : "obs-value-min-profile.json",
+        "java": {
+          "errorCount": 1,
+          "warningCount" : 0,
+          "output" : [
+            "ERROR: Observation.value.ofType(Quantity): The value in the instance (-1 g) is less than the specified minimum value (0 kg)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "obs-value-max-g",
+      "file": "obs-value-max-g.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount" : 0,
+        "output" : [
+        ]
+      },
+      "profile" : {
+        "source" : "obs-value-min-profile.json",
+        "java": {
+          "errorCount": 1,
+          "warningCount" : 0,
+          "output" : [
+            "ERROR: Observation.value.ofType(Quantity): The value in the instance (11000 g) is greater than the specified maxValue (0 kg) after UCUM conversion"
+          ]
+        }
+      }
+    },
+    {
+      "name": "base64-whitespace",
+      "file": "base64-whitespace.xml",
+      "java": {
+        "errorCount": 1,
+        "warningCount": 0,
+        "output": [
+          "ERROR: Parameters.parameter[0].value.ofType(base64Binary): Base64 values are not allowed to contain any whitespace (per RFC 4648). Note that non-validating readers are encouraged to accept whitespace anyway"
+        ]
+      }
+    },
+    {
+      "name": "base64-whitespace-r4",
+      "file": "base64-whitespace.xml",
+      "version" : "4.0.1",
+      "java": {
+        "errorCount": 0,
+        "warningCount": 1,
+        "output": [
+          "WARNING: Parameters.parameter[0].value.ofType(base64Binary): Base64 values SHOULD not contain any whitespace (per RFC 4648). Note that non-validating readers are encouraged to accept whitespace anyway"
+        ]
+      }
+    },
+    {
+      "name": "structureDefinition-11179-objectClass-R4",
+      "file": "StructureDefinition-11179-objectClass.json",
+      "version" : "4.0",
+      "java": {
+        "errorCount": 0,
+        "warningCount": 1,
+        "output": [
+          "WARNING: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"
+        ]
+      }
+    },
+    {
+      "name": "structureDefinition-11179-objectClass-R4B",
+      "file": "StructureDefinition-11179-objectClass.json",
+      "version" : "4.3",
+      "java": {
+        "errorCount": 0,
+        "warningCount": 1,
+        "output": [
+          "WARNING: StructureDefinition.extension[0].value.ofType(code): ValueSet http://terminology.hl7.org/ValueSet/hl7-work-group not found by validator"
+        ]
+      }
+    },
+    {
+      "name": "qr-enablewhen-2",
+      "file": "qr-enablewhen-2.xml",
+      "version" : "4.0",
+      "supporting": [
+        "q-enablewhen-2.xml"
+      ],
+      "java": {
+        "errorCount": 0,
+        "warningCount": 0,
+        "output": [
+        ]
+      }
+    },
+    {
+      "name": "bundle-enrl",
+      "file": "bundle-enrl.json",
+      "version" : "4.0",
+      "supporting": [
+        "bundle-enrl-sd.json"
+      ],
+      "java": {
+        "errorCount": 35,
+        "warningCount": 19,
+        "output": [
+          "WARNING: Bundle.identifier.type: None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#RI)",
+          "ERROR: Bundle.entry[0].resource.ofType(MessageHeader).extension[0]: The extension http://dev.gene.com/fhir/uapi/StructureDefinition/message-timestamp is unknown, and not allowed here",
+          "INFORMATION: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): Code System URI 'http://terminology.gene.com/fhir/usix/uapi/CodeSystem/uapi-event-type' is unknown so the code cannot be validated",
+          "WARNING: Bundle.entry[0].resource.ofType(MessageHeader).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-messageheader' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "WARNING: Bundle.entry[2].resource.ofType(Patient).identifier[0].type: None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#PI)",
+          "ERROR: Bundle.entry[2].resource.ofType(Patient).generalPractitioner[0]: The type 'practitioner' is not a valid Target for this element (must be one of [CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]])",
+          "ERROR: Bundle.entry[2].resource.ofType(Patient).generalPractitioner[0]: Invalid Resource target type. Found practitioner, but expected one of (Practitioner)",
+          "WARNING: Bundle.entry[2].resource.ofType(Patient).generalPractitioner[0].type: The value provided ('practitioner') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable)  (error message = Unknown Code http://hl7.org/fhir/resource-types#practitioner in http://hl7.org/fhir/resource-types)",
+          "ERROR: Bundle.entry[2].resource.ofType(Patient).managingOrganization: The type 'organization' is not a valid Target for this element (must be one of [CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]])",
+          "ERROR: Bundle.entry[2].resource.ofType(Patient).managingOrganization: Invalid Resource target type. Found organization, but expected one of (Organization)",
+          "WARNING: Bundle.entry[2].resource.ofType(Patient).managingOrganization.type: The value provided ('organization') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable)  (error message = Unknown Code http://hl7.org/fhir/resource-types#organization in http://hl7.org/fhir/resource-types)",
+          "WARNING: Bundle.entry[2].resource.ofType(Patient).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "WARNING: Bundle.entry[3].resource.ofType(Organization).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "WARNING: Bundle.entry[4].resource.ofType(Practitioner).identifier[0].type: Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#PRN should be one of 'Provider number, Zorgaanbieder/zorgverlener-nummer' instead of 'Provider identifier'",
+          "WARNING: Bundle.entry[4].resource.ofType(Practitioner).identifier[2].type: None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)",
+          "WARNING: Bundle.entry[4].resource.ofType(Practitioner).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "INFORMATION: Bundle.entry[5].resource.ofType(Coverage).beneficiary: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "WARNING: Bundle.entry[5].resource.ofType(Coverage).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "INFORMATION: Bundle.entry[6].resource.ofType(RelatedPerson).patient: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "WARNING: Bundle.entry[6].resource.ofType(RelatedPerson).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "WARNING: Bundle.entry[7].resource.ofType(QuestionnaireResponse): The questionnaire 'https://dev.gene.com/fhir/uapi/fhirapi/Questionnaire/1234' could not be resolved, so no validation can be performed against the base questionnaire",
+          "ERROR: Bundle.entry[8].resource.ofType(Condition).code.coding[0]: The code \"E10.3211+TT1.2\" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#E10.3211+TT1.2) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10-cm#E10.3211+TT1.2'",
+          "INFORMATION: Bundle.entry[8].resource.ofType(Condition).subject: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "WARNING: Bundle.entry[9].resource.ofType(Consent).category[0]: The display \"Patient Authorization Signature\" is not a valid display for the code {http://loinc.org}59284-0 - should be one of ['Consent Document', 'Consent', '临床文档型' (zh-CN), '临床文档' (zh-CN), '文档' (zh-CN), '文书' (zh-CN), '医疗文书' (zh-CN), '临床医疗文书 事件发生的地方' (zh-CN), '场景' (zh-CN), '环境' (zh-CN), '背景 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '超系统 - 病人 发现是一个原子型临床观察指标，并不是作为印象的概括陈述。体格检查、病史、系统检查及其他此类观察指标的属性均为发现。它们的标尺对于编码型发现可能是名义型，而对于叙述型文本之中所报告的发现，则可能是叙述型。' (zh-CN), '发现物' (zh-CN), '所见' (zh-CN), '结果' (zh-CN), '结论 同意书' (zh-CN), '知情同意' (zh-CN), '知情同意书 文档本体' (zh-CN), '临床文档本体' (zh-CN), '文档本体' (zh-CN), '文书本体' (zh-CN), '医疗文书本体' (zh-CN), '临床医疗文书本体 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间' (zh-CN), 'Documentazione dell''ontologia Osservazione Punto nel tempo (episodio)' (it-IT), '' (it-IT)] (from http://tx.fhir.org/r4)",
+          "INFORMATION: Bundle.entry[9].resource.ofType(Consent).patient: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "INFORMATION: Bundle.entry[10].resource.ofType(Provenance).agent[0].who: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "INFORMATION: Bundle.entry[10].resource.ofType(Provenance).signature[0].who: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "WARNING: Bundle.entry[10].resource.ofType(Provenance).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-provenance' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "INFORMATION: Bundle.entry[11].resource.ofType(ServiceRequest).code.coding[0]: Code System URI 'http://terminology.gene.com/fhir/usix/uapi/CodeSystem/uapi-sr-type' is unknown so the code cannot be validated",
+          "INFORMATION: Bundle.entry[11].resource.ofType(ServiceRequest).subject: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "WARNING: Bundle.entry[11].resource.ofType(ServiceRequest).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "INFORMATION: Bundle.entry[12].resource.ofType(ServiceRequest).code.coding[0]: Code System URI 'http://terminology.gene.com/fhir/usix/uapi/CodeSystem/uapi-sr-type' is unknown so the code cannot be validated",
+          "INFORMATION: Bundle.entry[12].resource.ofType(ServiceRequest).subject: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "WARNING: Bundle.entry[12].resource.ofType(ServiceRequest).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "INFORMATION: Bundle.entry[13].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.gene.com/fhir/usix/uapi/CodeSystem/uapi-product-name' is unknown so the code cannot be validated",
+          "INFORMATION: Bundle.entry[13].resource.ofType(MedicationRequest).subject: Details for urn:uuid:fc2e5a72-c363-4616-ae00-4ad25cbcb45c matching against Profile http://hl7.org/fhir/StructureDefinition/Patient",
+          "WARNING: Bundle.entry[13].resource.ofType(MedicationRequest).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-medicationrequest' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "WARNING: Bundle.entry[14].resource.ofType(Organization).meta.profile[0]: Profile reference 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles",
+          "ERROR: Bundle.entry[3]: Profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle, Element matches more than one slice - practice, payer",
+          "ERROR: Bundle.entry[14]: Profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle, Element matches more than one slice - practice, payer",
+          "ERROR: Bundle: Bundle.entry:practice: max allowed = 1, but found 2 (from http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle)",
+          "ERROR: Bundle.entry[0].resource.ofType(MessageHeader): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-messageheader not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[0].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-messageheader",
+          "ERROR: Bundle.entry[2].resource.ofType(Patient): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[2].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient",
+          "ERROR: Bundle.entry[3].resource.ofType(Organization): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[3].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization",
+          "ERROR: Bundle.entry[4].resource.ofType(Practitioner): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[4].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner",
+          "ERROR: Bundle.entry[5].resource.ofType(Coverage): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[5].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage",
+          "ERROR: Bundle.entry[6].resource.ofType(RelatedPerson): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[6].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson",
+          "ERROR: Bundle.entry[8].resource.ofType(Condition): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-condition not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[8].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-condition",
+          "ERROR: Bundle.entry[9].resource.ofType(Consent): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-consent not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[9].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-consent",
+          "ERROR: Bundle.entry[10].resource.ofType(Provenance): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-provenance not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[10].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-provenance",
+          "ERROR: Bundle.entry[11].resource.ofType(ServiceRequest): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[11].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest",
+          "ERROR: Bundle.entry[12].resource.ofType(ServiceRequest): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[12].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest",
+          "ERROR: Bundle.entry[13].resource.ofType(MedicationRequest): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-medicationrequest not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[13].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-medicationrequest",
+          "ERROR: Bundle.entry[14].resource.ofType(Organization): Specified profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization not found for entry resource of type 'entry'",
+          "ERROR: Bundle.entry[14].resource: Unknown profile http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization"
+        ]
+      }
+    },
+    {
+      "name": "auditEvent-ex-SecondSliceProfile",
+      "file": "auditEvent-ex-SecondSliceProfile.json",
+      "version" : "4.0",
+      "supporting": [
+        "structureDefinition-OtherId.json",
+        "structureDefinition-FirstSliceProfile.json",
+        "structureDefinition-SecondSliceProfile.json"
+      ],
+      "java": {
+        "errorCount": 0,
+        "warningCount": 2,
+        "output": [
+          "INFORMATION: AuditEvent.subtype[0]: Code System URI 'urn:ietf:rfc:1438' is unknown so the code cannot be validated",
+          "WARNING: AuditEvent.subtype[0]: The Coding provided (urn:ietf:rfc:1438#poke) is not in the value set http://hl7.org/fhir/ValueSet/audit-event-sub-type, and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = Not in value set http://hl7.org/fhir/ValueSet/audit-event-sub-type)",
+          "WARNING: AuditEvent.agent[0].extension[0].value.ofType(Reference).identifier.type: None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)"        
+        ]
+      }
+    },  
+    {
+      "name": "mimic",
+      "file": "mimic/encounter.json",
+      "packages" : ["mimic/mimic-0.1.2.tgz"],
+      "version" : "4.0",    
+      "java": {
+        "errorCount": 0,
+        "warningCount": 4,
+        "output": [
+          "INFORMATION: Encounter.class: Code System URI 'http://fhir.mimic.mit.edu/CodeSystem/admission-class' is unknown so the code cannot be validated",
+          "WARNING: Encounter.class: The Coding provided (http://fhir.mimic.mit.edu/CodeSystem/admission-class#URGENT) is not in the value set http://terminology.hl7.org/ValueSet/v3-ActEncounterCode, and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = Not in value set http://terminology.hl7.org/ValueSet/v3-ActEncounterCode)",
+          "INFORMATION: Encounter.type[0].coding[0]: Code System URI 'http://fhir.mimic.mit.edu/CodeSystem/admission-type' is unknown so the code cannot be validated",
+          "WARNING: Encounter.period.start: The value '2158-09-28T01:21:00-04:00' is outside the range of reasonable years - check for data entry error",
+          "WARNING: Encounter.period.end: The value '2158-09-28T12:10:00-04:00' is outside the range of reasonable years - check for data entry error",
+          "INFORMATION: Encounter.hospitalization.admitSource: None of the codings provided are in the value set 'Admit source' (http://hl7.org/fhir/ValueSet/encounter-admit-source), and a coding is recommended to come from this value set) (codes = http://fhir.mimic.mit.edu/CodeSystem/admit-source#null)",
+          "WARNING: Encounter.meta.profile[0]: Profile reference 'http://fhir.mimic.mit.edu/StructureDefinition/mimic-encounter' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles"
+        ]
+      }
+    },  
+    {
+      "name": "ext-context1",
+      "file": "ext_context1_bundle.xml",
+      "supporting" : ["ext_context1_profile_bundle.xml", "ext_context1_profile_composition.xml", "ext_context1_profile_condition.xml"],
+      "packages" : ["kbv.basis#1.2.0", "de.basisprofil.r4#0.9.13"],
+      "version" : "4.0",    
+      "java": {
+        "errorCount": 13,
+        "warningCount": 1,
+        "output": [
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Composition)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Composition)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Composition)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.author: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Composition)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.title: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Composition)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.status: minimum required = 1, but only found 0 (from https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Test_COMP)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.type: minimum required = 1, but only found 0 (from https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Test_COMP)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.date: minimum required = 1, but only found 0 (from https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Test_COMP)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.author: minimum required = 1, but only found 0 (from https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Test_COMP)",
+          "ERROR: Bundle.entry[0].resource.ofType(Composition): Composition.title: minimum required = 1, but only found 0 (from https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Test_COMP)",
+          "ERROR: Bundle.entry[1].resource.ofType(Condition): con-4: 'If condition is abated, then clinicalStatus must be either inactive, resolved, or remission' Rule 'If condition is abated, then clinicalStatus must be either inactive, resolved, or remission' Failed",
+          "ERROR: Bundle.entry[1].resource.ofType(Condition): Condition.subject: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Condition)",
+          "INFORMATION: Bundle.entry[1].resource.ofType(Condition).code.coding[0]: Code System URI 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' is unknown so the code cannot be validated",
+          "WARNING: Bundle.entry[1].resource.ofType(Condition).code.coding[0].extension[0].value.ofType(Coding): icd-5: 'Wenn die Diagnosesicherheit \"G (Gesichert)\" verwendet wird, dann muss clinicalStatus auf \"active\" und verificationStatus auf \"confirmed\" gesetzt werden.' Rule 'Wenn die Diagnosesicherheit \"G (Gesichert)\" verwendet wird, dann muss clinicalStatus auf \"active\" und verificationStatus auf \"confirmed\" gesetzt werden.' Failed",
+          "INFORMATION: Bundle.entry[1].resource.ofType(Condition).code.coding[0].extension[0].value.ofType(Coding): Code System URI 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT' is unknown so the code cannot be validated",
+          "ERROR: Bundle.entry[1].resource.ofType(Condition): Condition.subject: minimum required = 1, but only found 0 (from https://bla/StructureDefinition/MyKBV_PR_Base_Diagnosis)"
+        ]
+      }
+    },  
+    {
+      "name": "obs-value-xver-extension",
+      "file": "obs-value-xver-extension.xml",
+      "version" : "4.0",    
+      "java": {
+        "errorCount": 0,
+        "warningCount": 0
+      }
+    },  
+    {
+      "name": "zib-slicing",
+      "file": "slicing/example.json",
+      "version" : "3.0",    
+      "java": {
+        "errorCount": 1,
+        "warningCount": 1,
+        "output" : [
+          "ERROR: List.code.coding[0]: Unable to find code 11181000146103 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"11181000146103\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#11181000146103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#11181000146103'",
+          "WARNING: List.meta.profile[0]: Profile reference 'http://nictiz.nl/fhir/StructureDefinition/MedicationOverview' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles"            
+        ]
+      },
+      "profile": {
+        "source": "slicing/MedicationOverview.xml",
+        "java": {
+          "errorCount": 1,
+          "warningCount": 0,
+          "output": [
+            "ERROR: List.code.coding[0]: Unable to find code 11181000146103 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code \"11181000146103\" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#11181000146103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r3) for 'http://snomed.info/sct#11181000146103'"
+          ]
+        }
+      }
+    },  
+    {
+      "name": "xver-extensions-vs",
+      "file": "xver-extensions-vs.json",
+      "version" : "4.0",    
+      "java": {
+        "errorCount": 0,
+        "warningCount": 0,
+        "output" : [
+        ]
+      }
+    },
+    {
+      "name" : "pat-xver-extension-expected",
+      "file" : "pat-xver-extension-expected.xml",
+      "description" : "Use a modifier extension in an extension",
+      "version" : "4.0",    
+      "java": {
+        "errorCount": 3,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: StructureDefinition.snapshot.element[8]: eld-18: 'Must have a modifier reason if isModifier = true' Rule 'Must have a modifier reason if isModifier = true' Failed", 
+          "ERROR: StructureDefinition.differential.element[1].type[0].profile[0]: Profile http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.animal is for a modifier extension, but the Patient.extension element is not a modifier",
+          "ERROR: StructureDefinition.snapshot.element[8].type[0].profile[0]: Profile http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.animal is for a modifier extension, but the Patient.extension element is not a modifier"
+          
+        ]
+      }
+    },
+    {
+      "name" : "valueset-import-legacy-test",
+      "file" : "valueset-import-legacy-test.json",
+      "description" : "this checks that the validator is correctly interpreting legacy value sets published prior to aligning on https://jira.hl7.org/browse/FHIR-25179",
+      "version" : "4.0",
+      "java" : {
+        "errorCount": 0,
+        "warningCount": 0,
+        "output" : [
+        ]
+      },
+      "profile" : {
+        "source" : "valueset-import-legacy-test-profile.json",
+        "packages": ["hl7.fhir.us.dental-data-exchange#1.0.0"],
+        "java" : {
+          "errorCount": 0,
+          "warningCount": 0,
+          "output" : [
+          ]
+        }
+      }
+    },
+    {
+      "name" : "AuditEvent-slice23-first",
+      "file" : "slice23/AuditEvent-ex-FirstSliceProfile.json",
+      "version" : "4.0",
+      "java" : {
+        "errorCount": 0,
+        "warningCount": 2,
+        "output" : [
+          "INFORMATION: AuditEvent.subtype[0]: Code System URI 'urn:ietf:rfc:1438' is unknown so the code cannot be validated",
+          "WARNING: AuditEvent.subtype[0]: The Coding provided (urn:ietf:rfc:1438#poke) is not in the value set http://hl7.org/fhir/ValueSet/audit-event-sub-type, and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = Not in value set http://hl7.org/fhir/ValueSet/audit-event-sub-type ([]))",
+          "WARNING: AuditEvent.meta.profile[0]: Profile reference 'http://hl7.org/fhir/test/StructureDefinition/Slice23' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles"               
+        ]
+      }
+    },
+    {
+      "name" : "AuditEvent-slice23-second",
+      "file" : "slice23/AuditEvent-ex-SecondSliceProfile.json",
+      "version" : "4.0",
+      "java" : {
+        "debug" : true,
+        "errorCount": 2,
+        "warningCount": 3,
+        "output" : [
+          "INFORMATION: AuditEvent.subtype[0]: Code System URI 'urn:ietf:rfc:1438' is unknown so the code cannot be validated",
+          "WARNING: AuditEvent.subtype[0]: The Coding provided (urn:ietf:rfc:1438#poke) is not in the value set http://hl7.org/fhir/ValueSet/audit-event-sub-type, and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = Not in value set http://hl7.org/fhir/ValueSet/audit-event-sub-type ([]))",
+          "ERROR: AuditEvent.agent[0].extension[0]: The extension http://hl7.org/fhir/test/StructureDefinition/OtherId is unknown, and not allowed here",
+          "WARNING: AuditEvent.agent[0].extension[0].value.ofType(Identifier).type: None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)",
+          "ERROR: AuditEvent.agent[0].extension[1]: The extension http://hl7.org/fhir/test/StructureDefinition/OtherId is unknown, and not allowed here",
+          "WARNING: AuditEvent.meta.profile[0]: Profile reference 'http://hl7.org/fhir/test/StructureDefinition/Slice23' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles"
+        ]
+      },
+      "profile" : {
+        "source" : "slice23/StructureDefinition-Slice23.json",
+        "supporting" : [ "slice23/StructureDefinition-OtherId.json"],
+        "java" : {
+          "errorCount": 4,
+          "warningCount": 2,
+          "output" : [
+            "INFORMATION: AuditEvent.subtype[0]: Code System URI 'urn:ietf:rfc:1438' is unknown so the code cannot be validated",
+            "WARNING: AuditEvent.subtype[0]: The Coding provided (urn:ietf:rfc:1438#poke) is not in the value set http://hl7.org/fhir/ValueSet/audit-event-sub-type, and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = Not in value set http://hl7.org/fhir/ValueSet/audit-event-sub-type ([]))",
+            "WARNING: AuditEvent.agent[0].extension[0].value.ofType(Identifier).type: None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)",
+            "ERROR: AuditEvent.agent[0].extension[0]: Profile http://hl7.org/fhir/test/StructureDefinition/Slice23, Element matches more than one slice - extOtherId, extOtherId/npi",
+            "ERROR: AuditEvent.agent[0].extension[1]: Profile http://hl7.org/fhir/test/StructureDefinition/Slice23, Element matches more than one slice - extOtherId, extOtherId/npi",
+            "ERROR: AuditEvent.agent[0].extension[0]: Profile http://hl7.org/fhir/test/StructureDefinition/Slice23, Element matches more than one slice - extOtherId, extOtherId/provider-id",
+            "ERROR: AuditEvent.agent[0].extension[1]: Profile http://hl7.org/fhir/test/StructureDefinition/Slice23, Element matches more than one slice - extOtherId, extOtherId/provider-id"
+          ]
+        }
+      }
+    },
+    {
+      "name" : "library-fhir-model-definition",
+      "file" : "library-fhir-model-definition.xml",
+      "documentation" : "This is really a performance test",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 0,
+        "warningCount": 2,
+        "output" : [
+          "WARNING: Library.type: None of the codings provided are in the value set 'LibraryType' (http://hl7.org/fhir/ValueSet/library-type), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#model-definition)",
+          "WARNING: Library.type.coding[0]: A code with no system has no defined meaning. A system should be provided"
+          
+        ]
+      }
+    },
+    {
+      "name" : "bnd-ambiguous-refs",
+      "file" : "bnd-ambiguous-refs.xml",
+      "documentation" : "This bundle has a reference that could point to two different entries - check that generates a warning",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 0,
+        "warningCount": 3,
+        "output" : [
+          "WARNING: Bundle.entry[0].resource.ofType(Composition).author[0]: The bundle contains no match for http://zrbj.example/base-path/Patient/1 by the rules of Bundle reference resolution, but it has multiple resources that match Patient/1 by resource type and id",
+          "WARNING: Bundle.entry[0].resource.ofType(Composition).author[0]: Entry 1 matches the reference Patient/1 by type and id but it's fullUrl http://zrbj.example/different-path-A/Patient/1 does not match the full target URL http://zrbj.example/base-path/Patient/1 by Bundle resolution rules",
+          "WARNING: Bundle.entry[0].resource.ofType(Composition).author[0]: Entry 2 matches the reference Patient/1 by type and id but it's fullUrl http://zrbj.example/different-path-B/Patient/1 does not match the full target URL http://zrbj.example/base-path/Patient/1 by Bundle resolution rules"
+          
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-1 / R4",
+      "file" : "patient-id-bad-1.json",
+      "documentation" : "Illegal ID",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id_1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-1 / R5",
+      "file" : "patient-id-bad-1.json",
+      "documentation" : "Illegal ID",
+      "version" : "5.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id_1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-1 / R4B",
+      "file" : "patient-id-bad-1.json",
+      "documentation" : "Illegal ID",
+      "version" : "4.3",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id_1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-1 / R3",
+      "file" : "patient-id-bad-1.json",
+      "documentation" : "Illegal ID",
+      "version" : "3.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id_1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-1 / R2",
+      "file" : "patient-id-bad-1.json",
+      "documentation" : "Illegal ID",
+      "version" : "1.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id_1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-3 / R4",
+      "file" : "patient-id-bad-3.json",
+      "documentation" : "Illegal ID",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-3 / R5",
+      "file" : "patient-id-bad-3.json",
+      "documentation" : "Illegal ID",
+      "version" : "5.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-3 / R4B",
+      "file" : "patient-id-bad-3.json",
+      "documentation" : "Illegal ID",
+      "version" : "4.3",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-3 / R3",
+      "file" : "patient-id-bad-3.json",
+      "documentation" : "Illegal ID",
+      "version" : "3.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-3 / R2",
+      "file" : "patient-id-bad-3.json",
+      "documentation" : "Illegal ID",
+      "version" : "1.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-2 / R4",
+      "file" : "patient-id-bad-2.json",
+      "documentation" : "Illegal ID",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id 1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-2 / R5",
+      "file" : "patient-id-bad-2.json",
+      "documentation" : "Illegal ID",
+      "version" : "5.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id 1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-2 / R4B",
+      "file" : "patient-id-bad-2.json",
+      "documentation" : "Illegal ID",
+      "version" : "4.3",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id 1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-2 / R3",
+      "file" : "patient-id-bad-2.json",
+      "documentation" : "Illegal ID",
+      "version" : "3.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id 1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-bad-2 / R2",
+      "file" : "patient-id-bad-2.json",
+      "documentation" : "Illegal ID",
+      "version" : "1.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.id: id value 'bad-id 1' is not valid"
+        ]
+      }
+    },
+    {
+      "name" : "patient-id-only",
+      "file" : "patient-id-only.xml",
+      "documentation" : "Element with only id, and language with no xhtml",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 1,
+        "warningCount": 0,
+        "output" : [
+          "ERROR: Patient.implicitRules: Rule ele-1: 'All FHIR elements must have a @value or children' Failed"
+        ]
+      }
+    },
+    {
+      "name" : "capabilitystatement-measure-processor",
+      "file" : "capabilitystatement-measure-processor.xml",
+      "documentation" : "Wrongly includes an identifier - not picked up by the main fhir build",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 2,
+        "warningCount": 1,
+        "output" : [
+          "ERROR: /f:CapabilityStatement: Undefined element 'identifier'",
+          "WARNING: CapabilityStatement: Rule cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
+          "ERROR: CapabilityStatement.fhirVersion: The value provided ('5.0.0') is not in the value set 'FHIRVersion' (http://hl7.org/fhir/ValueSet/FHIR-version|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/FHIR-version#5.0.0 in http://hl7.org/fhir/FHIR-version)"
+        ]
+      }
+    },
+    {
+      "name" : "xml-fail",
+      "file" : "xml-fail.xml",
+      "documentation" : "Hung the element model parser in a different context",
+      "version" : "4.0",
+      "java" : {
+        "debug" : false,
+        "errorCount": 7,
+        "warningCount": 1,
+        "output" : [
+          "ERROR: /f:Bundle: Text should not be present ('[%loop count=70%] [%endloop%]')",
+          "ERROR: /f:Bundle: Text should not be present ('[%loop count=70%] [%endloop%]')",
+          "ERROR: /f:Bundle: Undefined attribute '@xsi:schemaLocation' on Bundle for type Bundle (properties = [Bundle.id, Bundle.meta, Bundle.implicitRules, Bundle.language, Bundle.identifier, Bundle.type, Bundle.timestamp, Bundle.total, Bundle.link, Bundle.entry, Bundle.signature])",
+          "ERROR: Endpoint/f:connectionType: Undefined element 'coding'",
+          "ERROR: Bundle.entry[0].resource.ofType(Endpoint).id: Invalid Resource id",
+          "ERROR: Bundle.entry[0].resource.ofType(Endpoint).status: The value provided ('[%status%]') is not in the value set 'EndpointStatus' (http://hl7.org/fhir/ValueSet/endpoint-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/endpoint-status#[%status%] in http://hl7.org/fhir/endpoint-status)",
+          "WARNING: Bundle.entry[0].resource.ofType(Endpoint).payloadType[0].coding[0]: A code with no system has no defined meaning. A system should be provided",
+          "ERROR: Bundle.entry[0].resource.ofType(Endpoint).payloadMimeType[0]: The value provided ('[%payloadFormat%]') is not in the value set 'MimeType' (http://hl7.org/fhir/ValueSet/mimetypes|4.0.1), and a code is required from this value set) (error message = The code '[%payloadFormat%]' is not valid in the system urn:ietf:bcp:13; The code provided (urn:ietf:bcp:13#[%payloadFormat%]) is not valid in the value set 'Mime Types' (from http://tx.fhir.org/r4))"
+        ]
       }
     }
   ]

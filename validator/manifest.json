@@ -2766,8 +2766,8 @@
           "errorCount": 0,
           "warningCount": 2,
           "output": [
-            "[WARNING] Terminology service failed while validating concept  with codings 'http://terminology.hl7.org/CodeSystem/v2-0131#C'): Cannot retrieve valueset '#relationships' (at Patient.contact[0].relationship[0], element Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship)",
-            "[WARNING] Terminology service failed while validating concept  with codings 'http://terminology.hl7.org/CodeSystem/v2-0131#N'): Cannot retrieve valueset '#relationships' (at Patient.contact[0].relationship[1], element Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship)"
+            "[WARNING] Terminology service failed while validating concept with coding(s) 'C' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Cannot retrieve valueset '#relationships' (at Patient.contact[0].relationship[0], element Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship)",
+            "[WARNING] Terminology service failed while validating concept with coding(s) 'N' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Cannot retrieve valueset '#relationships' (at Patient.contact[0].relationship[1], element Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship)"
           ]
         }
       },
@@ -6985,7 +6985,7 @@
           "errorCount": 0,
           "warningCount": 1,
           "output": [
-            "[WARNING] Terminology service failed while validating code 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Cannot retrieve valueset '#vs' (at ValueSet.compose[0].include[0].concept[0].designation[0].use[0], element ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use)"
+            "[WARNING] Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Cannot retrieve valueset '#vs' (at ValueSet.compose[0].include[0].concept[0].designation[0].use[0], element ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use)"
           ]
         }
       },
@@ -7035,7 +7035,7 @@
         "errorCount": 0,
         "warningCount": 1,
         "output": [
-          "[WARNING] Terminology service failed while validating code 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Cannot retrieve valueset '#vs' (at ValueSet.compose[0].include[0].concept[0].designation[0].use[0], element ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use)"
+          "[WARNING] Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Cannot retrieve valueset '#vs' (at ValueSet.compose[0].include[0].concept[0].designation[0].use[0], element ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use)"
         ]
       }
     },
@@ -7070,8 +7070,10 @@
       },
       "firely-sdk-current": {
         "errorCount": 0,
-        "warningCount": 0,
-        "output": []
+        "warningCount": 1,
+        "output": [
+          "[WARNING] Instance failed constraint que-0 \"Name should be usable as an identifier for the module by machine processing applications such as code generation\"(further diagnostics: name.matches('[A-Z]([A-Za-z0-9_]){0,254}')) (at Questionnaire)"
+        ]
       },
       "firely-sdk-wip": {
         "errorCount": 0,

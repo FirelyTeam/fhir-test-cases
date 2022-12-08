@@ -257,7 +257,7 @@
           "errorCount": 1,
           "warningCount": 0,
           "output": [
-            "[ERROR] Failed to convert ElementDefinition at Observation in profile http://phr.kanta.fi/StructureDefinition/fiphr-pef-stu3: Compiler needs access to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-patient-stu3', but it cannot be resolved."
+            "[ERROR] Compiler needs access to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-patient-stu3', but it cannot be resolved."
           ]
         }
       },
@@ -5582,7 +5582,7 @@
           "errorCount": 1,
           "warningCount": 2,
           "output": [
-            "[ERROR] Failed to convert ElementDefinition at MedicationStatement in profile http://hl7.org/fhir/test/StructureDefinition/medstmt-ips: Encountered a slice that has no slice name.",
+            "[ERROR] Failed to convert ElementDefinition at MedicationStatement.effective[x].extension in profile http://hl7.org/fhir/test/StructureDefinition/medstmt-ips: Encountered a slice that has no slice name.",
             "[WARNING] Cannot resolve reference Medication/eumfh-39-07-1 (at MedicationStatement.medicationReference[0], element MedicationStatement.medication[x][Reference])",
             "[WARNING] Cannot resolve reference Patient/eumfh-39-07 (at MedicationStatement.subject[0])"
           ]
@@ -7077,10 +7077,8 @@
       },
       "firely-sdk-wip": {
         "errorCount": 0,
-        "warningCount": 1,
-        "output": [
-          "[WARNING] Instance failed constraint que-0 \"Name should be usable as an identifier for the module by machine processing applications such as code generation\" (at Questionnaire)"
-        ]
+        "warningCount": 0,
+        "output": []
       }
     },
     {
@@ -7252,7 +7250,7 @@
           "errorCount": 1,
           "warningCount": 0,
           "output": [
-            "[ERROR] Failed to convert ElementDefinition at Patient in profile http://fhir.nl/fhir/StructureDefinition/nl-core-patient: Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+            "[ERROR] Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
           ]
         }
       },
@@ -7303,7 +7301,7 @@
         "errorCount": 1,
         "warningCount": 0,
         "output": [
-          "[ERROR] Failed to convert ElementDefinition at Patient in profile http://fhir.nl/fhir/StructureDefinition/nl-core-patient: Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+          "[ERROR] Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
         ]
       }
     },
@@ -7349,7 +7347,7 @@
         "errorCount": 1,
         "warningCount": 0,
         "output": [
-          "[ERROR] Failed to convert ElementDefinition at Patient in profile http://fhir.nl/fhir/StructureDefinition/nl-core-patient: Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+          "[ERROR] Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
         ]
       }
     },

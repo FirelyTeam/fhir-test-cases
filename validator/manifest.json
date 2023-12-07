@@ -257,7 +257,7 @@
           "errorCount": 1,
           "warningCount": 0,
           "output": [
-            "[ERROR] Compiler needs access to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-patient-stu3', but it cannot be resolved."
+            "[ERROR] Encountered an error while loading schema 'http://phr.kanta.fi/StructureDefinition/fiphr-pef-stu3': Compiler needs access to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-patient-stu3', but it cannot be resolved."
           ]
         }
       },
@@ -5560,7 +5560,7 @@
           "errorCount": 1,
           "warningCount": 2,
           "output": [
-            "[ERROR] Failed to convert ElementDefinition at MedicationStatement.effective[x].extension in profile http://hl7.org/fhir/test/StructureDefinition/medstmt-ips: Encountered a slice that has no slice name.",
+            "[ERROR] Encountered an error while loading schema 'http://hl7.org/fhir/test/StructureDefinition/medstmt-ips': Failed to convert ElementDefinition at MedicationStatement.effective[x].extension in profile http://hl7.org/fhir/test/StructureDefinition/medstmt-ips: Encountered a slice that has no slice name.",
             "[WARNING] Cannot resolve reference Medication/eumfh-39-07-1 (for slice Reference) (at MedicationStatement.medicationReference[0], element MedicationStatement.medication[x][Reference])",
             "[WARNING] Cannot resolve reference Patient/eumfh-39-07 (at MedicationStatement.subject[0])"
           ]
@@ -7215,7 +7215,7 @@
           "errorCount": 1,
           "warningCount": 0,
           "output": [
-            "[ERROR] Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+            "[ERROR] Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
           ]
         }
       },
@@ -7266,7 +7266,7 @@
         "errorCount": 1,
         "warningCount": 0,
         "output": [
-          "[ERROR] Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+          "[ERROR] Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
         ]
       }
     },
@@ -7312,7 +7312,7 @@
         "errorCount": 1,
         "warningCount": 0,
         "output": [
-          "[ERROR] Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+          "[ERROR] Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
         ]
       }
     },

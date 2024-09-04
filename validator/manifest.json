@@ -19149,7 +19149,7 @@
                     "code": "1030"
                   }
                 ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself."
+                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself (cycle structure: Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0] | Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0])."
               },
               "location": [
                 "Bundle.entry[7].resource[0]"
@@ -19355,7 +19355,7 @@
                     "code": "1030"
                   }
                 ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself."
+                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself (cycle structure: Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0] | Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0])."
               },
               "location": [
                 "Bundle.entry[7].resource[0]"
@@ -37085,7 +37085,7 @@
                     "code": "1030"
                   }
                 ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself."
+                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself (cycle structure: Bundle.entry[0].resource[0].contained[0].target[0] -> Bundle.entry[0].resource[0] | Bundle.entry[0].resource[0].contained[0].target[0] -> Bundle.entry[0].resource[0])."
               },
               "location": [
                 "Bundle.entry[0].resource[0]"
@@ -41500,7 +41500,7 @@
                     "code": "1030"
                   }
                 ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[1].resource[0]' refers back to itself."
+                "text": "Detected a loop: instance data inside 'Bundle.entry[1].resource[0]' refers back to itself (cycle structure: Bundle.entry[1].resource[0].contained[0].organization[0] -> Bundle.entry[1].resource[0] | Bundle.entry[1].resource[0].contained[0].organization[0] -> Bundle.entry[1].resource[0])."
               },
               "location": [
                 "Bundle.entry[1].resource[0]"
@@ -59583,7 +59583,7 @@
                     "code": "1030"
                   }
                 ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself."
+                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself (cycle structure: Bundle.entry[0].resource[0].subject[0] -> Bundle.entry[0].resource[0] | Bundle.entry[0].resource[0].subject[0] -> Bundle.entry[0].resource[0])."
               },
               "location": [
                 "Bundle.entry[0].resource[0]"

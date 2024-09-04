@@ -37053,29 +37053,6 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Bundle.entry.resource->Patient.contained->Provenance.target->Reference"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Bundle.entry[0].resource[0].contained[0].target[0]"
-              ],
-              "expression": [
-                "Bundle.entry[0].resource[0].contained[0].target[0]"
-              ]
-            },
-            {
               "severity": "warning",
               "code": "informational",
               "details": {
@@ -41468,29 +41445,6 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Bundle.entry.resource->MessageHeader.focus->Organization.contained->OrganizationAffiliation.organization->Reference"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Bundle.entry[1].resource[0].contained[0].organization[0]"
-              ],
-              "expression": [
-                "Bundle.entry[1].resource[0].contained[0].organization[0]"
-              ]
-            },
-            {
               "severity": "warning",
               "code": "informational",
               "details": {
@@ -41507,29 +41461,6 @@
               ],
               "expression": [
                 "Bundle.entry[1].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Bundle.entry.resource->MessageHeader.focus->Organization.contained->HealthcareService.providedBy"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Bundle.entry[1].resource[0].contained[2].providedBy[0]"
-              ],
-              "expression": [
-                "Bundle.entry[1].resource[0].contained[2].providedBy[0]"
               ]
             }
           ]

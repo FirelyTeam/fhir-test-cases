@@ -19146,25 +19146,6 @@
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1030"
-                  }
-                ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself (cycle structure: Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0] | Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0])."
-              },
-              "location": [
-                "Bundle.entry[7].resource[0]"
-              ],
-              "expression": [
-                "Bundle.entry[7].resource[0]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "6006"
                   },
                   {
@@ -19343,25 +19324,6 @@
               ],
               "expression": [
                 "Bundle.entry[5]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1030"
-                  }
-                ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself (cycle structure: Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0] | Bundle.entry[7].resource[0].contained[0].managingOrganization[0] -> Bundle.entry[7].resource[0])."
-              },
-              "location": [
-                "Bundle.entry[7].resource[0]"
-              ],
-              "expression": [
-                "Bundle.entry[7].resource[0]"
               ]
             },
             {

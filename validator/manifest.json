@@ -19100,6 +19100,25 @@
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1030"
+                  }
+                ],
+                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself."
+              },
+              "location": [
+                "Bundle.entry[7].resource[0]"
+              ],
+              "expression": [
+                "Bundle.entry[7].resource[0]"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "6006"
                   },
                   {
@@ -19278,6 +19297,25 @@
               ],
               "expression": [
                 "Bundle.entry[5]"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1030"
+                  }
+                ],
+                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself."
+              },
+              "location": [
+                "Bundle.entry[7].resource[0]"
+              ],
+              "expression": [
+                "Bundle.entry[7].resource[0]"
               ]
             },
             {
@@ -36874,7 +36912,28 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1030"
+                  }
+                ],
+                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself."
+              },
+              "location": [
+                "Bundle.entry[0].resource[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -41247,6 +41306,25 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1030"
+                  }
+                ],
+                "text": "Detected a loop: instance data inside 'Bundle.entry[1].resource[0]' refers back to itself."
+              },
+              "location": [
+                "Bundle.entry[1].resource[0]"
+              ],
+              "expression": [
+                "Bundle.entry[1].resource[0]"
+              ]
+            },
             {
               "severity": "warning",
               "code": "incomplete",
@@ -59321,7 +59399,7 @@
                     "code": "1030"
                   }
                 ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself (cycle structure: Bundle.entry[0].resource[0].subject[0] -> Bundle.entry[0].resource[0] | Bundle.entry[0].resource[0].subject[0] -> Bundle.entry[0].resource[0])."
+                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself."
               },
               "location": [
                 "Bundle.entry[0].resource[0]"

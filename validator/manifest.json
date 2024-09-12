@@ -16771,52 +16771,6 @@
               ]
             },
             {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Questionnaire.contained->Bundle"
-                  }
-                ],
-                "text": "Instance failed constraint bdl-3 \"entry.request mandatory for batch/transaction/history, otherwise prohibited\""
-              },
-              "location": [
-                "Questionnaire.contained[0]"
-              ],
-              "expression": [
-                "Questionnaire.contained[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Questionnaire.contained->Bundle"
-                  }
-                ],
-                "text": "Instance failed constraint bdl-4 \"entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited\""
-              },
-              "location": [
-                "Questionnaire.contained[0]"
-              ],
-              "expression": [
-                "Questionnaire.contained[0]"
-              ]
-            },
-            {
               "severity": "warning",
               "code": "incomplete",
               "details": {
@@ -19002,7 +18956,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Type checking the data: Encountered unknown element 'code' at location 'Bundle.entry[18].resource[0].code[0]' while parsing"
+                "text": "An item with the same key has already been added. Key: 754d6deb-2fa0-42f8-a6c8-7d203f165879"
               }
             }
           ]
@@ -31611,29 +31565,6 @@
               ]
             },
             {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Parameters.parameter.resource->Coverage.payor->Reference"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Parameters.parameter[1].resource[0].payor[0]"
-              ],
-              "expression": [
-                "Parameters.parameter[1].resource[0].payor[0]"
-              ]
-            },
-            {
               "severity": "warning",
               "code": "incomplete",
               "details": {
@@ -31677,29 +31608,6 @@
               ],
               "expression": [
                 "Parameters.parameter[2].resource[0].beneficiary[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Parameters.parameter.resource->Coverage.payor->Reference"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Parameters.parameter[2].resource[0].payor[0]"
-              ],
-              "expression": [
-                "Parameters.parameter[2].resource[0].payor[0]"
               ]
             }
           ]
@@ -31791,29 +31699,6 @@
               ]
             },
             {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Parameters.parameter.resource->Coverage.payor->Reference"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Parameters.parameter[1].resource[0].payor[0]"
-              ],
-              "expression": [
-                "Parameters.parameter[1].resource[0].payor[0]"
-              ]
-            },
-            {
               "severity": "warning",
               "code": "incomplete",
               "details": {
@@ -31857,29 +31742,6 @@
               ],
               "expression": [
                 "Parameters.parameter[2].resource[0].beneficiary[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Parameters.parameter.resource->Coverage.payor->Reference"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Parameters.parameter[2].resource[0].payor[0]"
-              ],
-              "expression": [
-                "Parameters.parameter[2].resource[0].payor[0]"
               ]
             }
           ]
@@ -37012,32 +36874,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Bundle.entry.resource->Patient.contained->Provenance.target->Reference"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Bundle.entry[0].resource[0].contained[0].target[0]"
-              ],
-              "expression": [
-                "Bundle.entry[0].resource[0].contained[0].target[0]"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -41411,49 +41248,26 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "error",
-              "code": "invariant",
+              "severity": "warning",
+              "code": "incomplete",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
+                    "code": "4005"
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Bundle.entry.resource->MessageHeader.focus->Organization.contained->OrganizationAffiliation.organization->Reference"
+                    "code": "Bundle.entry.resource->MessageHeader.focus->Organization.contained->OrganizationAffiliation.participatingOrganization"
                   }
                 ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
+                "text": "Cannot resolve reference #usagent"
               },
               "location": [
-                "Bundle.entry[1].resource[0].contained[0].organization[0]"
+                "Bundle.entry[1].resource[0].contained[0].participatingOrganization[0]"
               ],
               "expression": [
-                "Bundle.entry[1].resource[0].contained[0].organization[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "invariant",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1012"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Bundle.entry.resource->MessageHeader.focus->Organization.contained->HealthcareService.providedBy"
-                  }
-                ],
-                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
-              },
-              "location": [
-                "Bundle.entry[1].resource[0].contained[2].providedBy[0]"
-              ],
-              "expression": [
-                "Bundle.entry[1].resource[0].contained[2].providedBy[0]"
+                "Bundle.entry[1].resource[0].contained[0].participatingOrganization[0]"
               ]
             }
           ]

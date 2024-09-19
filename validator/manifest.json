@@ -9538,6 +9538,52 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension->Extension(http://hl7.org/fhir/StructureDefinition/translation)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,string}, {ELEMENT,code}, {ELEMENT,markdown} (for slice valueString)"
+                },
+                "location": [
+                  "Parameters.parameter[0].valueString[0].extension[0], element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension->Extension(http://hl7.org/fhir/StructureDefinition/translation)"
+                ],
+                "expression": [
+                  "Parameters.parameter[0].valueString[0].extension[0], element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension->Extension(http://hl7.org/fhir/StructureDefinition/translation)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension[translation]->Extension(http://hl7.org/fhir/StructureDefinition/translation)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,string}, {ELEMENT,code}, {ELEMENT,markdown} (for slice translation)"
+                },
+                "location": [
+                  "Parameters.parameter[0].valueString[0].extension[0], element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension[translation]->Extension(http://hl7.org/fhir/StructureDefinition/translation)"
+                ],
+                "expression": [
+                  "Parameters.parameter[0].valueString[0].extension[0], element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension[translation]->Extension(http://hl7.org/fhir/StructureDefinition/translation)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                       "code": "1005"
                     },
                     {
@@ -17047,6 +17093,29 @@
               ]
             },
             {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Questionnaire.item.item.item.item.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Questionnaire.item}, {ELEMENT,Questionnaire.item.item}"
+              },
+              "location": [
+                "Questionnaire.item[2].item[0].item[0].item[2].extension[0], element Questionnaire.item.item.item.item.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl)"
+              ],
+              "expression": [
+                "Questionnaire.item[2].item[0].item[0].item[2].extension[0], element Questionnaire.item.item.item.item.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl)"
+              ]
+            },
+            {
               "severity": "warning",
               "code": "incomplete",
               "details": {
@@ -19684,7 +19753,78 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome"
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1011"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address"
+                    }
+                  ],
+                  "text": "Element does not validate against any of the expected profiles (http://example.org/fhir/StructureDefinition/AddressWithExtension, http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions)."
+                },
+                "location": [
+                  "Person.address[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address"
+                ],
+                "expression": [
+                  "Person.address[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice simpleExtension)"
+                },
+                "location": [
+                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                ],
+                "expression": [
+                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions).extension[complexExtension]->Extension(http://example.org/fhir/StructureDefinition/ComplexExtension)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice complexExtension)"
+                },
+                "location": [
+                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions).extension[complexExtension]->Extension(http://example.org/fhir/StructureDefinition/ComplexExtension)"
+                ],
+                "expression": [
+                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions).extension[complexExtension]->Extension(http://example.org/fhir/StructureDefinition/ComplexExtension)"
+                ]
+              }
+            ]
           }
         }
       }
@@ -19825,6 +19965,52 @@
                 ],
                 "expression": [
                   "Person.address[0].extension, element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice simpleExtension)"
+                },
+                "location": [
+                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                ],
+                "expression": [
+                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice simpleExtension)"
+                },
+                "location": [
+                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
+                ],
+                "expression": [
+                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
                 ]
               }
             ]
@@ -23101,7 +23287,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.active->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}, {ELEMENT,Patient.name}, {EXTENSION,http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired}, {FHIRPATH,Patient.address.where(use = 'home')}"
+              },
+              "location": [
+                "Patient.active[0].extension[0], element Patient.active->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ],
+              "expression": [
+                "Patient.active[0].extension[0], element Patient.active->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23132,7 +23343,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Organization.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}, {ELEMENT,Patient.name}, {EXTENSION,http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired}, {FHIRPATH,Patient.address.where(use = 'home')}"
+              },
+              "location": [
+                "Organization.extension[0], element Organization.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ],
+              "expression": [
+                "Organization.extension[0], element Organization.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23181,7 +23417,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.address->Address.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}, {ELEMENT,Patient.name}, {EXTENSION,http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired}, {FHIRPATH,Patient.address.where(use = 'home')}"
+              },
+              "location": [
+                "Patient.address[0].extension[0], element Patient.address->Address.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ],
+              "expression": [
+                "Patient.address[0].extension[0], element Patient.address->Address.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23230,7 +23491,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor).value[x]->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}, {ELEMENT,Patient.name}, {EXTENSION,http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired}, {FHIRPATH,Patient.address.where(use = 'home')}"
+              },
+              "location": [
+                "Patient.extension[0].valueBoolean[0].extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor).value[x]->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ],
+              "expression": [
+                "Patient.extension[0].valueBoolean[0].extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor).value[x]->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23284,7 +23570,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.contact.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,DomainResource}, {ELEMENT,DomainResource.text}, {ELEMENT,BackboneElement}"
+              },
+              "location": [
+                "Patient.contact[0].extension[0], element Patient.contact.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
+              ],
+              "expression": [
+                "Patient.contact[0].extension[0], element Patient.contact.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23315,7 +23626,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,DomainResource}, {ELEMENT,DomainResource.text}, {ELEMENT,BackboneElement}"
+              },
+              "location": [
+                "Patient.name[0].extension[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
+              ],
+              "expression": [
+                "Patient.name[0].extension[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23364,7 +23700,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
+                  }
+                ],
+                "text": "Extension context failed invariant constraint "
+              },
+              "location": [
+                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
+              ],
+              "expression": [
+                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23479,7 +23840,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.example.value[x][string]->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,Address.line} (for slice string)"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[0].example[0].valueString[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.example.value[x][string]->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[0].example[0].valueString[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.example.value[x][string]->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -23494,7 +23880,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.fixed[x][string]->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,Address.line} (for slice string)"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[0].fixedString[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.fixed[x][string]->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[0].fixedString[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.fixed[x][string]->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -25689,7 +26100,147 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome"
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionType)"
+                },
+                "location": [
+                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ],
+                "expression": [
+                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionType)"
+                },
+                "location": [
+                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ],
+                "expression": [
+                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionSingle)"
+                },
+                "location": [
+                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ],
+                "expression": [
+                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionTypeSingle)"
+                },
+                "location": [
+                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ],
+                "expression": [
+                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionAlternate)"
+                },
+                "location": [
+                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ],
+                "expression": [
+                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ]
+              },
+              {
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionTypeAlternate)"
+                },
+                "location": [
+                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ],
+                "expression": [
+                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
+                ]
+              }
+            ]
           }
         }
       }
@@ -25990,7 +26541,32 @@
       "java": {},
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "MedicationDispense.whenHandedOver->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,Any}"
+              },
+              "location": [
+                "MedicationDispense.whenHandedOver[0].extension[0], element MedicationDispense.whenHandedOver->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor)"
+              ],
+              "expression": [
+                "MedicationDispense.whenHandedOver[0].extension[0], element MedicationDispense.whenHandedOver->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -26018,7 +26594,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "MedicationDispense.whenHandedOver->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,Any}"
+              },
+              "location": [
+                "MedicationDispense.whenHandedOver[0].extension[0], element MedicationDispense.whenHandedOver->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor)"
+              ],
+              "expression": [
+                "MedicationDispense.whenHandedOver[0].extension[0], element MedicationDispense.whenHandedOver->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -29844,6 +30445,29 @@
               ],
               "expression": [
                 "Patient"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.address->Address.country->string.extension->Extension(http://nictiz.nl/fhir/StructureDefinition/code-specification)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,code}, {DATATYPE,Coding}, {DATATYPE,CodeableConcept}, {DATATYPE,Address.country}"
+              },
+              "location": [
+                "Patient.address[0].country[0].extension[0], element Patient.address->Address.country->string.extension->Extension(http://nictiz.nl/fhir/StructureDefinition/code-specification)"
+              ],
+              "expression": [
+                "Patient.address[0].country[0].extension[0], element Patient.address->Address.country->string.extension->Extension(http://nictiz.nl/fhir/StructureDefinition/code-specification)"
               ]
             }
           ]
@@ -35759,6 +36383,29 @@
               },
               {
                 "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter[param1].extension->Extension(http://hl7.org/fhir/StructureDefinition/parameters-fullUrl)"
+                    }
+                  ],
+                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Parameters.parameter} (for slice param1)"
+                },
+                "location": [
+                  "Parameters.parameter[0].extension[0], element Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter[param1].extension->Extension(http://hl7.org/fhir/StructureDefinition/parameters-fullUrl)"
+                ],
+                "expression": [
+                  "Parameters.parameter[0].extension[0], element Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter[param1].extension->Extension(http://hl7.org/fhir/StructureDefinition/parameters-fullUrl)"
+                ]
+              },
+              {
+                "severity": "error",
                 "code": "incomplete",
                 "details": {
                   "coding": [
@@ -39181,7 +39828,78 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(http://example.org/StructureDefinition/PatternTest).address[Strassenanschrift].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address.line}"
+              },
+              "location": [
+                "Patient.address[0].line[0].extension[0], element Patient(http://example.org/StructureDefinition/PatternTest).address[Strassenanschrift].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ],
+              "expression": [
+                "Patient.address[0].line[0].extension[0], element Patient(http://example.org/StructureDefinition/PatternTest).address[Strassenanschrift].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(http://example.org/StructureDefinition/PatternTest).address[Strassenanschrift].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address.line}"
+              },
+              "location": [
+                "Patient.address[0].line[1].extension[0], element Patient(http://example.org/StructureDefinition/PatternTest).address[Strassenanschrift].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator)"
+              ],
+              "expression": [
+                "Patient.address[0].line[1].extension[0], element Patient(http://example.org/StructureDefinition/PatternTest).address[Strassenanschrift].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(http://example.org/StructureDefinition/PatternTest).address[Postfach].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address.line}"
+              },
+              "location": [
+                "Patient.address[1].line[0].extension[0], element Patient(http://example.org/StructureDefinition/PatternTest).address[Postfach].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox)"
+              ],
+              "expression": [
+                "Patient.address[1].line[0].extension[0], element Patient(http://example.org/StructureDefinition/PatternTest).address[Postfach].line->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -42394,6 +43112,29 @@
               ]
             },
             {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DeviceRequest.modifierExtension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Resource}"
+              },
+              "location": [
+                "DeviceRequest.modifierExtension[0], element DeviceRequest.modifierExtension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
+              ],
+              "expression": [
+                "DeviceRequest.modifierExtension[0], element DeviceRequest.modifierExtension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
+              ]
+            },
+            {
               "severity": "warning",
               "code": "incomplete",
               "details": {
@@ -44201,6 +44942,52 @@
               "expression": [
                 "StructureDefinition"
               ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
             }
           ]
         }
@@ -44287,6 +45074,52 @@
               ],
               "expression": [
                 "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
               ]
             }
           ]
@@ -46948,6 +47781,29 @@
           "issue": [
             {
               "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
               "code": "invariant",
               "details": {
                 "coding": [
@@ -46967,6 +47823,259 @@
               ],
               "expression": [
                 "StructureDefinition.snapshot[0].element[8]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[9].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[9].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[12].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[12].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[14].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[14].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[17].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[17].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[19].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[19].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[22].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[22].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[24].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[24].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[26].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[26].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[41].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[41].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[52].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[52].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[60].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[60].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
               ]
             }
           ]
@@ -48312,6 +49421,52 @@
               "expression": [
                 "Patient, element Patient(https://fhir.kbv.de/StructureDefinition/Patient)"
               ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address.line}"
+              },
+              "location": [
+                "Patient.address[0].line[0].extension[0], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber)"
+              ],
+              "expression": [
+                "Patient.address[0].line[0].extension[0], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension[Strasse]->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address.line}"
+              },
+              "location": [
+                "Patient.address[0].line[0].extension[1], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension[Strasse]->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ],
+              "expression": [
+                "Patient.address[0].line[0].extension[1], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension[Strasse]->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ]
             }
           ]
         }
@@ -48354,6 +49509,52 @@
               ],
               "expression": [
                 "Patient, element Patient(https://fhir.kbv.de/StructureDefinition/Patient)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address.line}"
+              },
+              "location": [
+                "Patient.address[0].line[0].extension[0], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber)"
+              ],
+              "expression": [
+                "Patient.address[0].line[0].extension[0], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension[Strasse]->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address.line}"
+              },
+              "location": [
+                "Patient.address[0].line[0].extension[1], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension[Strasse]->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
+              ],
+              "expression": [
+                "Patient.address[0].line[0].extension[1], element Patient(https://fhir.kbv.de/StructureDefinition/Patient).address.line.extension[Strasse]->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName)"
               ]
             }
           ]
@@ -53199,7 +54400,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,HumanName.family}"
+              },
+              "location": [
+                "Patient.name[0].extension[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)"
+              ],
+              "expression": [
+                "Patient.name[0].extension[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/humanname-mothers-family)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -53851,6 +55077,52 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,AuditEvent.agent}"
+              },
+              "location": [
+                "AuditEvent.agent[0].extension[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
+              ],
+              "expression": [
+                "AuditEvent.agent[0].extension[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,AuditEvent.agent}"
+              },
+              "location": [
+                "AuditEvent.agent[0].extension[1], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
+              ],
+              "expression": [
+                "AuditEvent.agent[0].extension[1], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
+              ]
+            },
             {
               "severity": "warning",
               "code": "incomplete",
@@ -55078,6 +56350,29 @@
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Questionnaire.derivedFrom->canonical.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Questionnaire.item}"
+              },
+              "location": [
+                "Questionnaire.derivedFrom[0].extension[0], element Questionnaire.derivedFrom->canonical.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType)"
+              ],
+              "expression": [
+                "Questionnaire.derivedFrom[0].extension[0], element Questionnaire.derivedFrom->canonical.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1003"
                   },
                   {
@@ -55282,6 +56577,29 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Questionnaire.derivedFrom->canonical.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Questionnaire.item}"
+              },
+              "location": [
+                "Questionnaire.derivedFrom[0].extension[0], element Questionnaire.derivedFrom->canonical.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType)"
+              ],
+              "expression": [
+                "Questionnaire.derivedFrom[0].extension[0], element Questionnaire.derivedFrom->canonical.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType)"
+              ]
+            },
             {
               "severity": "error",
               "code": "invalid",
@@ -55697,7 +57015,216 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {RESOURCE,*}"
+              },
+              "location": [
+                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm)"
+              ],
+              "expression": [
+                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "ValueSet(http://hl7.org/fhir/StructureDefinition/shareablevalueset).extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {RESOURCE,*}"
+              },
+              "location": [
+                "ValueSet.extension[0], element ValueSet(http://hl7.org/fhir/StructureDefinition/shareablevalueset).extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status)"
+              ],
+              "expression": [
+                "ValueSet.extension[0], element ValueSet(http://hl7.org/fhir/StructureDefinition/shareablevalueset).extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[6].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[6].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[25].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[25].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[31].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[31].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[2].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[2].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[12].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[12].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[15].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[15].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            }
+          ]
         }
       }
     },
@@ -56237,6 +57764,29 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {RESOURCE,*}"
+              },
+              "location": [
+                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm)"
+              ],
+              "expression": [
+                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm)"
+              ]
+            },
+            {
               "severity": "warning",
               "code": "incomplete",
               "details": {
@@ -56257,6 +57807,374 @@
               ],
               "expression": [
                 "StructureDefinition.baseDefinition[0].extension"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "ValueSet(http://hl7.org/fhir/StructureDefinition/shareablevalueset).extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {RESOURCE,*}"
+              },
+              "location": [
+                "ValueSet.extension[0], element ValueSet(http://hl7.org/fhir/StructureDefinition/shareablevalueset).extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status)"
+              ],
+              "expression": [
+                "ValueSet.extension[0], element ValueSet(http://hl7.org/fhir/StructureDefinition/shareablevalueset).extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[14].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[14].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[21].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[21].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[24].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[24].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[34].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[34].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[36].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[36].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[39].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[39].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[41].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[41].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[6].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[6].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[13].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[13].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[16].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[16].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[23].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[23].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[25].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[25].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[28].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[28].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {DATATYPE,ElementDefinition.binding}"
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[30].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[30].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
               ]
             }
           ]

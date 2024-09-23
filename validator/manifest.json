@@ -43900,26 +43900,16 @@
             "issue": [
               {
                 "severity": "error",
-                "code": "invalid",
+                "code": "unknown",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1019"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                      "code": "-1"
                     }
                   ],
-                  "text": "Value '-1 'kg'' is smaller than 0 'kg') (for slice valueQuantity)"
-                },
-                "location": [
-                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
-                ],
-                "expression": [
-                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
-                ]
+                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile': Failed to convert ElementDefinition at Observation.value[x]:valueQuantity in profile http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile: Cannot convert the limit value () to a comparable primitive."
+                }
               }
             ]
           }
@@ -43966,26 +43956,16 @@
             "issue": [
               {
                 "severity": "error",
-                "code": "invalid",
+                "code": "unknown",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1019"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                      "code": "-1"
                     }
                   ],
-                  "text": "Value '-1 'g'' is smaller than 0 'kg') (for slice valueQuantity)"
-                },
-                "location": [
-                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
-                ],
-                "expression": [
-                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
-                ]
+                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile': Failed to convert ElementDefinition at Observation.value[x]:valueQuantity in profile http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile: Cannot convert the limit value () to a comparable primitive."
+                }
               }
             ]
           }
@@ -44032,26 +44012,16 @@
             "issue": [
               {
                 "severity": "error",
-                "code": "invalid",
+                "code": "unknown",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1020"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                      "code": "-1"
                     }
                   ],
-                  "text": "Value '11000 'g'' is larger than 0 'kg') (for slice valueQuantity)"
-                },
-                "location": [
-                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
-                ],
-                "expression": [
-                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
-                ]
+                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile': Failed to convert ElementDefinition at Observation.value[x]:valueQuantity in profile http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile: Cannot convert the limit value () to a comparable primitive."
+                }
               }
             ]
           }

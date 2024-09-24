@@ -19753,78 +19753,7 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome",
-            "issue": [
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1011"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address"
-                    }
-                  ],
-                  "text": "Element does not validate against any of the expected profiles (http://example.org/fhir/StructureDefinition/AddressWithExtension, http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions)."
-                },
-                "location": [
-                  "Person.address[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address"
-                ],
-                "expression": [
-                  "Person.address[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice simpleExtension)"
-                },
-                "location": [
-                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                ],
-                "expression": [
-                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions).extension[complexExtension]->Extension(http://example.org/fhir/StructureDefinition/ComplexExtension)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice complexExtension)"
-                },
-                "location": [
-                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions).extension[complexExtension]->Extension(http://example.org/fhir/StructureDefinition/ComplexExtension)"
-                ],
-                "expression": [
-                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithTwoExtensions).extension[complexExtension]->Extension(http://example.org/fhir/StructureDefinition/ComplexExtension)"
-                ]
-              }
-            ]
+            "resourceType": "OperationOutcome"
           }
         }
       }
@@ -19965,52 +19894,6 @@
                 ],
                 "expression": [
                   "Person.address[0].extension, element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice simpleExtension)"
-                },
-                "location": [
-                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                ],
-                "expression": [
-                  "Person.address[0].extension[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Address} (for slice simpleExtension)"
-                },
-                "location": [
-                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
-                ],
-                "expression": [
-                  "Person.address[0].extension[1], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]->Extension(http://example.org/fhir/StructureDefinition/SimpleExtension)"
                 ]
               }
             ]
@@ -26100,147 +25983,7 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome",
-            "issue": [
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionType)"
-                },
-                "location": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionType)"
-                },
-                "location": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionSingle)"
-                },
-                "location": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionTypeSingle)"
-                },
-                "location": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionAlternate)"
-                },
-                "location": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionTypeAlternate)"
-                },
-                "location": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              }
-            ]
+            "resourceType": "OperationOutcome"
           }
         }
       }
@@ -36379,29 +36122,6 @@
                 ],
                 "expression": [
                   "Parameters.parameter[0].modifierExtension, element Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter.modifierExtension"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter[param1].extension->Extension(http://hl7.org/fhir/StructureDefinition/parameters-fullUrl)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Parameters.parameter} (for slice param1)"
-                },
-                "location": [
-                  "Parameters.parameter[0].extension[0], element Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter[param1].extension->Extension(http://hl7.org/fhir/StructureDefinition/parameters-fullUrl)"
-                ],
-                "expression": [
-                  "Parameters.parameter[0].extension[0], element Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter[param1].extension->Extension(http://hl7.org/fhir/StructureDefinition/parameters-fullUrl)"
                 ]
               },
               {
@@ -55077,52 +54797,6 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
-            {
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,AuditEvent.agent}"
-              },
-              "location": [
-                "AuditEvent.agent[0].extension[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ],
-              "expression": [
-                "AuditEvent.agent[0].extension[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,AuditEvent.agent}"
-              },
-              "location": [
-                "AuditEvent.agent[0].extension[1], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ],
-              "expression": [
-                "AuditEvent.agent[0].extension[1], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension[altid]->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ]
-            },
             {
               "severity": "warning",
               "code": "incomplete",

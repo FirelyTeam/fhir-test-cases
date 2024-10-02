@@ -15622,32 +15622,7 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome",
-            "issue": [
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry[slice2]"
-                    }
-                  ],
-                  "text": "Instance count is 0, which is not within the specified cardinality of 1..3"
-                },
-                "location": [
-                  "List.entry, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry[slice2]"
-                ],
-                "expression": [
-                  "List.entry, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry[slice2]"
-                ]
-              }
-            ]
+            "resourceType": "OperationOutcome"
           }
         }
       }
@@ -15715,29 +15690,6 @@
                 ],
                 "expression": [
                   "List.entry, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry[slice1]"
-                ]
-              },
-              {
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry[slice2]"
-                    }
-                  ],
-                  "text": "Instance count is 4, which is not within the specified cardinality of 1..3"
-                },
-                "location": [
-                  "List.entry, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry[slice2]"
-                ],
-                "expression": [
-                  "List.entry, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry[slice2]"
                 ]
               }
             ]
@@ -19100,6 +19052,25 @@
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1030"
+                  }
+                ],
+                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself (cycle structure: )."
+              },
+              "location": [
+                "Bundle.entry[7].resource[0]"
+              ],
+              "expression": [
+                "Bundle.entry[7].resource[0]"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "6006"
                   },
                   {
@@ -19278,6 +19249,25 @@
               ],
               "expression": [
                 "Bundle.entry[5]"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1030"
+                  }
+                ],
+                "text": "Detected a loop: instance data inside 'Bundle.entry[7].resource[0]' refers back to itself (cycle structure: )."
+              },
+              "location": [
+                "Bundle.entry[7].resource[0]"
+              ],
+              "expression": [
+                "Bundle.entry[7].resource[0]"
               ]
             },
             {
@@ -36874,7 +36864,28 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1030"
+                  }
+                ],
+                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself (cycle structure: )."
+              },
+              "location": [
+                "Bundle.entry[0].resource[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -39863,52 +39874,6 @@
               "expression": [
                 "DocumentManifest.subject[0]"
               ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4005"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DocumentManifest.content->DocumentReference.subject"
-                  }
-                ],
-                "text": "Cannot resolve reference Patient/88153369-e217-44d2-939d-f5ad9af7f763"
-              },
-              "location": [
-                "DocumentManifest.contained[0].subject[0]"
-              ],
-              "expression": [
-                "DocumentManifest.contained[0].subject[0]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DocumentManifest.content->DocumentReference.content.attachment->Attachment.contentType"
-                  }
-                ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed mith message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
-              },
-              "location": [
-                "DocumentManifest.contained[0].content[0].attachment[0].contentType[0]"
-              ],
-              "expression": [
-                "DocumentManifest.contained[0].content[0].attachment[0].contentType[0]"
-              ]
             }
           ]
         }
@@ -40062,52 +40027,6 @@
               ],
               "expression": [
                 "DocumentManifest.subject[0]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4005"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DocumentManifest.content.p[x][Reference]->DocumentReference.subject"
-                  }
-                ],
-                "text": "Cannot resolve reference Patient/88153369-e217-44d2-939d-f5ad9af7f763"
-              },
-              "location": [
-                "DocumentManifest.contained[0].subject[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.subject"
-              ],
-              "expression": [
-                "DocumentManifest.contained[0].subject[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.subject"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DocumentManifest.content.p[x][Reference]->DocumentReference.content.attachment->Attachment.contentType"
-                  }
-                ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
-              },
-              "location": [
-                "DocumentManifest.contained[0].content[0].attachment[0].contentType[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.content.attachment->Attachment.contentType"
-              ],
-              "expression": [
-                "DocumentManifest.contained[0].content[0].attachment[0].contentType[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.content.attachment->Attachment.contentType"
               ]
             }
           ]
@@ -41249,25 +41168,21 @@
           "issue": [
             {
               "severity": "warning",
-              "code": "incomplete",
+              "code": "informational",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4005"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Bundle.entry.resource->MessageHeader.focus->Organization.contained->OrganizationAffiliation.participatingOrganization"
+                    "code": "1030"
                   }
                 ],
-                "text": "Cannot resolve reference #usagent"
+                "text": "Detected a loop: instance data inside 'Bundle.entry[1].resource[0]' refers back to itself (cycle structure: )."
               },
               "location": [
-                "Bundle.entry[1].resource[0].contained[0].participatingOrganization[0]"
+                "Bundle.entry[1].resource[0]"
               ],
               "expression": [
-                "Bundle.entry[1].resource[0].contained[0].participatingOrganization[0]"
+                "Bundle.entry[1].resource[0]"
               ]
             }
           ]
@@ -43845,16 +43760,26 @@
             "issue": [
               {
                 "severity": "error",
-                "code": "unknown",
+                "code": "invalid",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "-1"
+                      "code": "1019"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
                     }
                   ],
-                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile': Failed to convert ElementDefinition at Observation.value[x]:valueQuantity in profile http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile: Cannot convert the limit value () to a comparable primitive."
-                }
+                  "text": "Value '-1 'kg'' is smaller than 0 'kg') (for slice valueQuantity)"
+                },
+                "location": [
+                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                ],
+                "expression": [
+                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                ]
               }
             ]
           }
@@ -43901,16 +43826,26 @@
             "issue": [
               {
                 "severity": "error",
-                "code": "unknown",
+                "code": "invalid",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "-1"
+                      "code": "1019"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
                     }
                   ],
-                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile': Failed to convert ElementDefinition at Observation.value[x]:valueQuantity in profile http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile: Cannot convert the limit value () to a comparable primitive."
-                }
+                  "text": "Value '-1 'g'' is smaller than 0 'kg') (for slice valueQuantity)"
+                },
+                "location": [
+                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                ],
+                "expression": [
+                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                ]
               }
             ]
           }
@@ -43957,16 +43892,26 @@
             "issue": [
               {
                 "severity": "error",
-                "code": "unknown",
+                "code": "invalid",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "-1"
+                      "code": "1020"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
                     }
                   ],
-                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile': Failed to convert ElementDefinition at Observation.value[x]:valueQuantity in profile http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile: Cannot convert the limit value () to a comparable primitive."
-                }
+                  "text": "Value '11000 'g'' is larger than 0 'kg') (for slice valueQuantity)"
+                },
+                "location": [
+                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                ],
+                "expression": [
+                  "Observation.valueQuantity[0], element Observation(http://hl7.org.au/fhir/tests/StructureDefinition/obs-value-min-profile).value[x][valueQuantity]"
+                ]
               }
             ]
           }
@@ -59321,7 +59266,7 @@
                     "code": "1030"
                   }
                 ],
-                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself (cycle structure: Bundle.entry[0].resource[0].subject[0] -> Bundle.entry[0].resource[0] | Bundle.entry[0].resource[0].subject[0] -> Bundle.entry[0].resource[0])."
+                "text": "Detected a loop: instance data inside 'Bundle.entry[0].resource[0]' refers back to itself (cycle structure: )."
               },
               "location": [
                 "Bundle.entry[0].resource[0]"

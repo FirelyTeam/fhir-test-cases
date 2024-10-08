@@ -23297,32 +23297,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired).value[x]->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}, {ELEMENT,Patient.name}, {EXTENSION,http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired}, {FHIRPATH,Patient.address.where(use = 'home')}"
-              },
-              "location": [
-                "Patient.extension[0].valueBoolean[0].extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired).value[x]->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-              ],
-              "expression": [
-                "Patient.extension[0].valueBoolean[0].extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired).value[x]->boolean.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },

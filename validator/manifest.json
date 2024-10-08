@@ -23528,7 +23528,7 @@
                     "code": "Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
                   }
                 ],
-                "text": "Extension context failed invariant constraint "
+                "text": "Extension context failed invariant constraint Patient.active.not()"
               },
               "location": [
                 "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"

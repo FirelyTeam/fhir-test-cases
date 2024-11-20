@@ -995,7 +995,32 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1001"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "CustomResource"
+                  }
+                ],
+                "text": "Encountered unknown child elements 'active','name'"
+              },
+              "location": [
+                "CustomResource"
+              ],
+              "expression": [
+                "CustomResource"
+              ]
+            }
+          ]
         }
       }
     },
@@ -12581,16 +12606,16 @@
                     },
                     {
                       "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier->Identifier"
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier"
                     }
                   ],
                   "text": "Instance failed constraint ident-1 \"Identifier with no value has limited utility.  If communicating that an identifier value has been suppressed or missing, the value element SHOULD be present with an extension indicating the missing semantic - e.g. data-absent-reason\""
                 },
                 "location": [
-                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier->Identifier"
+                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier"
                 ],
                 "expression": [
-                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier->Identifier"
+                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier"
                 ]
               },
               {
@@ -12604,16 +12629,16 @@
                     },
                     {
                       "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier[foo]->Identifier"
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier[foo]"
                     }
                   ],
                   "text": "Instance failed constraint ident-1 \"Identifier with no value has limited utility.  If communicating that an identifier value has been suppressed or missing, the value element SHOULD be present with an extension indicating the missing semantic - e.g. data-absent-reason\" (for slice foo)"
                 },
                 "location": [
-                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier[foo]->Identifier"
+                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier[foo]"
                 ],
                 "expression": [
-                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier[foo]->Identifier"
+                  "Patient.identifier[0], element Patient(http://hl7.org/fhir/StructureDefinition/slice-profile-and-local-profile).identifier[foo]"
                 ]
               }
             ]
@@ -37561,7 +37586,7 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "MedicationRequest.requester->Reference"
+                    "code": "MedicationRequest.requester"
                   }
                 ],
                 "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
@@ -37773,7 +37798,7 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "MedicationRequest.requester->Reference"
+                    "code": "MedicationRequest.requester"
                   }
                 ],
                 "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
@@ -44092,7 +44117,7 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Encounter.period->Period"
+                    "code": "Encounter.period"
                   }
                 ],
                 "text": "Instance failed constraint per-1 \"If present, start SHALL have a lower value than end\""
@@ -45517,16 +45542,670 @@
           "issue": [
             {
               "severity": "error",
-              "code": "unknown",
+              "code": "incomplete",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle': Cannot walk into unknown child 'type' at 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle#Bundle.entry.resource.type (Bundle.entry:practice.resource.type:ins)'."
-              }
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-messageheader'."
+              },
+              "location": [
+                "Bundle.entry[0].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4009"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.extension"
+                  }
+                ],
+                "text": "Unable to resolve reference to extension 'http://dev.gene.com/fhir/uapi/StructureDefinition/message-timestamp'."
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].extension, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.extension"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].extension, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.extension"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.sender[forOrganization]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
+              },
+              "location": [
+                "Bundle.entry[3].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.sender[forOrganization]"
+              ],
+              "expression": [
+                "Bundle.entry[3].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.sender[forOrganization]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'."
+              },
+              "location": [
+                "Bundle.entry[2].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ],
+              "expression": [
+                "Bundle.entry[2].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.generalPractitioner[forPractitioner]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'."
+              },
+              "location": [
+                "Bundle.entry[4].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.generalPractitioner[forPractitioner]"
+              ],
+              "expression": [
+                "Bundle.entry[4].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.generalPractitioner[forPractitioner]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-medicationrequest'."
+              },
+              "location": [
+                "Bundle.entry[13].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ],
+              "expression": [
+                "Bundle.entry[13].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'."
+              },
+              "location": [
+                "Bundle.entry[5].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]"
+              ],
+              "expression": [
+                "Bundle.entry[5].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'."
+              },
+              "location": [
+                "Bundle.entry[6].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]"
+              ],
+              "expression": [
+                "Bundle.entry[6].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.payor[forOrganization]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
+              },
+              "location": [
+                "Bundle.entry[14].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.payor[forOrganization]"
+              ],
+              "expression": [
+                "Bundle.entry[14].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.payor[forOrganization]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-provenance'."
+              },
+              "location": [
+                "Bundle.entry[10].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ],
+              "expression": [
+                "Bundle.entry[10].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "6006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Provenance.signature->Signature.sigFormat"
+                  }
+                ],
+                "text": "Terminology service failed while validating code 'image/*': Operation validate code failed: creating the required expansion failed mith message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
+              },
+              "location": [
+                "Bundle.entry[10].resource[0].signature[0].sigFormat[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Provenance.signature->Signature.sigFormat"
+              ],
+              "expression": [
+                "Bundle.entry[10].resource[0].signature[0].sigFormat[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Provenance.signature->Signature.sigFormat"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest'."
+              },
+              "location": [
+                "Bundle.entry[11].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ],
+              "expression": [
+                "Bundle.entry[11].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest'."
+              },
+              "location": [
+                "Bundle.entry[12].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ],
+              "expression": [
+                "Bundle.entry[12].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[messageheader].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-messageheader'."
+              },
+              "location": [
+                "Bundle.entry[0].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[messageheader].resource"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[messageheader].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[patient].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'."
+              },
+              "location": [
+                "Bundle.entry[2].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[patient].resource"
+              ],
+              "expression": [
+                "Bundle.entry[2].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[patient].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practitioner].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'."
+              },
+              "location": [
+                "Bundle.entry[4].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practitioner].resource"
+              ],
+              "expression": [
+                "Bundle.entry[4].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practitioner].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice]"
+                  }
+                ],
+                "text": "Instance count is 2, which is not within the specified cardinality of 1..1"
+              },
+              "location": [
+                "Bundle.entry, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice]"
+              ],
+              "expression": [
+                "Bundle.entry, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
+              },
+              "location": [
+                "Bundle.entry[3].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+              ],
+              "expression": [
+                "Bundle.entry[3].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1008"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
+                  }
+                ],
+                "text": "Value '{\"coding\":[{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"prov\",\"display\":\"Healthcare Provider\"}]}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
+              },
+              "location": [
+                "Bundle.entry[3].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
+              ],
+              "expression": [
+                "Bundle.entry[3].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
+              },
+              "location": [
+                "Bundle.entry[14].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+              ],
+              "expression": [
+                "Bundle.entry[14].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1008"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
+                  }
+                ],
+                "text": "Value '{\"coding\":[{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"ins\"}]}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
+              },
+              "location": [
+                "Bundle.entry[14].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
+              ],
+              "expression": [
+                "Bundle.entry[14].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[medicationrequest].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-medicationrequest'."
+              },
+              "location": [
+                "Bundle.entry[13].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[medicationrequest].resource"
+              ],
+              "expression": [
+                "Bundle.entry[13].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[medicationrequest].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[condition].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-condition'."
+              },
+              "location": [
+                "Bundle.entry[8].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[condition].resource"
+              ],
+              "expression": [
+                "Bundle.entry[8].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[condition].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[coverage].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'."
+              },
+              "location": [
+                "Bundle.entry[5].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[coverage].resource"
+              ],
+              "expression": [
+                "Bundle.entry[5].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[coverage].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[consent].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-consent'."
+              },
+              "location": [
+                "Bundle.entry[9].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[consent].resource"
+              ],
+              "expression": [
+                "Bundle.entry[9].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[consent].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[provenance].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-provenance'."
+              },
+              "location": [
+                "Bundle.entry[10].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[provenance].resource"
+              ],
+              "expression": [
+                "Bundle.entry[10].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[provenance].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest'."
+              },
+              "location": [
+                "Bundle.entry[11].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+              ],
+              "expression": [
+                "Bundle.entry[11].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest'."
+              },
+              "location": [
+                "Bundle.entry[12].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+              ],
+              "expression": [
+                "Bundle.entry[12].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[relatedperson].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'."
+              },
+              "location": [
+                "Bundle.entry[6].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[relatedperson].resource"
+              ],
+              "expression": [
+                "Bundle.entry[6].resource, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[relatedperson].resource"
+              ]
             }
           ]
         }

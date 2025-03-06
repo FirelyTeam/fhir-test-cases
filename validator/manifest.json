@@ -4451,6 +4451,29 @@
               ]
             },
             {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.section"
+                  }
+                ],
+                "text": "Instance failed constraint cmp-1 \"A section must at least one of text, entries, or sub-sections\""
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].section[8].section[2]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].section[8].section[2]"
+              ]
+            },
+            {
               "severity": "warning",
               "code": "incomplete",
               "details": {
@@ -30369,7 +30392,55 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "ValueSet.compose.exclude"
+                  }
+                ],
+                "text": "Instance failed constraint vsd-2 \"A value set with concepts or filters SHALL include a system\""
+              },
+              "location": [
+                "ValueSet.compose[0].exclude[0]"
+              ],
+              "expression": [
+                "ValueSet.compose[0].exclude[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "ValueSet.compose.exclude"
+                  }
+                ],
+                "text": "Instance failed constraint vsd-1 \"A value set include/exclude SHALL have a value set or a system\""
+              },
+              "location": [
+                "ValueSet.compose[0].exclude[0]"
+              ],
+              "expression": [
+                "ValueSet.compose[0].exclude[0]"
+              ]
+            }
+          ]
         }
       }
     },

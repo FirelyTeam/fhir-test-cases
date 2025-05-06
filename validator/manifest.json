@@ -712,6 +712,29 @@
               "expression": [
                 "Observation.performer[0]"
               ]
+            },
+            {
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation.device"
+                  }
+                ],
+                "text": "Cannot resolve reference #dev1"
+              },
+              "location": [
+                "Observation.device[0]"
+              ],
+              "expression": [
+                "Observation.device[0]"
+              ]
             }
           ]
         }
@@ -24481,7 +24504,55 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8a \"In any differential, all the elements must be in the specified type\""
+              },
+              "location": [
+                "StructureDefinition.differential[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -24496,7 +24567,55 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8a \"In any differential, all the elements must be in the specified type\""
+              },
+              "location": [
+                "StructureDefinition.differential[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -27451,6 +27570,29 @@
               ],
               "expression": [
                 "Bundle"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.author"
+                  }
+                ],
+                "text": "Cannot resolve reference #531077aed3314c3d8038dd7b85db7e0d"
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].author[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].author[0]"
               ]
             },
             {
@@ -42278,6 +42420,29 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.author"
+                  }
+                ],
+                "text": "Cannot resolve reference #531077aed3314c3d8038dd7b85db7e0d"
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].author[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].author[0]"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Bundle.entry.resource->Composition.section.entry->MedicationRequest.requester.onBehalfOf"
                   }
                 ],
@@ -43449,6 +43614,52 @@
             },
             {
               "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentManifest.contained->DocumentReference.author"
+                  }
+                ],
+                "text": "Cannot resolve reference #3"
+              },
+              "location": [
+                "DocumentManifest.contained[4].author[0]"
+              ],
+              "expression": [
+                "DocumentManifest.contained[4].author[0]"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentManifest.contained->DocumentReference.authenticator"
+                  }
+                ],
+                "text": "Cannot resolve reference #4"
+              },
+              "location": [
+                "DocumentManifest.contained[4].authenticator[0]"
+              ],
+              "expression": [
+                "DocumentManifest.contained[4].authenticator[0]"
+              ]
+            },
+            {
+              "severity": "warning",
               "code": "informational",
               "details": {
                 "coding": [
@@ -43468,6 +43679,52 @@
               ],
               "expression": [
                 "DocumentManifest.contained[4].content[0].attachment[0].contentType[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentManifest.contained->DocumentReference.context.sourcePatientInfo->Reference"
+                  }
+                ],
+                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\""
+              },
+              "location": [
+                "DocumentManifest.contained[4].context[0].sourcePatientInfo[0]"
+              ],
+              "expression": [
+                "DocumentManifest.contained[4].context[0].sourcePatientInfo[0]"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentManifest.contained->DocumentReference.context.sourcePatientInfo"
+                  }
+                ],
+                "text": "Cannot resolve reference #5"
+              },
+              "location": [
+                "DocumentManifest.contained[4].context[0].sourcePatientInfo[0]"
+              ],
+              "expression": [
+                "DocumentManifest.contained[4].context[0].sourcePatientInfo[0]"
               ]
             },
             {
@@ -43504,39 +43761,62 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DocumentManifest.content.p[x][Reference]->DocumentReference.subject"
+                    "code": "DocumentManifest.author"
                   }
                 ],
-                "text": "Cannot resolve reference Patient/88153369-e217-44d2-939d-f5ad9af7f763"
+                "text": "Cannot resolve reference #1"
               },
               "location": [
-                "DocumentManifest.contained[0].subject[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.subject"
+                "DocumentManifest.author[0]"
               ],
               "expression": [
-                "DocumentManifest.contained[0].subject[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.subject"
+                "DocumentManifest.author[0]"
               ]
             },
             {
-              "severity": "warning",
-              "code": "informational",
+              "severity": "error",
+              "code": "invariant",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
+                    "code": "1012"
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DocumentManifest.content.p[x][Reference]->DocumentReference.content.attachment->Attachment.contentType"
+                    "code": "DocumentManifest.content.p[x][Reference]->Reference"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
+                "text": "Instance failed constraint ref-1 \"SHALL have a contained resource if a local reference is provided\" (for slice Reference)"
               },
               "location": [
-                "DocumentManifest.contained[0].content[0].attachment[0].contentType[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.content.attachment->Attachment.contentType"
+                "DocumentManifest.content[0].pReference[0], element DocumentManifest.content.p[x][Reference]->Reference"
               ],
               "expression": [
-                "DocumentManifest.contained[0].content[0].attachment[0].contentType[0], element DocumentManifest.content.p[x][Reference]->DocumentReference.content.attachment->Attachment.contentType"
+                "DocumentManifest.content[0].pReference[0], element DocumentManifest.content.p[x][Reference]->Reference"
+              ]
+            },
+            {
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentManifest.content.p[x][Reference]"
+                  }
+                ],
+                "text": "Cannot resolve reference #2 (for slice Reference)"
+              },
+              "location": [
+                "DocumentManifest.content[0].pReference[0], element DocumentManifest.content.p[x][Reference]"
+              ],
+              "expression": [
+                "DocumentManifest.content[0].pReference[0], element DocumentManifest.content.p[x][Reference]"
               ]
             }
           ]
@@ -59710,7 +59990,1780 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8 \"In any snapshot, all the elements must be in the specified type\""
+              },
+              "location": [
+                "StructureDefinition.snapshot[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[0].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[0].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[1].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[1].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[2].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[2].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[3].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[3].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[4].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[4].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[5].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[5].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[6].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[6].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[7].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[7].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[8].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[8].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[9].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[9].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[10].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[10].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[11].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[11].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[12].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[12].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[13].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[13].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[14].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[14].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[15].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[15].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[16].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[16].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[17].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[17].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[18].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[18].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[19].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[19].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[20].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[20].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[21].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[21].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[22].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[22].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[23].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[23].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[24].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[24].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[25].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[25].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[26].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[26].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[27].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[27].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[28].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[28].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[29].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[29].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[30].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[30].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[31].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[31].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[32].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[32].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[33].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[33].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[34].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[34].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[35].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[35].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[36].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[36].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[37].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[37].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[38].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[38].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[39].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[39].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[40].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[40].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[41].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[41].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[42].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[42].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[43].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[43].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[44].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[44].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[45].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[45].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[46].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[46].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8a \"In any differential, all the elements must be in the specified type\""
+              },
+              "location": [
+                "StructureDefinition.differential[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[1].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[1].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[2].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[2].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[3].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[3].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[4].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[4].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[5].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[5].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[6].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[6].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[7].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[7].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[8].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[8].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[9].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[9].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[10].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[10].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[11].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[11].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[12].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[12].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[13].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[13].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[14].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[14].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[15].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[15].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[16].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[16].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[17].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[17].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[18].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[18].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[19].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[19].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[20].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[20].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[21].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[21].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[22].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[22].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[23].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[23].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[24].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[24].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[25].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[25].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[26].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[26].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[27].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[27].id[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -60390,6 +62443,2053 @@
               ],
               "expression": [
                 "StructureDefinition.baseDefinition[0].extension"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8 \"In any snapshot, all the elements must be in the specified type\""
+              },
+              "location": [
+                "StructureDefinition.snapshot[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[0].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[0].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[1].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[1].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[2].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[2].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[3].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[3].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[4].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[4].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[5].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[5].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[6].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[6].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[7].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[7].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[8].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[8].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[9].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[9].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[10].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[10].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[11].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[11].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[12].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[12].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[13].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[13].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[14].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[14].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[15].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[15].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[16].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[16].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[17].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[17].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[18].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[18].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[19].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[19].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[20].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[20].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[21].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[21].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[22].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[22].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[23].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[23].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[24].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[24].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[25].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[25].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[26].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[26].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[27].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[27].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[28].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[28].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[29].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[29].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[30].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[30].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[31].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[31].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[32].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[32].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[33].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[33].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[34].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[34].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[35].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[35].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[36].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[36].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[37].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[37].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[38].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[38].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[39].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[39].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[40].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[40].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[41].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[41].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[42].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[42].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[43].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[43].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[44].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[44].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[45].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[45].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[46].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[46].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[47].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[47].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[48].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[48].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[49].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[49].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[50].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[50].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[51].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[51].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8a \"In any differential, all the elements must be in the specified type\""
+              },
+              "location": [
+                "StructureDefinition.differential[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[0].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[1].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[1].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[2].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[2].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[3].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[3].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[4].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[4].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[5].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[5].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[6].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[6].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[7].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[7].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[8].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[8].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[9].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[9].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[10].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[10].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[11].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[11].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[12].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[12].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[13].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[13].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[14].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[14].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[15].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[15].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[16].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[16].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[17].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[17].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[18].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[18].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[19].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[19].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[20].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[20].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[21].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[21].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[22].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[22].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[23].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[23].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[24].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[24].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[25].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[25].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[26].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[26].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[27].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[27].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[28].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[28].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[29].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[29].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[30].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[30].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[31].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[31].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[32].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[32].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[33].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[33].id[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential.element->ElementDefinition.id->string"
+                  }
+                ],
+                "text": "The declared type of the element (string) is incompatible with that of the instance (id)."
+              },
+              "location": [
+                "StructureDefinition.differential[0].element[34].id[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0].element[34].id[0]"
               ]
             }
           ]

@@ -48036,6 +48036,52 @@
               "expression": [
                 "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
               ]
+            },
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8 \"All snapshot elements must start with the StructureDefinition's specified type for non-logical models, or with the same type name for logical models\""
+              },
+              "location": [
+                "StructureDefinition.snapshot[0]"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invariant",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.differential"
+                  }
+                ],
+                "text": "Instance failed constraint sdf-8a \"In any differential, all the elements must start with the StructureDefinition's specified type for non-logical models, or with the same type name for logical models\""
+              },
+              "location": [
+                "StructureDefinition.differential[0]"
+              ],
+              "expression": [
+                "StructureDefinition.differential[0]"
+              ]
             }
           ]
         }

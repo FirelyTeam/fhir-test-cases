@@ -9577,32 +9577,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Parameters.parameter.value[x][string]->string.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/translation'. (for slice string)"
-              },
-              "location": [
-                "Parameters.parameter[0].valueString[0].extension, element Parameters.parameter.value[x][string]->string.extension"
-              ],
-              "expression": [
-                "Parameters.parameter[0].valueString[0].extension, element Parameters.parameter.value[x][string]->string.extension"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       },
       "profile": {
@@ -9669,35 +9644,6 @@
                     "valueUri": "http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints"
                   }
                 ],
-                "severity": "warning",
-                "code": "incomplete",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "4009"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter.value[x][string]->string.extension"
-                    }
-                  ],
-                  "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/translation'. (for slice string)"
-                },
-                "location": [
-                  "Parameters.parameter[0].valueString[0].extension, element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter.value[x][string]->string.extension"
-                ],
-                "expression": [
-                  "Parameters.parameter[0].valueString[0].extension, element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter.value[x][string]->string.extension"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints"
-                  }
-                ],
                 "severity": "error",
                 "code": "invalid",
                 "details": {
@@ -9747,64 +9693,6 @@
                 ],
                 "expression": [
                   "Parameters.parameter[0].valueString[0], element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString]"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints"
-                  }
-                ],
-                "severity": "warning",
-                "code": "incomplete",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "4009"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension"
-                    }
-                  ],
-                  "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/translation'. (for slice valueString)"
-                },
-                "location": [
-                  "Parameters.parameter[0].valueString[0].extension, element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension"
-                ],
-                "expression": [
-                  "Parameters.parameter[0].valueString[0].extension, element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints"
-                  }
-                ],
-                "severity": "error",
-                "code": "incomplete",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "4000"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension[translation]"
-                    }
-                  ],
-                  "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/StructureDefinition/translation'. (for slice translation)"
-                },
-                "location": [
-                  "Parameters.parameter[0].valueString[0].extension, element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension[translation]"
-                ],
-                "expression": [
-                  "Parameters.parameter[0].valueString[0].extension, element Parameters(http://hl7.org/fhir/StructureDefinition/string-extensions-and-constraints).parameter[string].value[x][valueString].extension[translation]"
                 ]
               },
               {
@@ -13450,26 +13338,32 @@
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                }
+              ],
               "severity": "warning",
-              "code": "incomplete",
+              "code": "informational",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
+                    "code": "6006"
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.name->HumanName.extension"
+                    "code": "Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
                   }
                 ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'."
+                "text": "Terminology service failed while validating code 'unknown': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'http://terminology.hl7.org/CodeSystem/data-absent-reason', so the expansion cannot be completed.\"."
               },
               "location": [
-                "Patient.name[0].extension"
+                "Patient.name[0].extension[0].valueCode[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
               ],
               "expression": [
-                "Patient.name[0].extension"
+                "Patient.name[0].extension[0].valueCode[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
               ]
             }
           ]
@@ -13516,29 +13410,87 @@
                 "extension": [
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/StructureDefinition/extension-slice-profile"
+                    "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                   }
                 ],
                 "severity": "warning",
-                "code": "incomplete",
+                "code": "informational",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "4009"
+                      "code": "6006"
                     },
                     {
                       "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name->HumanName.extension"
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
                     }
                   ],
-                  "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'."
+                  "text": "Terminology service failed while validating code 'unknown': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'http://terminology.hl7.org/CodeSystem/data-absent-reason', so the expansion cannot be completed.\"."
                 },
                 "location": [
-                  "Patient.name[0].extension, element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name->HumanName.extension"
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
                 ],
                 "expression": [
-                  "Patient.name[0].extension, element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name->HumanName.extension"
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name->HumanName.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ],
+                "severity": "warning",
+                "code": "informational",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "6006"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
+                    }
+                  ],
+                  "text": "Terminology service failed while validating code 'unknown': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'http://terminology.hl7.org/CodeSystem/data-absent-reason', so the expansion cannot be completed.\". (for slice foo)"
+                },
+                "location": [
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
+                ],
+                "expression": [
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ],
+                "severity": "warning",
+                "code": "informational",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "6006"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar]->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
+                    }
+                  ],
+                  "text": "Terminology service failed while validating code 'unknown': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'http://terminology.hl7.org/CodeSystem/data-absent-reason', so the expansion cannot be completed.\". (for slice dar)"
+                },
+                "location": [
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar]->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
+                ],
+                "expression": [
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar]->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
                 ]
               },
               {
@@ -13549,54 +13501,25 @@
                   }
                 ],
                 "severity": "warning",
-                "code": "incomplete",
+                "code": "informational",
                 "details": {
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "4009"
+                      "code": "6006"
                     },
                     {
                       "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension"
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar].value[x][valueCode]"
                     }
                   ],
-                  "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. (for slice foo)"
+                  "text": "Terminology service failed while validating code 'unknown': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'http://terminology.hl7.org/CodeSystem/data-absent-reason', so the expansion cannot be completed.\". (for slice valueCode)"
                 },
                 "location": [
-                  "Patient.name[0].extension, element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension"
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar].value[x][valueCode]"
                 ],
                 "expression": [
-                  "Patient.name[0].extension, element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/StructureDefinition/extension-slice-profile"
-                  }
-                ],
-                "severity": "error",
-                "code": "incomplete",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "4000"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar]"
-                    }
-                  ],
-                  "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. (for slice dar)"
-                },
-                "location": [
-                  "Patient.name[0].extension, element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar]"
-                ],
-                "expression": [
-                  "Patient.name[0].extension, element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar]"
+                  "Patient.name[0].extension[0].valueCode[0], element Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).name[foo].extension[dar].value[x][valueCode]"
                 ]
               }
             ]
@@ -20971,32 +20894,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/patient-animal'."
-              },
-              "location": [
-                "Patient.extension"
-              ],
-              "expression": [
-                "Patient.extension"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -50854,17 +50752,33 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "https://fhir.kbv.de/StructureDefinition/Patient"
+                }
+              ],
               "severity": "error",
-              "code": "unknown",
+              "code": "invariant",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "1012"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient(https://fhir.kbv.de/StructureDefinition/Patient)"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/Patient|0.0.0': Cannot walk into unknown StructureDefinition with canonical 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct' at 'https://fhir.kbv.de/StructureDefinition/Patient#Patient.address.extension (Patient.address.extension:Stadtteil)'"
-              }
+                "text": "Instance failed constraint pat-de-kbv-1 \"Test, ob auf den Straßennamen in der erster Adresszeile zugegriffen werden kann.\""
+              },
+              "location": [
+                "Patient, element Patient(https://fhir.kbv.de/StructureDefinition/Patient)"
+              ],
+              "expression": [
+                "Patient, element Patient(https://fhir.kbv.de/StructureDefinition/Patient)"
+              ]
             }
           ]
         }
@@ -55374,38 +55288,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-                }
-              ],
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "CodeSystem.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-                  }
-                ],
-                "text": "Terminology service failed while validating code 'oo': Operation validate code failed: valueset 'http://hl7.org/fhir/ValueSet/hl7-work-group' is unknown."
-              },
-              "location": [
-                "CodeSystem.extension[0].valueCode[0], element CodeSystem.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-              ],
-              "expression": [
-                "CodeSystem.extension[0].valueCode[0], element CodeSystem.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -56246,17 +56129,62 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "error",
-              "code": "unknown",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.who"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Cannot walk into unknown StructureDefinition with canonical 'http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID' at 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile#AuditEvent.agent.extension (AuditEvent.agent.extension:altid)'"
-              }
+                "text": "Cannot resolve reference Patient/Bob"
+              },
+              "location": [
+                "AuditEvent.agent[0].who[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.who"
+              ],
+              "expression": [
+                "AuditEvent.agent[0].who[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.who"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).source.observer"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/Bob"
+              },
+              "location": [
+                "AuditEvent.source[0].observer[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).source.observer"
+              ],
+              "expression": [
+                "AuditEvent.source[0].observer[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).source.observer"
+              ]
             }
           ]
         }
@@ -56289,7 +56217,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Cannot walk into unknown StructureDefinition with canonical 'http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID' at 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile#AuditEvent.agent.extension (AuditEvent.agent.extension:altid)'"
+                "text": "Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
               }
             }
           ]
@@ -58113,7 +58041,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Cannot walk into unknown StructureDefinition with canonical 'http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID' at 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile#AuditEvent.agent.extension (AuditEvent.agent.extension:altid)'"
+                "text": "Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
               }
             }
           ]
@@ -59147,110 +59075,6 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-                }
-              ],
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-                  }
-                ],
-                "text": "Terminology service failed while validating code 'fhir': Operation validate code failed: valueset 'http://hl7.org/fhir/ValueSet/hl7-work-group' is unknown."
-              },
-              "location": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-              ],
-              "expression": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'."
-              },
-              "location": [
-                "StructureDefinition.extension"
-              ],
-              "expression": [
-                "StructureDefinition.extension"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-                }
-              ],
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status).value[x]"
-                  }
-                ],
-                "text": "Terminology service failed while validating code 'normative': Operation validate code failed: valueset 'http://hl7.org/fhir/ValueSet/standards-status' is unknown."
-              },
-              "location": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status).value[x]"
-              ],
-              "expression": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status).value[x]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics'."
-              },
-              "location": [
-                "StructureDefinition.extension"
-              ],
-              "expression": [
-                "StructureDefinition.extension"
-              ]
-            },
-            {
               "severity": "warning",
               "code": "invariant",
               "details": {
@@ -59271,29 +59095,6 @@
               ],
               "expression": [
                 "StructureDefinition.differential[0].element[2]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName'."
-              },
-              "location": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension"
-              ],
-              "expression": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension"
               ]
             }
           ]
@@ -59370,110 +59171,6 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-                }
-              ],
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-                  }
-                ],
-                "text": "Terminology service failed while validating code 'fhir': Operation validate code failed: valueset 'http://hl7.org/fhir/ValueSet/hl7-work-group' is unknown."
-              },
-              "location": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-              ],
-              "expression": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'."
-              },
-              "location": [
-                "StructureDefinition.extension"
-              ],
-              "expression": [
-                "StructureDefinition.extension"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-                }
-              ],
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status).value[x]"
-                  }
-                ],
-                "text": "Terminology service failed while validating code 'deprecated': Operation validate code failed: valueset 'http://hl7.org/fhir/ValueSet/standards-status' is unknown."
-              },
-              "location": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status).value[x]"
-              ],
-              "expression": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status).value[x]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics'."
-              },
-              "location": [
-                "StructureDefinition.extension"
-              ],
-              "expression": [
-                "StructureDefinition.extension"
-              ]
-            },
-            {
               "severity": "warning",
               "code": "invariant",
               "details": {
@@ -59494,29 +59191,6 @@
               ],
               "expression": [
                 "StructureDefinition.differential[0].element[2]"
-              ]
-            },
-            {
-              "severity": "warning",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4009"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension"
-                  }
-                ],
-                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName'."
-              },
-              "location": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension"
-              ],
-              "expression": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension"
               ]
             }
           ]

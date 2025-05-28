@@ -53547,14 +53547,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 1
-                },
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -53588,14 +53580,6 @@
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
                 },
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 166
-                },
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "BindingValidator"
                 }
@@ -53616,92 +53600,10 @@
                 "text": "Terminology service failed while validating code 'fhir': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/hl7-work-group' is unknown."
               },
               "location": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
+                "StructureDefinition.extension[0].valueCode, element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
               ],
               "expression": [
-                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 3183
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4919
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                "StructureDefinition.extension[0].valueCode, element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
               ]
             }
           ]
@@ -58230,41 +58132,9 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 18
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "error",
+              "severity": "fatal",
               "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.id->id.value"
-                  }
-                ],
-                "text": "Value 'bad-id_1' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
-              },
-              "location": [
-                "Patient.id[0].value"
-              ],
-              "expression": [
-                "Patient.id[0].value"
-              ]
+              "diagnostics": "One or more errors occurred. (string 'bad-id_1' is not a correct literal for a id. At Patient.id, line 3, position 19.)"
             }
           ]
         }
@@ -58521,41 +58391,9 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 125
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "error",
+              "severity": "fatal",
               "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.id->id.value"
-                  }
-                ],
-                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
-              },
-              "location": [
-                "Patient.id[0].value"
-              ],
-              "expression": [
-                "Patient.id[0].value"
-              ]
+              "diagnostics": "One or more errors occurred. (string 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' is not a correct literal for a id. At Patient.id, line 3, position 126.)"
             }
           ]
         }
@@ -58812,41 +58650,9 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 18
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "error",
+              "severity": "fatal",
               "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.id->id.value"
-                  }
-                ],
-                "text": "Value 'bad-id 1' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
-              },
-              "location": [
-                "Patient.id[0].value"
-              ],
-              "expression": [
-                "Patient.id[0].value"
-              ]
+              "diagnostics": "One or more errors occurred. (string 'bad-id 1' is not a correct literal for a id. At Patient.id, line 3, position 19.)"
             }
           ]
         }

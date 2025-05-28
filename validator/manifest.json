@@ -224,6 +224,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 10
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 23
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -32867,6 +32875,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 5
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 4
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "CanonicalValidator"
                 }
@@ -44710,6 +44726,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 13
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 44
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -44976,6 +45000,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 13
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 44
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -45231,6 +45263,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 44
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -47534,6 +47574,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 19
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -47592,6 +47640,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 100
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -47662,6 +47718,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 10
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -49938,6 +50002,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 57
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirUriValidator"
                 }
@@ -49966,6 +50038,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 9
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 55
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirUriValidator"
@@ -50942,6 +51022,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 9
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 80
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -51075,6 +51163,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 9
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 80
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -52788,6 +52884,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 4
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -56953,6 +57057,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -57011,6 +57123,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -57071,6 +57191,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -57129,6 +57257,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -57212,6 +57348,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 125
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -57270,6 +57414,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 125
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -57330,6 +57482,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 125
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -57388,6 +57548,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 125
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -57471,6 +57639,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -57529,6 +57705,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -57589,6 +57773,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -57647,6 +57839,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -60281,6 +60481,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 54
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 42
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "CanonicalValidator"
                 }
@@ -60483,6 +60691,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 185
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 51
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "CanonicalValidator"
@@ -64468,6 +64684,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 9
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 22
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
@@ -64564,6 +64788,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 9
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 22
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
@@ -66732,6 +66964,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 5
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 59
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"

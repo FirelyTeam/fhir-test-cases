@@ -24726,50 +24726,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-animal"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -24809,50 +24766,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-animal"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -25068,50 +24982,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -25126,50 +24997,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-animal"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -25211,47 +25039,6 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-animal"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ]
-            },
             {
               "extension": [
                 {
@@ -25325,50 +25112,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-animal"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -28799,50 +28543,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}, {ELEMENT,Patient.name}, {EXTENSION,http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired}, {FHIRPATH,Patient.address.where(use = 'home')}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -28860,50 +28561,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}, {ELEMENT,Patient.name}, {EXTENSION,http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired}, {FHIRPATH,Patient.address.where(use = 'home')}"
-              },
-              "location": [
-                "Patient.name[0].extension[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-              ],
-              "expression": [
-                "Patient.name[0].extension[0], element Patient.name->HumanName.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/ext-ctxt-defn)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -29161,50 +28819,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -29237,47 +28852,6 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor)"
-              ]
-            },
             {
               "extension": [
                 {
@@ -29337,50 +28911,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,DomainResource}, {ELEMENT,DomainResource.text}, {ELEMENT,BackboneElement}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -29398,50 +28929,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.text->Narrative.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,DomainResource}, {ELEMENT,DomainResource.text}, {ELEMENT,BackboneElement}"
-              },
-              "location": [
-                "Patient.text[0].extension[0], element Patient.text->Narrative.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-              ],
-              "expression": [
-                "Patient.text[0].extension[0], element Patient.text->Narrative.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -29459,50 +28947,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.contact.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,DomainResource}, {ELEMENT,DomainResource.text}, {ELEMENT,BackboneElement}"
-              },
-              "location": [
-                "Patient.contact[0].extension[0], element Patient.contact.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-              ],
-              "expression": [
-                "Patient.contact[0].extension[0], element Patient.contact.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/exta-ctxt-defn)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -29594,50 +29039,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -29690,19 +29092,19 @@
                 }
               ],
               "severity": "error",
-              "code": "invalid",
+              "code": "invariant",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
+                    "code": "1012"
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
                   }
                 ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
+                "text": "Extension context failed invariant constraint Patient.active.not()"
               },
               "location": [
                 "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/extb-ctxt-defn)"
@@ -32951,91 +32353,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "PlanDefinition.action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action}"
-              },
-              "location": [
-                "PlanDefinition.action[0].extension[0], element PlanDefinition.action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-              ],
-              "expression": [
-                "PlanDefinition.action[0].extension[0], element PlanDefinition.action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 12
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "PlanDefinition.action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action}"
-              },
-              "location": [
-                "PlanDefinition.action[1].extension[0], element PlanDefinition.action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-              ],
-              "expression": [
-                "PlanDefinition.action[1].extension[0], element PlanDefinition.action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       },
       "profile": {
@@ -33050,337 +32368,7 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome",
-            "issue": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 6
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action}"
-                },
-                "location": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 6
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionType)"
-                },
-                "location": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 12
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action}"
-                },
-                "location": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 12
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionType)"
-                },
-                "location": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action.extension[actionType]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 6
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionSingle)"
-                },
-                "location": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 6
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionTypeSingle)"
-                },
-                "location": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[0].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionSingle].extension[actionTypeSingle]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 12
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionAlternate)"
-                },
-                "location": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 12
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "ExtensionContextValidator"
-                  }
-                ],
-                "severity": "error",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1028"
-                    },
-                    {
-                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                      "code": "PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                    }
-                  ],
-                  "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,PlanDefinition.action} (for slice actionTypeAlternate)"
-                },
-                "location": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ],
-                "expression": [
-                  "PlanDefinition.action[1].extension[0], element PlanDefinition(http://hl7.org/fhir/pq-cmc/StructureDefinition/pharmqualityspecification).action[actionAlternate].extension[actionTypeAlternate]->Extension(http://hl7.org/fhir/pq-cmc/StructureDefinition/extActionType)"
-                ]
-              }
-            ]
+            "resourceType": "OperationOutcome"
           }
         }
       }
@@ -52263,47 +51251,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DeviceRequest.extension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Resource}"
-              },
-              "location": [
-                "DeviceRequest.extension[0], element DeviceRequest.extension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
-              ],
-              "expression": [
-                "DeviceRequest.extension[0], element DeviceRequest.extension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 19
                 },
@@ -52466,47 +51413,6 @@
               ],
               "expression": [
                 "DeviceRequest.extension"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "DeviceRequest.modifierExtension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Resource}"
-              },
-              "location": [
-                "DeviceRequest.modifierExtension[0], element DeviceRequest.modifierExtension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
-              ],
-              "expression": [
-                "DeviceRequest.modifierExtension[0], element DeviceRequest.modifierExtension->Extension(http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason)"
               ]
             },
             {
@@ -54059,47 +52965,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 114
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 17
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "QuestionnaireResponse.contained->Questionnaire.item.item.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-hidden)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Questionnaire.item}, {ELEMENT,Questionnaire.item.item}"
-              },
-              "location": [
-                "QuestionnaireResponse.contained[0].item[0].item[9].extension[0], element QuestionnaireResponse.contained->Questionnaire.item.item.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-hidden)"
-              ],
-              "expression": [
-                "QuestionnaireResponse.contained[0].item[0].item[9].extension[0], element QuestionnaireResponse.contained->Questionnaire.item.item.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-hidden)"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 176
                 },
@@ -54764,88 +53629,6 @@
               "expression": [
                 "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
               ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 5882
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 7533
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ]
             }
           ]
         }
@@ -55046,88 +53829,6 @@
               ],
               "expression": [
                 "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 5882
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 7533
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
               ]
             }
           ]
@@ -58299,47 +57000,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 90
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.constraint.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.constraint}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[0].constraint[4].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.constraint.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[0].constraint[4].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.constraint.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"
                 },
                 {
@@ -58375,47 +57035,6 @@
               ],
               "expression": [
                 "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 218
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[4].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
               ]
             },
             {
@@ -58787,129 +57406,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1341
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[33].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[33].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1515
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[37].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[37].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1620
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 8
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[40].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[40].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"
                 },
                 {
@@ -58945,88 +57441,6 @@
               ],
               "expression": [
                 "StructureDefinition.snapshot[0].element[41].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1799
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[44].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[44].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 1960
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[48].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[48].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
               ]
             },
             {
@@ -59074,47 +57488,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 2226
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[55].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[55].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"
                 },
                 {
@@ -59150,88 +57523,6 @@
               ],
               "expression": [
                 "StructureDefinition.snapshot[0].element[60].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 2526
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[63].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[63].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 2581
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}"
-              },
-              "location": [
-                "StructureDefinition.snapshot[0].element[64].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.snapshot[0].element[64].binding[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
               ]
             }
           ]
@@ -61307,47 +59598,6 @@
               ],
               "expression": [
                 "Medication.extension"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "https://example.com/StructureDefinition/ext-medication"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 9
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Medication.extension->Extension(https://example.com/StructureDefinition/ext-medication)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Medication}"
-              },
-              "location": [
-                "Medication.extension[0], element Medication.extension->Extension(https://example.com/StructureDefinition/ext-medication)"
-              ],
-              "expression": [
-                "Medication.extension[0], element Medication.extension->Extension(https://example.com/StructureDefinition/ext-medication)"
               ]
             }
           ]
@@ -65065,47 +63315,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 18
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Patient}"
-              },
-              "location": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired)"
-              ],
-              "expression": [
-                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired)"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 7
                 },
@@ -66888,50 +65097,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 5
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-category)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,StructureDefinition}"
-              },
-              "location": [
-                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-category)"
-              ],
-              "expression": [
-                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-category)"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -66998,88 +65164,6 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 12
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 9
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,AuditEvent.agent}"
-              },
-              "location": [
-                "AuditEvent.agent[0].extension[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ],
-              "expression": [
-                "AuditEvent.agent[0].extension[0], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 19
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 9
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,AuditEvent.agent}"
-              },
-              "location": [
-                "AuditEvent.agent[0].extension[1], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ],
-              "expression": [
-                "AuditEvent.agent[0].extension[1], element AuditEvent(http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile).agent.extension->Extension(http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID)"
-              ]
-            },
             {
               "extension": [
                 {
@@ -71307,47 +69391,6 @@
               "expression": [
                 "CapabilityStatement.format[0]"
               ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/something"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 11
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 20
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "CapabilityStatement.rest.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/something)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,CapabilityStatement.rest}"
-              },
-              "location": [
-                "CapabilityStatement.rest[0].extension[0], element CapabilityStatement.rest.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/something)"
-              ],
-              "expression": [
-                "CapabilityStatement.rest[0].extension[0], element CapabilityStatement.rest.extension->Extension(http://hl7.org/fhir/test/StructureDefinition/something)"
-              ]
             }
           ]
         }
@@ -71456,47 +69499,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 20
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,StructureDefinition}"
-              },
-              "location": [
-                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics)"
-              ],
-              "expression": [
-                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics)"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 122
                 },
@@ -71529,47 +69531,6 @@
               ],
               "expression": [
                 "StructureDefinition.differential[0].element[2]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 135
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 24
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}, {ELEMENT,OperationDefinition.parameter.binding}"
-              },
-              "location": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
               ]
             }
           ]
@@ -71648,47 +69609,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 20
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,StructureDefinition}"
-              },
-              "location": [
-                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics)"
-              ],
-              "expression": [
-                "StructureDefinition.extension[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics)"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 122
                 },
@@ -71721,47 +69641,6 @@
               ],
               "expression": [
                 "StructureDefinition.differential[0].element[2]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 135
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 24
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  },
-                  {
-                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": "StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.binding}, {ELEMENT,OperationDefinition.parameter.binding}"
-              },
-              "location": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
-              ],
-              "expression": [
-                "StructureDefinition.differential[0].element[3].binding[0].extension[0], element StructureDefinition.differential.element->ElementDefinition.binding.extension->Extension(http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)"
               ]
             }
           ]

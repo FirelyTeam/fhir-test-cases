@@ -53547,6 +53547,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 1
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -53580,6 +53588,14 @@
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
                 },
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 166
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "BindingValidator"
                 }
@@ -53600,10 +53616,92 @@
                 "text": "Terminology service failed while validating code 'fhir': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/hl7-work-group' is unknown."
               },
               "location": [
-                "StructureDefinition.extension[0].valueCode, element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
+                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
               ],
               "expression": [
-                "StructureDefinition.extension[0].valueCode, element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
+                "StructureDefinition.extension[0].valueCode[0], element StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value[x]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 3183
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ExtensionContextValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[1].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 4919
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ExtensionContextValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+                  }
+                ],
+                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,ElementDefinition.type.code}"
+              },
+              "location": [
+                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
+              ],
+              "expression": [
+                "StructureDefinition.snapshot[0].element[3].type[0].extension[0], element StructureDefinition.snapshot.element->ElementDefinition.type.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type)"
               ]
             }
           ]
@@ -58132,9 +58230,41 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "fatal",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "RegExValidator"
+                }
+              ],
+              "severity": "error",
               "code": "invalid",
-              "diagnostics": "One or more errors occurred. (string 'bad-id_1' is not a correct literal for a id. At Patient.id, line 3, position 19.)"
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.id->id.value"
+                  }
+                ],
+                "text": "Value 'bad-id_1' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
+              },
+              "location": [
+                "Patient.id[0].value"
+              ],
+              "expression": [
+                "Patient.id[0].value"
+              ]
             }
           ]
         }
@@ -58391,9 +58521,41 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "fatal",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 125
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "RegExValidator"
+                }
+              ],
+              "severity": "error",
               "code": "invalid",
-              "diagnostics": "One or more errors occurred. (string 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' is not a correct literal for a id. At Patient.id, line 3, position 126.)"
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.id->id.value"
+                  }
+                ],
+                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
+              },
+              "location": [
+                "Patient.id[0].value"
+              ],
+              "expression": [
+                "Patient.id[0].value"
+              ]
             }
           ]
         }
@@ -58650,9 +58812,41 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "fatal",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "RegExValidator"
+                }
+              ],
+              "severity": "error",
               "code": "invalid",
-              "diagnostics": "One or more errors occurred. (string 'bad-id 1' is not a correct literal for a id. At Patient.id, line 3, position 19.)"
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.id->id.value"
+                  }
+                ],
+                "text": "Value 'bad-id 1' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
+              },
+              "location": [
+                "Patient.id[0].value"
+              ],
+              "expression": [
+                "Patient.id[0].value"
+              ]
             }
           ]
         }
@@ -63286,17 +63480,337 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "error",
-              "code": "unknown",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 24
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 20
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.subject"
                   }
                 ],
-                "text": "Versions can only be used when the ResourceIdentity is a (relative) url"
-              }
+                "text": "Cannot resolve reference Patient/98549f1a-e0d5-4454-849c-f5b97d3ed299"
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].subject[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 52
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Cannot resolve reference AllergyIntolerance/e198be1e-9861-46af-9d97-841ef9f7c707"
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].section[0].entry[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].section[0].entry[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 73
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Cannot resolve reference MedicationStatement/d41ac499-c7e8-45fa-9246-69028bae178f"
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].section[1].entry[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].section[1].entry[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 94
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Cannot resolve reference Condition/da138a5d-633f-493f-9485-e5af1320db5b"
+              },
+              "location": [
+                "Bundle.entry[0].resource[0].section[2].entry[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].resource[0].section[2].entry[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 153
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 11
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ExtensionSchema"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4009"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->MedicationStatement.extension"
+                  }
+                ],
+                "text": "Unable to resolve reference to extension 'http://hl7.org/fhir/StructureDefinition/NarrativeLink'."
+              },
+              "location": [
+                "Bundle.entry[2].resource[0].extension"
+              ],
+              "expression": [
+                "Bundle.entry[2].resource[0].extension"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 155
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 126
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirUriValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->MedicationStatement.extension->Extension.value[x][uri]->uri.value"
+                  }
+                ],
+                "text": "Value 'urn:uuid:a6a8a8e6-415c-42e1-abf7-f8d876e5908b#MedicationSummary-d41ac499-c7e8-45fa-9246-69028bae178f' is not a valid URI"
+              },
+              "location": [
+                "Bundle.entry[2].resource[0].extension[0].valueUri[0].value, element Bundle.entry.resource->MedicationStatement.extension->Extension.value[x][uri]->uri.value"
+              ],
+              "expression": [
+                "Bundle.entry[2].resource[0].extension[0].valueUri[0].value, element Bundle.entry.resource->MedicationStatement.extension->Extension.value[x][uri]->uri.value"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 168
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 20
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->MedicationStatement.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/98549f1a-e0d5-4454-849c-f5b97d3ed299"
+              },
+              "location": [
+                "Bundle.entry[2].resource[0].subject[0]"
+              ],
+              "expression": [
+                "Bundle.entry[2].resource[0].subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 209
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 20
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->AllergyIntolerance.patient"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/98549f1a-e0d5-4454-849c-f5b97d3ed299"
+              },
+              "location": [
+                "Bundle.entry[3].resource[0].patient[0]"
+              ],
+              "expression": [
+                "Bundle.entry[3].resource[0].patient[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 236
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 20
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Condition.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/98549f1a-e0d5-4454-849c-f5b97d3ed299"
+              },
+              "location": [
+                "Bundle.entry[4].resource[0].subject[0]"
+              ],
+              "expression": [
+                "Bundle.entry[4].resource[0].subject[0]"
+              ]
             }
           ]
         }
@@ -72422,16 +72936,111 @@
           "issue": [
             {
               "severity": "error",
-              "code": "unknown",
+              "code": "invalid",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "1100"
                   }
                 ],
-                "text": "Versions can only be used when the ResourceIdentity is a (relative) url"
+                "text": "The 'id' attribute is invalid - The value 'AllergyIntolerance-urn:uuid:edf25255-bfcd-4e29-a797-e89ea4ef000c' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:ID' - The ':' character, hexadecimal value 0x3A, cannot be included in a name."
               }
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1100"
+                  }
+                ],
+                "text": "The 'id' attribute is invalid - The value 'AllergyIntolerance-urn:uuid:01ea6a58-df5f-4455-b6b2-7a31492be6b1' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:ID' - The ':' character, hexadecimal value 0x3A, cannot be included in a name."
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/narrativeLink"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 133
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 134
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTypeLabelValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->AllergyIntolerance.extension->Extension(http://hl7.org/fhir/StructureDefinition/narrativeLink).value[x]->url"
+                  }
+                ],
+                "text": "The declared type of the element (url) is incompatible with that of the instance (uri)."
+              },
+              "location": [
+                "Bundle.entry[2].resource[0].extension[0].valueUri[0], element Bundle.entry.resource->Composition.section.entry->AllergyIntolerance.extension->Extension(http://hl7.org/fhir/StructureDefinition/narrativeLink).value[x]->url"
+              ],
+              "expression": [
+                "Bundle.entry[2].resource[0].extension[0].valueUri[0], element Bundle.entry.resource->Composition.section.entry->AllergyIntolerance.extension->Extension(http://hl7.org/fhir/StructureDefinition/narrativeLink).value[x]->url"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/narrativeLink"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 172
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 132
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTypeLabelValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1003"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->AllergyIntolerance.extension->Extension(http://hl7.org/fhir/StructureDefinition/narrativeLink).value[x]->url"
+                  }
+                ],
+                "text": "The declared type of the element (url) is incompatible with that of the instance (uri)."
+              },
+              "location": [
+                "Bundle.entry[3].resource[0].extension[0].valueUri[0], element Bundle.entry.resource->Composition.section.entry->AllergyIntolerance.extension->Extension(http://hl7.org/fhir/StructureDefinition/narrativeLink).value[x]->url"
+              ],
+              "expression": [
+                "Bundle.entry[3].resource[0].extension[0].valueUri[0], element Bundle.entry.resource->Composition.section.entry->AllergyIntolerance.extension->Extension(http://hl7.org/fhir/StructureDefinition/narrativeLink).value[x]->url"
+              ]
             }
           ]
         }
@@ -72476,15 +73085,15 @@
           "issue": [
             {
               "severity": "error",
-              "code": "unknown",
+              "code": "invalid",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "1100"
                   }
                 ],
-                "text": "Versions can only be used when the ResourceIdentity is a (relative) url"
+                "text": "The 'idref' attribute is not declared."
               }
             }
           ]

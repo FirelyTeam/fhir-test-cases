@@ -8826,7 +8826,7 @@
                       "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
                     }
                   ],
-                  "text": "Instance count at element \"category\" is 2, which is not within the specified cardinality of 0..1"
+                  "text": "Instance count at element 'category' is 2, which is not within the specified cardinality of 0..1"
                 },
                 "location": [
                   "Observation, element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
@@ -10093,7 +10093,7 @@
                     "code": "List.entry"
                   }
                 ],
-                "text": "Missing required member: item"
+                "text": "Missing required member: 'item'"
               },
               "location": [
                 "List.entry[0]"
@@ -10207,7 +10207,7 @@
                     "code": "List.entry"
                   }
                 ],
-                "text": "Missing required member: item"
+                "text": "Missing required member: 'item'"
               },
               "location": [
                 "List.entry[0]"
@@ -13126,7 +13126,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: status (for slice code-A)"
+                  "text": "Missing required member: 'status' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13167,7 +13167,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: type (for slice code-A)"
+                  "text": "Missing required member: 'type' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13208,7 +13208,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: date (for slice code-A)"
+                  "text": "Missing required member: 'date' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13249,7 +13249,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: author (for slice code-A)"
+                  "text": "Missing required member: 'author' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13290,7 +13290,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: title (for slice code-A)"
+                  "text": "Missing required member: 'title' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13331,7 +13331,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: status (for slice code-A)"
+                  "text": "Missing required member: 'status' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13372,7 +13372,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: type (for slice code-A)"
+                  "text": "Missing required member: 'type' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13413,7 +13413,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: date (for slice code-A)"
+                  "text": "Missing required member: 'date' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13454,7 +13454,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: author (for slice code-A)"
+                  "text": "Missing required member: 'author' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13495,7 +13495,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: status (for slice code-A)"
+                  "text": "Missing required member: 'status' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13536,7 +13536,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: type (for slice code-A)"
+                  "text": "Missing required member: 'type' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13577,7 +13577,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: date (for slice code-A)"
+                  "text": "Missing required member: 'date' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13618,7 +13618,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: author (for slice code-A)"
+                  "text": "Missing required member: 'author' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13659,7 +13659,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: title (for slice code-A)"
+                  "text": "Missing required member: 'title' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13823,7 +13823,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: status (for slice code-A)"
+                  "text": "Missing required member: 'status' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13864,7 +13864,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: type (for slice code-A)"
+                  "text": "Missing required member: 'type' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13905,7 +13905,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: date (for slice code-A)"
+                  "text": "Missing required member: 'date' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13946,7 +13946,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: author (for slice code-A)"
+                  "text": "Missing required member: 'author' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -13987,7 +13987,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: title (for slice code-A)"
+                  "text": "Missing required member: 'title' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[0], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14028,7 +14028,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: status (for slice code-A)"
+                  "text": "Missing required member: 'status' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14069,7 +14069,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: type (for slice code-A)"
+                  "text": "Missing required member: 'type' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14110,7 +14110,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: date (for slice code-A)"
+                  "text": "Missing required member: 'date' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14151,7 +14151,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: author (for slice code-A)"
+                  "text": "Missing required member: 'author' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14192,7 +14192,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: title (for slice code-A)"
+                  "text": "Missing required member: 'title' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[1], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14233,7 +14233,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: status (for slice code-A)"
+                  "text": "Missing required member: 'status' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14274,7 +14274,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: type (for slice code-A)"
+                  "text": "Missing required member: 'type' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14315,7 +14315,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: date (for slice code-A)"
+                  "text": "Missing required member: 'date' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14356,7 +14356,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: author (for slice code-A)"
+                  "text": "Missing required member: 'author' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -14397,7 +14397,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
                     }
                   ],
-                  "text": "Missing required member: title (for slice code-A)"
+                  "text": "Missing required member: 'title' (for slice code-A)"
                 },
                 "location": [
                   "Composition.section[2], element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section[code-A]->Composition(http://hl7.org/fhir/test/StructureDefinition/document-section-library)"
@@ -17054,7 +17054,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/cholesterol)"
                   }
                 ],
-                "text": "Missing required member: referenceRange"
+                "text": "Missing required member: 'referenceRange'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/cholesterol)"
@@ -19856,7 +19856,7 @@
                       "code": "Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]"
                     }
                   ],
-                  "text": "Instance count at element \"coding\" is 3, which is not within the specified cardinality of 0..1 (for slice slice1)"
+                  "text": "Instance count at element 'coding' is 3, which is not within the specified cardinality of 0..1 (for slice slice1)"
                 },
                 "location": [
                   "Medication.code[0], element Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]"
@@ -21388,7 +21388,7 @@
                       "code": "Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]"
                     }
                   ],
-                  "text": "Instance count at element \"coding\" is 3, which is not within the specified cardinality of 0..1 (for slice slice1)"
+                  "text": "Instance count at element 'coding' is 3, which is not within the specified cardinality of 0..1 (for slice slice1)"
                 },
                 "location": [
                   "Medication.code[0], element Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]"
@@ -23341,7 +23341,7 @@
                       "code": "Patient(urn:oid:568584c9-6f10-4f80-8658-be04bb64a698).address->Address(urn:oid:29a8b2a7-070f-4383-af2c-bdea61d358c9)"
                     }
                   ],
-                  "text": "Missing required member: use"
+                  "text": "Missing required member: 'use'"
                 },
                 "location": [
                   "Patient.address[0], element Patient(urn:oid:568584c9-6f10-4f80-8658-be04bb64a698).address->Address(urn:oid:29a8b2a7-070f-4383-af2c-bdea61d358c9)"
@@ -23382,7 +23382,7 @@
                       "code": "Patient(urn:oid:568584c9-6f10-4f80-8658-be04bb64a698).address->Address(urn:oid:81812c1b-6be6-47ab-9518-975b068a6557)"
                     }
                   ],
-                  "text": "Missing required member: type"
+                  "text": "Missing required member: 'type'"
                 },
                 "location": [
                   "Patient.address[0], element Patient(urn:oid:568584c9-6f10-4f80-8658-be04bb64a698).address->Address(urn:oid:81812c1b-6be6-47ab-9518-975b068a6557)"
@@ -23782,7 +23782,7 @@
                       "code": "Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]"
                     }
                   ],
-                  "text": "Instance count at element \"extension\" is 2, which is not within the specified cardinality of 0..1 (for slice simpleExtension)"
+                  "text": "Instance count at element 'extension' is 2, which is not within the specified cardinality of 0..1 (for slice simpleExtension)"
                 },
                 "location": [
                   "Person.address[0], element Person(http://example.org/fhir/StructureDefinition/PersonWithTwoAddresstypes).address->Address(http://example.org/fhir/StructureDefinition/AddressWithExtension).extension[simpleExtension]"
@@ -24558,7 +24558,7 @@
                     "code": "Patient.extension->Extension"
                   }
                 ],
-                "text": "Missing required member: url"
+                "text": "Missing required member: 'url'"
               },
               "location": [
                 "Patient.extension[0]"
@@ -25502,7 +25502,7 @@
                       "code": "Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry[Obs1]"
                     }
                   ],
-                  "text": "Instance count at element \"entry\" is 2, which is not within the specified cardinality of 1..1"
+                  "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1"
                 },
                 "location": [
                   "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry[Obs1]"
@@ -28936,7 +28936,7 @@
                     "code": "StructureDefinition"
                   }
                 ],
-                "text": "Missing required member: name"
+                "text": "Missing required member: 'name'"
               },
               "location": [
                 "StructureDefinition"
@@ -33171,7 +33171,7 @@
                     "code": "Measure.group.population.criteria->Expression"
                   }
                 ],
-                "text": "Missing required member: language"
+                "text": "Missing required member: 'language'"
               },
               "location": [
                 "Measure.group[0].population[0].criteria[0]"
@@ -33357,7 +33357,7 @@
                     "code": "Measure.group.population"
                   }
                 ],
-                "text": "Missing required member: criteria"
+                "text": "Missing required member: 'criteria'"
               },
               "location": [
                 "Measure.group[0].population[0]"
@@ -35977,7 +35977,7 @@
                       "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry[slice1]"
                     }
                   ],
-                  "text": "Instance count at element \"entry\" is 2, which is not within the specified cardinality of 1..1"
+                  "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1"
                 },
                 "location": [
                   "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry[slice1]"
@@ -37870,7 +37870,7 @@
                       "code": "Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-none)"
                     }
                   ],
-                  "text": "Missing required member: identifier"
+                  "text": "Missing required member: 'identifier'"
                 },
                 "location": [
                   "Patient, element Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-none)"
@@ -37982,7 +37982,7 @@
                       "code": "Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-fixed)"
                     }
                   ],
-                  "text": "Missing required member: identifier"
+                  "text": "Missing required member: 'identifier'"
                 },
                 "location": [
                   "Patient, element Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-fixed)"
@@ -38094,7 +38094,7 @@
                       "code": "Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-pattern)"
                     }
                   ],
-                  "text": "Missing required member: identifier"
+                  "text": "Missing required member: 'identifier'"
                 },
                 "location": [
                   "Patient, element Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-pattern)"
@@ -38569,7 +38569,7 @@
                       "code": "Parameters(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profile-params).parameter[one].resource->Patient(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profiles-patient)"
                     }
                   ],
-                  "text": "Missing required member: name (for slice one)"
+                  "text": "Missing required member: 'name' (for slice one)"
                 },
                 "location": [
                   "Parameters.parameter[0].resource[0], element Parameters(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profile-params).parameter[one].resource->Patient(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profiles-patient)"
@@ -38677,7 +38677,7 @@
                       "code": "Parameters(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profile-params).parameter[one].resource->Patient(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profiles-patient)"
                     }
                   ],
-                  "text": "Missing required member: name (for slice one)"
+                  "text": "Missing required member: 'name' (for slice one)"
                 },
                 "location": [
                   "Parameters.parameter[0].resource[0], element Parameters(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profile-params).parameter[one].resource->Patient(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profiles-patient)"
@@ -38718,7 +38718,7 @@
                       "code": "Parameters(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profile-params).parameter[one].resource->Patient(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profiles-patient2)"
                     }
                   ],
-                  "text": "Missing required member: dateOfBirth (for slice one)"
+                  "text": "Missing required member: 'dateOfBirth' (for slice one)"
                 },
                 "location": [
                   "Parameters.parameter[0].resource[0], element Parameters(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profile-params).parameter[one].resource->Patient(http://hl7.org/fhir/test/StructureDefinition/parameters-profiled-resource-profiles-patient2)"
@@ -39487,7 +39487,7 @@
                     "code": "Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[Binary]"
                   }
                 ],
-                "text": "Instance count at element \"entry\" is 2, which is not within the specified cardinality of 0..1"
+                "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 0..1"
               },
               "location": [
                 "Bundle.entry[0].resource[0].section[0], element Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[Binary]"
@@ -42681,7 +42681,7 @@
                       "code": "Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter.extension"
                     }
                   ],
-                  "text": "Instance count at element \"extension\" is 1, which is not within the specified cardinality of 0..0"
+                  "text": "Instance count at element 'extension' is 1, which is not within the specified cardinality of 0..0"
                 },
                 "location": [
                   "Parameters.parameter[0], element Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter.extension"
@@ -42722,7 +42722,7 @@
                       "code": "Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter.modifierExtension"
                     }
                   ],
-                  "text": "Instance count at element \"modifierExtension\" is 1, which is not within the specified cardinality of 0..0"
+                  "text": "Instance count at element 'modifierExtension' is 1, which is not within the specified cardinality of 0..0"
                 },
                 "location": [
                   "Parameters.parameter[0], element Parameters(http://sra.digitalhealth.gov.au/fhir/StructureDefinition/test-input-params).parameter.modifierExtension"
@@ -44359,7 +44359,7 @@
                     "code": "MedicationRequest"
                   }
                 ],
-                "text": "Missing required member: medication[x]"
+                "text": "Missing required member: 'medication[x]'"
               },
               "location": [
                 "MedicationRequest"
@@ -44641,7 +44641,7 @@
                     "code": "MedicationRequest"
                   }
                 ],
-                "text": "Missing required member: medication[x]"
+                "text": "Missing required member: 'medication[x]'"
               },
               "location": [
                 "MedicationRequest"
@@ -44913,7 +44913,7 @@
                     "code": "MedicationRequest"
                   }
                 ],
-                "text": "Missing required member: medication[x]"
+                "text": "Missing required member: 'medication[x]'"
               },
               "location": [
                 "MedicationRequest"
@@ -50851,7 +50851,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice1]"
                     }
                   ],
-                  "text": "Instance count at element \"referenceRange\" is 2, which is not within the specified cardinality of 1..1 (for slice Slice1)"
+                  "text": "Instance count at element 'referenceRange' is 2, which is not within the specified cardinality of 1..1 (for slice Slice1)"
                 },
                 "location": [
                   "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice1]"
@@ -50892,7 +50892,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice1]"
                     }
                   ],
-                  "text": "Missing required member: appliesTo (for slice Slice1)"
+                  "text": "Missing required member: 'appliesTo' (for slice Slice1)"
                 },
                 "location": [
                   "Observation.referenceRange[0], element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice1]"
@@ -50933,7 +50933,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice1]"
                     }
                   ],
-                  "text": "Missing required member: appliesTo (for slice Slice1)"
+                  "text": "Missing required member: 'appliesTo' (for slice Slice1)"
                 },
                 "location": [
                   "Observation.referenceRange[1], element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice1]"
@@ -51050,7 +51050,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice3]"
                     }
                   ],
-                  "text": "Instance count at element \"referenceRange\" is 2, which is not within the specified cardinality of 1..1 (for slice Slice3)"
+                  "text": "Instance count at element 'referenceRange' is 2, which is not within the specified cardinality of 1..1 (for slice Slice3)"
                 },
                 "location": [
                   "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange[Slice3]"
@@ -53857,7 +53857,7 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice]"
                   }
                 ],
-                "text": "Instance count at element \"entry\" is 2, which is not within the specified cardinality of 1..1"
+                "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1"
               },
               "location": [
                 "Bundle, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice]"
@@ -60196,7 +60196,7 @@
                     "code": "Bundle.entry.resource->MeasureReport.contained->Bundle.entry.resource->List"
                   }
                 ],
-                "text": "Missing required member: status"
+                "text": "Missing required member: 'status'"
               },
               "location": [
                 "Bundle.entry[1].resource[0].contained[0].entry[0].resource[0]"
@@ -60233,7 +60233,7 @@
                     "code": "Bundle.entry.resource->MeasureReport.contained->Bundle.entry.resource->List"
                   }
                 ],
-                "text": "Missing required member: mode"
+                "text": "Missing required member: 'mode'"
               },
               "location": [
                 "Bundle.entry[1].resource[0].contained[0].entry[0].resource[0]"
@@ -60771,7 +60771,7 @@
                     "code": "Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).code.coding"
                   }
                 ],
-                "text": "Instance count at element \"coding\" is 2, which is not within the specified cardinality of 0..1"
+                "text": "Instance count at element 'coding' is 2, which is not within the specified cardinality of 0..1"
               },
               "location": [
                 "Observation.code[0], element Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).code.coding"
@@ -61841,7 +61841,7 @@
                     "code": "Patient.extension->Extension"
                   }
                 ],
-                "text": "Missing required member: url"
+                "text": "Missing required member: 'url'"
               },
               "location": [
                 "Patient.extension[2]"
@@ -63595,7 +63595,7 @@
                     "code": "StructureDefinition"
                   }
                 ],
-                "text": "Missing required member: name"
+                "text": "Missing required member: 'name'"
               },
               "location": [
                 "StructureDefinition"
@@ -63632,7 +63632,7 @@
                     "code": "StructureDefinition"
                   }
                 ],
-                "text": "Missing required member: status"
+                "text": "Missing required member: 'status'"
               },
               "location": [
                 "StructureDefinition"
@@ -63669,7 +63669,7 @@
                     "code": "StructureDefinition"
                   }
                 ],
-                "text": "Missing required member: abstract"
+                "text": "Missing required member: 'abstract'"
               },
               "location": [
                 "StructureDefinition"
@@ -63799,7 +63799,7 @@
                     "code": "StructureDefinition"
                   }
                 ],
-                "text": "Missing required member: name"
+                "text": "Missing required member: 'name'"
               },
               "location": [
                 "StructureDefinition"
@@ -63836,7 +63836,7 @@
                     "code": "StructureDefinition"
                   }
                 ],
-                "text": "Missing required member: status"
+                "text": "Missing required member: 'status'"
               },
               "location": [
                 "StructureDefinition"
@@ -63873,7 +63873,7 @@
                     "code": "StructureDefinition"
                   }
                 ],
-                "text": "Missing required member: abstract"
+                "text": "Missing required member: 'abstract'"
               },
               "location": [
                 "StructureDefinition"
@@ -66521,7 +66521,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp)"
                   }
                 ],
-                "text": "Missing required member: category"
+                "text": "Missing required member: 'category'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp)"
@@ -66562,7 +66562,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp)"
                   }
                 ],
-                "text": "Missing required member: code"
+                "text": "Missing required member: 'code'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp)"
@@ -66603,7 +66603,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp)"
                   }
                 ],
-                "text": "Missing required member: subject"
+                "text": "Missing required member: 'subject'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp)"
@@ -66644,7 +66644,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp)"
                   }
                 ],
-                "text": "Missing required member: effective[x]"
+                "text": "Missing required member: 'effective[x]'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp)"
@@ -66685,7 +66685,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp)"
                   }
                 ],
-                "text": "Missing required member: component"
+                "text": "Missing required member: 'component'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp)"
@@ -66726,7 +66726,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp).value[x][valueQuantity]"
                   }
                 ],
-                "text": "Instance count at element \"value\" is 1, which is not within the specified cardinality of 0..0"
+                "text": "Instance count at element 'value' is 1, which is not within the specified cardinality of 0..0"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).value[x][valueQuantity]"
@@ -70231,7 +70231,7 @@
                     "code": "Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"
                   }
                 ],
-                "text": "Missing required member: coding"
+                "text": "Missing required member: 'coding'"
               },
               "location": [
                 "Observation.category[2], element Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"
@@ -70272,7 +70272,7 @@
                     "code": "Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"
                   }
                 ],
-                "text": "Missing required member: coding"
+                "text": "Missing required member: 'coding'"
               },
               "location": [
                 "Observation.category[3], element Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"
@@ -70571,7 +70571,7 @@
                     "code": "Bundle.entry.resource->Composition.subject"
                   }
                 ],
-                "text": "Instance count at element \"subject\" is 2, which is not within the specified cardinality of 0..1"
+                "text": "Instance count at element 'subject' is 2, which is not within the specified cardinality of 0..1"
               },
               "location": [
                 "Bundle.entry[0].resource[0]"
@@ -70861,7 +70861,7 @@
                     "code": "Bundle.entry.resource->Composition"
                   }
                 ],
-                "text": "Missing required member: status"
+                "text": "Missing required member: 'status'"
               },
               "location": [
                 "Bundle.entry[0].resource[0]"
@@ -70898,7 +70898,7 @@
                     "code": "Bundle.entry.resource->Composition"
                   }
                 ],
-                "text": "Missing required member: type"
+                "text": "Missing required member: 'type'"
               },
               "location": [
                 "Bundle.entry[0].resource[0]"
@@ -70935,7 +70935,7 @@
                     "code": "Bundle.entry.resource->Composition"
                   }
                 ],
-                "text": "Missing required member: date"
+                "text": "Missing required member: 'date'"
               },
               "location": [
                 "Bundle.entry[0].resource[0]"
@@ -70972,7 +70972,7 @@
                     "code": "Bundle.entry.resource->Composition"
                   }
                 ],
-                "text": "Missing required member: author"
+                "text": "Missing required member: 'author'"
               },
               "location": [
                 "Bundle.entry[0].resource[0]"
@@ -71009,7 +71009,7 @@
                     "code": "Bundle.entry.resource->Composition"
                   }
                 ],
-                "text": "Missing required member: title"
+                "text": "Missing required member: 'title'"
               },
               "location": [
                 "Bundle.entry[0].resource[0]"

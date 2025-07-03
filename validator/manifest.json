@@ -1153,7 +1153,46 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 20
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirUriValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.fullUrl->uri"
+                  }
+                ],
+                "text": "Value '' is not a valid URI"
+              },
+              "location": [
+                "Bundle.entry[0].fullUrl[0]"
+              ],
+              "expression": [
+                "Bundle.entry[0].fullUrl[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -10535,6 +10574,43 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirUriValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Parameters.parameter.value[x][uri]->uri"
+                  }
+                ],
+                "text": "Value '' is not a valid URI (for slice uri)"
+              },
+              "location": [
+                "Parameters.parameter[35].value[0], element Parameters.parameter.value[x][uri]->uri"
+              ],
+              "expression": [
+                "Parameters.parameter[35].value[0], element Parameters.parameter.value[x][uri]->uri"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 169
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RegExValidator"
                 }
               ],
@@ -12520,6 +12596,43 @@
               ],
               "expression": [
                 "Parameters.parameter[29].value[0].extension[0].value[0], element Parameters.parameter.value[x][string]->string.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value[x]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 149
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirUriValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Parameters.parameter.value[x][uri]->uri"
+                  }
+                ],
+                "text": "Value '' is not a valid URI (for slice uri)"
+              },
+              "location": [
+                "Parameters.parameter[30].value[0], element Parameters.parameter.value[x][uri]->uri"
+              ],
+              "expression": [
+                "Parameters.parameter[30].value[0], element Parameters.parameter.value[x][uri]->uri"
               ]
             },
             {
@@ -31699,7 +31812,46 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirUriValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.extension->Extension.url"
+                  }
+                ],
+                "text": "Value '' is not a valid URI"
+              },
+              "location": [
+                "Patient.extension[0].url[0]"
+              ],
+              "expression": [
+                "Patient.extension[0].url[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -66680,6 +66832,43 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 4
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirUriValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.implicitRules->uri"
+                  }
+                ],
+                "text": "Value '' is not a valid URI"
+              },
+              "location": [
+                "Patient.implicitRules[0]"
+              ],
+              "expression": [
+                "Patient.implicitRules[0]"
+              ]
+            },
             {
               "extension": [
                 {

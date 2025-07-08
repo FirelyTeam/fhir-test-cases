@@ -46044,9 +46044,64 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
-              "severity": "fatal",
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient'."
+              },
+              "location": [
+                "Patient"
+              ],
+              "expression": [
+                "Patient"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 10
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 26
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "RegExValidator"
+                }
+              ],
+              "severity": "error",
               "code": "invalid",
-              "diagnostics": "'0x0D' is invalid within a JSON string. The string should be correctly escaped. LineNumber: 308 | BytePositionInLine: 249."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.address->Address.country->string"
+                  }
+                ],
+                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*'"
+              },
+              "location": [
+                "Patient.address[0].country[0]"
+              ],
+              "expression": [
+                "Patient.address[0].country[0]"
+              ]
             }
           ]
         }
@@ -46078,7 +46133,7 @@
                 "expression": [
                   "Patient.address[0].country.extension[0].value.ofType(CodeableConcept)"
                 ]
-              }
+              }fi
             ]
           }
         },
@@ -46087,17 +46142,9 @@
             "resourceType": "OperationOutcome",
             "issue": [
               {
-                "severity": "error",
-                "code": "unknown",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "-1"
-                    }
-                  ],
-                  "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
-                }
+                "severity": "fatal",
+                "code": "invalid",
+                "diagnostics": "'0x0D' is invalid within a JSON string. The string should be correctly escaped. LineNumber: 308 | BytePositionInLine: 249."
               }
             ]
           }

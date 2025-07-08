@@ -8410,7 +8410,7 @@
                       "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
                     }
                   ],
-                  "text": "No elements matched required slice: 'SystolicBP'"
+                  "text": "No elements matched required slice: 'component:SystolicBP'"
                 },
                 "location": [
                   "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
@@ -9732,7 +9732,7 @@
                       "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category"
                     }
                   ],
-                  "text": "No elements matched required slice: 'LaboratoryTestResultCode'"
+                  "text": "No elements matched required slice: 'category:LaboratoryTestResultCode'"
                 },
                 "location": [
                   "Observation, element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category"
@@ -18474,7 +18474,7 @@
                       "code": "Patient(http://hl7.org/fhir/StructureDefinition/patient-patternidentifier-profile).identifier"
                     }
                   ],
-                  "text": "No elements matched required slice: 'MR'"
+                  "text": "No elements matched required slice: 'identifier:MR'"
                 },
                 "location": [
                   "Patient, element Patient(http://hl7.org/fhir/StructureDefinition/patient-patternidentifier-profile).identifier"
@@ -19087,7 +19087,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
                     }
                   ],
-                  "text": "No elements matched required slice: 'code-B'"
+                  "text": "No elements matched required slice: 'section:code-B'"
                 },
                 "location": [
                   "Composition, element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
@@ -19825,7 +19825,7 @@
                       "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
                     }
                   ],
-                  "text": "No elements matched required slice: 'code-B'"
+                  "text": "No elements matched required slice: 'section:code-B'"
                 },
                 "location": [
                   "Composition, element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
@@ -22612,7 +22612,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
                   }
                 ],
-                "text": "No elements matched required slice: 'SystolicBP'"
+                "text": "No elements matched required slice: 'component:SystolicBP'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
@@ -23254,7 +23254,7 @@
                       "code": "Observation(http://hl7.org/fhir/StructureDefinition/observation-bp-profile).component"
                     }
                   ],
-                  "text": "No elements matched required slice: 'SystolicBP'"
+                  "text": "No elements matched required slice: 'component:SystolicBP'"
                 },
                 "location": [
                   "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/observation-bp-profile).component"
@@ -25795,7 +25795,7 @@
                       "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
                     }
                   ],
-                  "text": "No elements matched required slice: 'slice1'"
+                  "text": "No elements matched required slice: 'entry:slice1'"
                 },
                 "location": [
                   "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
@@ -25915,7 +25915,7 @@
                       "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
                     }
                   ],
-                  "text": "No elements matched required slice: 'slice1'"
+                  "text": "No elements matched required slice: 'entry:slice1'"
                 },
                 "location": [
                   "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
@@ -32083,7 +32083,7 @@
                     "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal).extension"
                   }
                 ],
-                "text": "No elements matched required slice: 'species'"
+                "text": "No elements matched required slice: 'extension:species'"
               },
               "location": [
                 "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal).extension"
@@ -33263,7 +33263,7 @@
                       "code": "Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Obs2'"
+                  "text": "No elements matched required slice: 'entry:Obs2'"
                 },
                 "location": [
                   "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
@@ -33473,7 +33473,7 @@
                       "code": "Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Patient'"
+                  "text": "No elements matched required slice: 'entry:Patient'"
                 },
                 "location": [
                   "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
@@ -39163,7 +39163,7 @@
                       "code": "Observation(http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein).code.coding"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Urinalysis-SNOMED-CT'"
+                  "text": "No elements matched required slice: 'coding:Urinalysis-SNOMED-CT'"
                 },
                 "location": [
                   "Observation.code[0], element Observation(http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein).code.coding"
@@ -45698,7 +45698,7 @@
                       "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry"
                     }
                   ],
-                  "text": "No elements matched required slice: 'slice2'"
+                  "text": "No elements matched required slice: 'entry:slice2'"
                 },
                 "location": [
                   "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry"
@@ -60560,7 +60560,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Slice3'"
+                  "text": "No elements matched required slice: 'referenceRange:Slice3'"
                 },
                 "location": [
                   "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
@@ -60669,7 +60669,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Slice2'"
+                  "text": "No elements matched required slice: 'referenceRange:Slice2'"
                 },
                 "location": [
                   "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
@@ -60702,7 +60702,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Slice3'"
+                  "text": "No elements matched required slice: 'referenceRange:Slice3'"
                 },
                 "location": [
                   "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
@@ -60926,7 +60926,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Slice1'"
+                  "text": "No elements matched required slice: 'referenceRange:Slice1'"
                 },
                 "location": [
                   "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
@@ -60959,7 +60959,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
                     }
                   ],
-                  "text": "No elements matched required slice: 'Slice2'"
+                  "text": "No elements matched required slice: 'referenceRange:Slice2'"
                 },
                 "location": [
                   "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
@@ -61094,7 +61094,7 @@
                     "code": "Bundle(http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo).entry"
                   }
                 ],
-                "text": "No elements matched required slice: 'Composition'"
+                "text": "No elements matched required slice: 'entry:Composition'"
               },
               "location": [
                 "Bundle, element Bundle(http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo).entry"
@@ -81004,7 +81004,7 @@
                     "code": "Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category"
                   }
                 ],
-                "text": "No elements matched required slice: 'slice3'"
+                "text": "No elements matched required slice: 'category:slice3'"
               },
               "location": [
                 "Observation, element Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category"

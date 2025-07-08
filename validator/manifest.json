@@ -1224,7 +1224,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Choice element 'value should be suffixed by a type. At Group.characteristic[0], line 10, position 15."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON114"
+                  }
+                ],
+                "text": "Syntax error in source: Choice element 'value should be suffixed by a type. At Group.characteristic[0], line 10, position 15."
+              }
             }
           ]
         }
@@ -1760,7 +1768,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An object needs to have at least one property. At List.entry[0], line 8, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON120"
+                  }
+                ],
+                "text": "Syntax error in source: An object needs to have at least one property. At List.entry[0], line 8, position 4."
+              }
             }
           ]
         }
@@ -1777,7 +1793,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An array needs to have at least one element. At List.entry[0], line 7, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON121"
+                  }
+                ],
+                "text": "Syntax error in source: An array needs to have at least one element. At List.entry[0], line 7, position 4."
+              }
             }
           ]
         }
@@ -3070,7 +3094,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Encountered duplicate property 'active'. At Patient.active, line 10, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON129"
+                  }
+                ],
+                "text": "Syntax error in source: Encountered duplicate property 'active'. At Patient.active, line 10, position 2."
+              }
             }
           ]
         }
@@ -13576,7 +13608,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Choice element names should be suffixed by a type. At Group.characteristic[0], line 8, position 6."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML105"
+                  }
+                ],
+                "text": "Syntax error in source: Choice element names should be suffixed by a type. At Group.characteristic[0], line 8, position 6."
+              }
             }
           ]
         }
@@ -14310,7 +14350,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At List.id, line 4, position 20."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML113"
+                  }
+                ],
+                "text": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At List.id, line 4, position 20."
+              }
             }
           ]
         }
@@ -14542,22 +14590,54 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List, line 2, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML112"
+                  }
+                ],
+                "text": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List, line 2, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.id, line 4, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML112"
+                  }
+                ],
+                "text": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.id, line 4, position 4."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.status, line 5, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML112"
+                  }
+                ],
+                "text": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.status, line 5, position 4."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.mode, line 6, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML112"
+                  }
+                ],
+                "text": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.mode, line 6, position 4."
+              }
             }
           ]
         }
@@ -14591,7 +14671,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.id, line 4, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML112"
+                  }
+                ],
+                "text": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.id, line 4, position 4."
+              }
             }
           ]
         }
@@ -14625,7 +14713,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.id, line 4, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML112"
+                  }
+                ],
+                "text": "Syntax error in source: Element uses the namespace 'http://hl7.org/fhir1', which is not allowed. At List.id, line 4, position 4."
+              }
             }
           ]
         }
@@ -14660,7 +14756,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element 'status' is not in the correct order, should go before element 'mode'. At List.status, line 4, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML109"
+                  }
+                ],
+                "text": "Syntax error in source: Element 'status' is not in the correct order, should go before element 'mode'. At List.status, line 4, position 4."
+              }
             }
           ]
         }
@@ -14852,7 +14956,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Narrative has incorrect namespace. Namespace should be http://www.w3.org/1999/xhtml At List.text.div, line 7, position 6."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML107"
+                  }
+                ],
+                "text": "Syntax error in source: Narrative has incorrect namespace. Namespace should be http://www.w3.org/1999/xhtml At List.text.div, line 7, position 6."
+              }
             }
           ]
         }
@@ -14941,7 +15053,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Narrative has incorrect namespace. Namespace should be http://www.w3.org/1999/xhtml At List.text.div, line 7, position 6."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML107"
+                  }
+                ],
+                "text": "Syntax error in source: Narrative has incorrect namespace. Namespace should be http://www.w3.org/1999/xhtml At List.text.div, line 7, position 6."
+              }
             }
           ]
         }
@@ -17635,7 +17755,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element 'type' is not in the correct order, should go before element 'identifier'. At Observation.subject.type, line 11, position 6."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML109"
+                  }
+                ],
+                "text": "Syntax error in source: Element 'type' is not in the correct order, should go before element 'identifier'. At Observation.subject.type, line 11, position 6."
+              }
             }
           ]
         }
@@ -26036,7 +26164,15 @@
               {
                 "severity": "warning",
                 "code": "structure",
-                "diagnostics": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML109"
+                    }
+                  ],
+                  "text": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                }
               }
             ]
           }
@@ -26163,7 +26299,15 @@
               {
                 "severity": "warning",
                 "code": "structure",
-                "diagnostics": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML109"
+                    }
+                  ],
+                  "text": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                }
               }
             ]
           }
@@ -26290,7 +26434,15 @@
               {
                 "severity": "warning",
                 "code": "structure",
-                "diagnostics": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML109"
+                    }
+                  ],
+                  "text": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                }
               }
             ]
           }
@@ -26529,7 +26681,15 @@
               {
                 "severity": "warning",
                 "code": "structure",
-                "diagnostics": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML109"
+                    }
+                  ],
+                  "text": "Syntax error in source: Element 'extension' is not in the correct order, should go before element 'valueSet'. At StructureDefinition.differential.element[0].binding.extension[0], line 20, position 10."
+                }
               }
             ]
           }
@@ -30358,27 +30518,67 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element 'type' is not in the correct order, should go before element 'title'. At Bundle.entry[0].resource.type, line 42, position 10."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML109"
+                  }
+                ],
+                "text": "Syntax error in source: Element 'type' is not in the correct order, should go before element 'title'. At Bundle.entry[0].resource.type, line 42, position 10."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element 'subject' is not in the correct order, should go before element 'title'. At Bundle.entry[0].resource.subject, line 50, position 10."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML109"
+                  }
+                ],
+                "text": "Syntax error in source: Element 'subject' is not in the correct order, should go before element 'title'. At Bundle.entry[0].resource.subject, line 50, position 10."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element 'date' is not in the correct order, should go before element 'title'. At Bundle.entry[0].resource.date, line 53, position 10."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML109"
+                  }
+                ],
+                "text": "Syntax error in source: Element 'date' is not in the correct order, should go before element 'title'. At Bundle.entry[0].resource.date, line 53, position 10."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element 'telecom' is not in the correct order, should go before element 'address'. At Bundle.entry[1].resource.telecom[0], line 144, position 10."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML109"
+                  }
+                ],
+                "text": "Syntax error in source: Element 'telecom' is not in the correct order, should go before element 'address'. At Bundle.entry[1].resource.telecom[0], line 144, position 10."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Bundle.entry[13], line 424, position 11."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML113"
+                  }
+                ],
+                "text": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Bundle.entry[13], line 424, position 11."
+              }
             }
           ]
         }
@@ -39943,7 +40143,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At MedicationDispense.whenHandedOver, line 7, position 25."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At MedicationDispense.whenHandedOver, line 7, position 25."
+              }
             }
           ]
         }
@@ -46388,7 +46596,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Patient.name[0].text.script, line 10, position 36."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML113"
+                  }
+                ],
+                "text": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Patient.name[0].text.script, line 10, position 36."
+              }
             }
           ]
         }
@@ -49742,17 +49958,41 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element has no namespace, expected the HL7 FHIR namespace (http://hl7.org/fhir) At Header, line 2, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML101"
+                  }
+                ],
+                "text": "Syntax error in source: Element has no namespace, expected the HL7 FHIR namespace (http://hl7.org/fhir) At Header, line 2, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Element has no namespace, expected the HL7 FHIR namespace (http://hl7.org/fhir) At Header.ReceivingApplication, line 3, position 6."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML101"
+                  }
+                ],
+                "text": "Syntax error in source: Element has no namespace, expected the HL7 FHIR namespace (http://hl7.org/fhir) At Header.ReceivingApplication, line 3, position 6."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Header.ReceivingApplication, line 3, position 27."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML113"
+                  }
+                ],
+                "text": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Header.ReceivingApplication, line 3, position 27."
+              }
             }
           ]
         }
@@ -53831,7 +54071,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An array needs to have at least one element. At DocumentReference.category[0].coding[0], line 5, position 21."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON121"
+                  }
+                ],
+                "text": "Syntax error in source: An array needs to have at least one element. At DocumentReference.category[0].coding[0], line 5, position 21."
+              }
             }
           ]
         }
@@ -57633,7 +57881,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An object needs to have at least one property. At Parameters, line 3, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON120"
+                  }
+                ],
+                "text": "Syntax error in source: An object needs to have at least one property. At Parameters, line 3, position 2."
+              }
             }
           ]
         }
@@ -57655,7 +57911,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An object needs to have at least one property. At Parameters, line 3, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON120"
+                  }
+                ],
+                "text": "Syntax error in source: An object needs to have at least one property. At Parameters, line 3, position 2."
+              }
             }
           ]
         }
@@ -58665,7 +58929,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 5, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 5, position 2."
+              }
             }
           ]
         }
@@ -68151,12 +68423,28 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Bundle.type, line 8, position 29."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML113"
+                  }
+                ],
+                "text": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Bundle.type, line 8, position 29."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Bundle.entry[0], line 45, position 11."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML113"
+                  }
+                ],
+                "text": "Syntax error in source: Xml node of type 'Text' is unexpected at this point At Bundle.entry[0], line 45, position 11."
+              }
             }
           ]
         }
@@ -68334,7 +68622,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 30, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 30, position 2."
+              }
             }
           ]
         }
@@ -68375,7 +68671,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 26, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 26, position 2."
+              }
             }
           ]
         }
@@ -68416,7 +68720,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 52, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 52, position 2."
+              }
             }
           ]
         }
@@ -68457,47 +68769,119 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 138, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 138, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 129, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 129, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 130, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 130, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 131, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 131, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 132, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 132, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 133, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 133, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 134, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 134, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 135, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 135, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 136, position 19."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 136, position 19."
+              }
             }
           ]
         }
@@ -68538,52 +68922,132 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 136, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 136, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 126, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 126, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 127, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 127, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 128, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 128, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 129, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 129, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 130, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 130, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 131, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 131, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 132, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 132, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 133, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 133, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 134, position 19."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 134, position 19."
+              }
             }
           ]
         }
@@ -68624,47 +69088,119 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 122, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 122, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 113, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 113, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 114, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 114, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 115, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 115, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 116, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 116, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 117, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 117, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 118, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 118, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 119, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 119, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 120, position 19."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 120, position 19."
+              }
             }
           ]
         }
@@ -68705,47 +69241,119 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 106, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 106, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 97, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 97, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 98, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 98, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 99, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 99, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 100, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 100, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 101, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 101, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 102, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 102, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 103, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 103, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 104, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 104, position 18."
+              }
             }
           ]
         }
@@ -68786,47 +69394,119 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 149, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 149, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 140, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 140, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 141, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 141, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 142, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 142, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 143, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 143, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 144, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 144, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 145, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 145, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 146, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 146, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 147, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 147, position 18."
+              }
             }
           ]
         }
@@ -68867,22 +69547,54 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 90, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 90, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 86, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 86, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 87, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 87, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 88, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 88, position 18."
+              }
             }
           ]
         }
@@ -68923,22 +69635,54 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 138, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 138, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 134, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 134, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 135, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 135, position 18."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 136, position 18."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON109"
+                  }
+                ],
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 136, position 18."
+              }
             }
           ]
         }
@@ -68979,12 +69723,28 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 17, position 4."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 17, position 4."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An object needs to have at least one property. At DynamicResource.cards[0].source, line 8, position 29."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON120"
+                  }
+                ],
+                "text": "Syntax error in source: An object needs to have at least one property. At DynamicResource.cards[0].source, line 8, position 29."
+              }
             }
           ]
         }
@@ -69025,12 +69785,28 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 3, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 3, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An array needs to have at least one element. At DynamicResource.cards[0], line 2, position 14."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON121"
+                  }
+                ],
+                "text": "Syntax error in source: An array needs to have at least one element. At DynamicResource.cards[0], line 2, position 14."
+              }
             }
           ]
         }
@@ -69071,12 +69847,28 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 3, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 3, position 2."
+              }
             },
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: An object needs to have at least one property. At DynamicResource, line 3, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON120"
+                  }
+                ],
+                "text": "Syntax error in source: An object needs to have at least one property. At DynamicResource, line 3, position 2."
+              }
             }
           ]
         }
@@ -69117,7 +69909,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 13, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 13, position 2."
+              }
             }
           ]
         }
@@ -69158,7 +69958,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 13, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 13, position 2."
+              }
             }
           ]
         }
@@ -69199,7 +70007,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 19, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 19, position 2."
+              }
             }
           ]
         }
@@ -69240,7 +70056,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 42, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 42, position 2."
+              }
             }
           ]
         }
@@ -69281,7 +70105,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 22, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 22, position 2."
+              }
             }
           ]
         }
@@ -69323,7 +70155,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 48, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 48, position 2."
+              }
             }
           ]
         }
@@ -69365,7 +70205,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Resource has no 'resourceType' property. At line 29, position 2."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "JSON103"
+                  }
+                ],
+                "text": "Syntax error in source: Resource has no 'resourceType' property. At line 29, position 2."
+              }
             }
           ]
         }
@@ -73384,7 +74232,15 @@
             {
               "severity": "warning",
               "code": "structure",
-              "diagnostics": "Syntax error in source: Attribute 'value' should have been an element with a `value` property, not an attribute. At SpecimenDefinition.identifier.value, line 5, position 15."
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML125"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should have been an element with a `value` property, not an attribute. At SpecimenDefinition.identifier.value, line 5, position 15."
+              }
             }
           ]
         }

@@ -8385,6 +8385,39 @@
                 "expression": [
                   "Observation.performer[0], element Observation(http://hl7.org/fhir/StructureDefinition/vitalsigns).performer"
                 ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'SystolicBP'"
+                },
+                "location": [
+                  "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
+                ]
               }
             ]
           }
@@ -9667,6 +9700,47 @@
           "outcome": {
             "resourceType": "OperationOutcome",
             "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'LaboratoryTestResultCode'"
+                },
+                "location": [
+                  "Observation, element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category"
+                ]
+              },
               {
                 "extension": [
                   {
@@ -18366,7 +18440,50 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome"
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-patternidentifier-profile"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/patient-patternidentifier-profile).identifier"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'MR'"
+                },
+                "location": [
+                  "Patient, element Patient(http://hl7.org/fhir/StructureDefinition/patient-patternidentifier-profile).identifier"
+                ],
+                "expression": [
+                  "Patient, element Patient(http://hl7.org/fhir/StructureDefinition/patient-patternidentifier-profile).identifier"
+                ]
+              }
+            ]
           }
         }
       }
@@ -18938,6 +19055,47 @@
           "outcome": {
             "resourceType": "OperationOutcome",
             "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/document-structure"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 4
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'code-B'"
+                },
+                "location": [
+                  "Composition, element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
+                ],
+                "expression": [
+                  "Composition, element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
+                ]
+              },
               {
                 "extension": [
                   {
@@ -19635,6 +19793,47 @@
           "outcome": {
             "resourceType": "OperationOutcome",
             "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/document-structure"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 4
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'code-B'"
+                },
+                "location": [
+                  "Composition, element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
+                ],
+                "expression": [
+                  "Composition, element Composition(http://hl7.org/fhir/test/StructureDefinition/document-structure).section"
+                ]
+              },
               {
                 "extension": [
                   {
@@ -22380,6 +22579,47 @@
               "expression": [
                 "Observation.performer[0], element Observation(http://hl7.org/fhir/StructureDefinition/bp).performer"
               ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "SliceValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
+                  }
+                ],
+                "text": "No elements matched required slice: 'SystolicBP'"
+              },
+              "location": [
+                "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
+              ],
+              "expression": [
+                "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).component"
+              ]
             }
           ]
         }
@@ -22980,6 +23220,47 @@
                 ],
                 "expression": [
                   "Observation.performer[0], element Observation(http://hl7.org/fhir/StructureDefinition/observation-bp-profile).performer"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/StructureDefinition/observation-bp-profile"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://hl7.org/fhir/StructureDefinition/observation-bp-profile).component"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'SystolicBP'"
+                },
+                "location": [
+                  "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/observation-bp-profile).component"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/observation-bp-profile).component"
                 ]
               }
             ]
@@ -25480,7 +25761,50 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome"
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'slice1'"
+                },
+                "location": [
+                  "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
+                ],
+                "expression": [
+                  "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
+                ]
+              }
+            ]
           }
         }
       }
@@ -25557,7 +25881,50 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome"
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'slice1'"
+                },
+                "location": [
+                  "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
+                ],
+                "expression": [
+                  "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-profile-list).entry"
+                ]
+              }
+            ]
           }
         }
       }
@@ -31682,7 +32049,50 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/patient-animal"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 4
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "SliceValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal).extension"
+                  }
+                ],
+                "text": "No elements matched required slice: 'species'"
+              },
+              "location": [
+                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal).extension"
+              ],
+              "expression": [
+                "Patient.extension[0], element Patient.extension->Extension(http://hl7.org/fhir/StructureDefinition/patient-animal).extension"
+              ]
+            }
+          ]
         }
       }
     },
@@ -32837,6 +33247,47 @@
                   },
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Obs2'"
+                },
+                "location": [
+                  "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
+                ],
+                "expression": [
+                  "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "CardinalityValidator"
                   }
                 ],
@@ -32990,6 +33441,47 @@
           "outcome": {
             "resourceType": "OperationOutcome",
             "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Patient'"
+                },
+                "location": [
+                  "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
+                ],
+                "expression": [
+                  "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry"
+                ]
+              },
               {
                 "extension": [
                   {
@@ -38639,6 +39131,47 @@
           "outcome": {
             "resourceType": "OperationOutcome",
             "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 5
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 13
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein).code.coding"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Urinalysis-SNOMED-CT'"
+                },
+                "location": [
+                  "Observation.code[0], element Observation(http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein).code.coding"
+                ],
+                "expression": [
+                  "Observation.code[0], element Observation(http://hl7.org.au/fhir/ch/v1/StructureDefinition/ncdhc-observation-urinalysis-protein).code.coding"
+                ]
+              },
               {
                 "extension": [
                   {
@@ -45131,6 +45664,47 @@
                 ],
                 "expression": [
                   "List.contained[1].subject[0], element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).contained->Condition.subject"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'slice2'"
+                },
+                "location": [
+                  "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry"
+                ],
+                "expression": [
+                  "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry"
                 ]
               },
               {
@@ -59960,7 +60534,42 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome"
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Slice3'"
+                },
+                "location": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ]
+              }
+            ]
           }
         }
       }
@@ -60036,6 +60645,72 @@
           "outcome": {
             "resourceType": "OperationOutcome",
             "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Slice2'"
+                },
+                "location": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Slice3'"
+                },
+                "location": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ]
+              },
               {
                 "extension": [
                   {
@@ -60235,6 +60910,72 @@
                   },
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Slice1'"
+                },
+                "location": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "SliceValidator"
+                  }
+                ],
+                "severity": "error",
+                "code": "invalid",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "1028"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                    }
+                  ],
+                  "text": "No elements matched required slice: 'Slice2'"
+                },
+                "location": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ],
+                "expression": [
+                  "Observation, element Observation(http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef).referenceRange"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "CardinalityValidator"
                   }
                 ],
@@ -60327,7 +61068,42 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "SliceValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo).entry"
+                  }
+                ],
+                "text": "No elements matched required slice: 'Composition'"
+              },
+              "location": [
+                "Bundle, element Bundle(http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo).entry"
+              ],
+              "expression": [
+                "Bundle, element Bundle(http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo).entry"
+              ]
+            }
+          ]
         }
       }
     },
@@ -80196,6 +80972,47 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "SliceValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category"
+                  }
+                ],
+                "text": "No elements matched required slice: 'slice3'"
+              },
+              "location": [
+                "Observation, element Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category"
+              ],
+              "expression": [
+                "Observation, element Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category"
+              ]
+            },
             {
               "extension": [
                 {

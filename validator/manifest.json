@@ -46133,7 +46133,7 @@
                 "expression": [
                   "Patient.address[0].country.extension[0].value.ofType(CodeableConcept)"
                 ]
-              }fi
+              }
             ]
           }
         },

@@ -75103,7 +75103,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract"
+                "text": "Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract is a mandatory element."
               }
             },
             {
@@ -75164,7 +75164,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract"
+                "text": "Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract is a mandatory element."
               }
             },
             {

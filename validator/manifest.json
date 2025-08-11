@@ -1034,6 +1034,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -1180,7 +1188,7 @@
                     "code": "JSON114"
                   }
                 ],
-                "text": "Syntax error in source: Choice element 'value should be suffixed by a type. At Group.characteristic[0], line 10, position 15."
+                "text": "Syntax error in source: Choice element 'value' should be suffixed by a type. At Group.characteristic[0].value, line 10, position 16."
               }
             }
           ]
@@ -1509,6 +1517,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -1771,6 +1787,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
                 }
@@ -1925,17 +1949,106 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ChildrenValidator"
+                }
+              ],
               "severity": "error",
-              "code": "unknown",
+              "code": "invalid",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "1001"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List"
                   }
                 ],
-                "text": "While building a POCO: value is a primitive of type System.String, but the target POCO is a Hl7.Fhir.Model.DynamicDataType, which is not FHIR primitive. (at List.status[0].extension[0].value[0])"
-              }
+                "text": "Encountered unknown child elements 'fhir_comments'"
+              },
+              "expression": [
+                "List"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ChildrenValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1001"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.id->id"
+                  }
+                ],
+                "text": "Encountered unknown child elements 'fhir_comments'"
+              },
+              "expression": [
+                "List.id[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ExtensionSchema"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4009"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.status->code.extension"
+                  }
+                ],
+                "text": "Unable to resolve reference to extension 'http://acme.com/some_url'."
+              },
+              "expression": [
+                "List.status[0].extension[0]"
+              ]
             }
           ]
         }
@@ -1951,6 +2064,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
@@ -2041,6 +2162,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
                 }
@@ -2088,6 +2217,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
@@ -2174,6 +2311,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
                 }
@@ -2245,6 +2390,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
@@ -2327,6 +2480,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
@@ -2477,6 +2638,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
                 }
@@ -2561,6 +2730,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
@@ -2960,7 +3137,7 @@
                     "code": "JSON129"
                   }
                 ],
-                "text": "Syntax error in source: Encountered duplicate property 'active'. At Patient.active, line 10, position 2."
+                "text": "Syntax error in source: Encountered duplicate property 'active'. At Patient, line 9, position 14."
               }
             }
           ]
@@ -5122,6 +5299,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 2
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
@@ -7970,6 +8155,14 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                     "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
                   },
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -12852,7 +13045,7 @@
                     "code": "Group.characteristic.value[@default]"
                   }
                 ],
-                "text": "Element is of type 'DynamicDataType', which is not one of the allowed choice types ('CodeableConcept','boolean','Quantity','Range','Reference') (for slice @default)"
+                "text": "Element is of type 'UnknownType_Group.characteristic[0]', which is not one of the allowed choice types ('CodeableConcept','boolean','Quantity','Range','Reference') (for slice @default)"
               },
               "expression": [
                 "Group.characteristic[0].value[0], element Group.characteristic.value[@default]"
@@ -35394,6 +35587,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -36431,6 +36632,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
@@ -41529,6 +41738,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -45722,6 +45939,14 @@
                     "valueUri": "http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-none"
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "RequiredValidator"
                   }
@@ -45823,6 +46048,14 @@
                     "valueUri": "http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-fixed"
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "RequiredValidator"
                   }
@@ -45922,6 +46155,14 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                     "valueUri": "http://hl7.org/fhir/test/StructureDefinition/Patient-min-profile-pattern"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
                   },
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -51991,6 +52232,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -52247,6 +52496,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -52492,6 +52749,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
@@ -55403,7 +55668,7 @@
                     "code": "JSON120"
                   }
                 ],
-                "text": "Syntax error in source: An object needs to have at least one property. At Parameters, line 3, position 2."
+                "text": "Syntax error in source: An object needs to have at least one property. At line 3, position 2."
               }
             }
           ]
@@ -55433,7 +55698,7 @@
                     "code": "JSON120"
                   }
                 ],
-                "text": "Syntax error in source: An object needs to have at least one property. At Parameters, line 3, position 2."
+                "text": "Syntax error in source: An object needs to have at least one property. At line 3, position 2."
               }
             }
           ]
@@ -57979,6 +58244,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -58103,6 +58376,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
@@ -58231,6 +58512,14 @@
                     "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "SliceValidator"
                   }
@@ -58337,6 +58626,14 @@
                     "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "SliceValidator"
                   }
@@ -58367,6 +58664,14 @@
                     "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "SliceValidator"
                   }
@@ -58395,6 +58700,14 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                     "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
                   },
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -58579,6 +58892,14 @@
                     "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "SliceValidator"
                   }
@@ -58609,6 +58930,14 @@
                     "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                  },
+                  {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "SliceValidator"
                   }
@@ -58637,6 +58966,14 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                     "valueUri": "http://example.org/fhir/StructureDefinition/TypeSubtypeSlicingstructuredef"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
                   },
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -58736,6 +59073,14 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://ahdis.ch/ig/bundleconformsto/StructureDefinition/BundleConformsTo"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -59872,6 +60217,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -60014,6 +60367,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
@@ -61331,6 +61692,14 @@
                   "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
                 },
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "CardinalityValidator"
                 }
@@ -61386,7 +61755,7 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
                   }
                 ],
-                "text": "Value '{\"coding\":[{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"prov\",\"display\":\"Healthcare Provider\"}]}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
+                "text": "Value '{\"coding\":{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"prov\",\"display\":\"Healthcare Provider\"}}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
               },
               "expression": [
                 "Bundle.entry[3].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
@@ -61424,7 +61793,7 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
                   }
                 ],
-                "text": "Value '{\"coding\":[{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"ins\"}]}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
+                "text": "Value '{\"coding\":{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"ins\"}}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
               },
               "expression": [
                 "Bundle.entry[14].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
@@ -65915,7 +66284,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 129, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item3, line 129, position 18."
               }
             },
             {
@@ -65928,7 +66297,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 130, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item4, line 130, position 18."
               }
             },
             {
@@ -65941,7 +66310,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 131, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item5, line 131, position 18."
               }
             },
             {
@@ -65954,7 +66323,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 132, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item6, line 132, position 18."
               }
             },
             {
@@ -65967,7 +66336,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 133, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item7, line 133, position 18."
               }
             },
             {
@@ -65980,7 +66349,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 134, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item8, line 134, position 18."
               }
             },
             {
@@ -65993,7 +66362,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 135, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item9, line 135, position 18."
               }
             },
             {
@@ -66006,7 +66375,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 136, position 19."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item10, line 136, position 19."
               }
             }
           ]
@@ -66068,7 +66437,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 126, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item2, line 126, position 18."
               }
             },
             {
@@ -66081,7 +66450,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 127, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item3, line 127, position 18."
               }
             },
             {
@@ -66094,7 +66463,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 128, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item4, line 128, position 18."
               }
             },
             {
@@ -66107,7 +66476,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 129, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item5, line 129, position 18."
               }
             },
             {
@@ -66120,7 +66489,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 130, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item6, line 130, position 18."
               }
             },
             {
@@ -66133,7 +66502,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 131, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item7, line 131, position 18."
               }
             },
             {
@@ -66146,7 +66515,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 132, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item8, line 132, position 18."
               }
             },
             {
@@ -66159,7 +66528,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 133, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item9, line 133, position 18."
               }
             },
             {
@@ -66172,7 +66541,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 134, position 19."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item10, line 134, position 19."
               }
             }
           ]
@@ -66234,7 +66603,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 113, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item3, line 113, position 18."
               }
             },
             {
@@ -66247,7 +66616,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 114, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item4, line 114, position 18."
               }
             },
             {
@@ -66260,7 +66629,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 115, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item5, line 115, position 18."
               }
             },
             {
@@ -66273,7 +66642,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 116, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item6, line 116, position 18."
               }
             },
             {
@@ -66286,7 +66655,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 117, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item7, line 117, position 18."
               }
             },
             {
@@ -66299,7 +66668,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 118, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item8, line 118, position 18."
               }
             },
             {
@@ -66312,7 +66681,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 119, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item9, line 119, position 18."
               }
             },
             {
@@ -66325,7 +66694,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item10, line 120, position 19."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item10, line 120, position 19."
               }
             }
           ]
@@ -66387,7 +66756,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 97, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item2, line 97, position 18."
               }
             },
             {
@@ -66400,7 +66769,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 98, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item3, line 98, position 18."
               }
             },
             {
@@ -66413,7 +66782,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 99, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item4, line 99, position 18."
               }
             },
             {
@@ -66426,7 +66795,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 100, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item5, line 100, position 18."
               }
             },
             {
@@ -66439,7 +66808,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 101, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item6, line 101, position 18."
               }
             },
             {
@@ -66452,7 +66821,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 102, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item7, line 102, position 18."
               }
             },
             {
@@ -66465,7 +66834,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 103, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item8, line 103, position 18."
               }
             },
             {
@@ -66478,7 +66847,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 104, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item9, line 104, position 18."
               }
             }
           ]
@@ -66540,7 +66909,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item2, line 140, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item2, line 140, position 18."
               }
             },
             {
@@ -66553,7 +66922,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 141, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item3, line 141, position 18."
               }
             },
             {
@@ -66566,7 +66935,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 142, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item4, line 142, position 18."
               }
             },
             {
@@ -66579,7 +66948,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 143, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item5, line 143, position 18."
               }
             },
             {
@@ -66592,7 +66961,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item6, line 144, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item6, line 144, position 18."
               }
             },
             {
@@ -66605,7 +66974,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item7, line 145, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item7, line 145, position 18."
               }
             },
             {
@@ -66618,7 +66987,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item8, line 146, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item8, line 146, position 18."
               }
             },
             {
@@ -66631,7 +67000,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item9, line 147, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item9, line 147, position 18."
               }
             }
           ]
@@ -66693,7 +67062,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 86, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item3, line 86, position 18."
               }
             },
             {
@@ -66706,7 +67075,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 87, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item4, line 87, position 18."
               }
             },
             {
@@ -66719,7 +67088,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 88, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item5, line 88, position 18."
               }
             }
           ]
@@ -66781,7 +67150,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item3, line 134, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item3, line 134, position 18."
               }
             },
             {
@@ -66794,7 +67163,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item4, line 135, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item4, line 135, position 18."
               }
             },
             {
@@ -66807,7 +67176,7 @@
                     "code": "JSON109"
                   }
                 ],
-                "text": "Syntax error in source: Expected a primitive value, not a json null. At DynamicResource.prefetch.item5, line 136, position 18."
+                "text": "Syntax error in source: Expected a primitive value, not a json null. At UnknownResource_.prefetch.item5, line 136, position 18."
               }
             }
           ]
@@ -66869,7 +67238,7 @@
                     "code": "JSON120"
                   }
                 ],
-                "text": "Syntax error in source: An object needs to have at least one property. At DynamicResource.cards[0].source, line 8, position 29."
+                "text": "Syntax error in source: An object needs to have at least one property. At UnknownResource_.cards[0].source, line 8, position 29."
               }
             }
           ]
@@ -66931,7 +67300,7 @@
                     "code": "JSON121"
                   }
                 ],
-                "text": "Syntax error in source: An array needs to have at least one element. At DynamicResource.cards[0], line 2, position 14."
+                "text": "Syntax error in source: An array needs to have at least one element. At UnknownResource_.cards[0], line 2, position 14."
               }
             }
           ]
@@ -66993,7 +67362,7 @@
                     "code": "JSON120"
                   }
                 ],
-                "text": "Syntax error in source: An object needs to have at least one property. At DynamicResource, line 3, position 2."
+                "text": "Syntax error in source: An object needs to have at least one property. At line 3, position 2."
               }
             }
           ]
@@ -70066,6 +70435,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
                 }
@@ -71634,6 +72011,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 }
@@ -71819,6 +72204,14 @@
           "issue": [
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ChildrenValidator"
@@ -72086,6 +72479,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -72112,6 +72513,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -72137,6 +72546,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
@@ -72257,6 +72674,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -72283,6 +72708,14 @@
             {
               "extension": [
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -72308,6 +72741,14 @@
             },
             {
               "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
@@ -75002,6 +75443,14 @@
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
                 },
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -75030,6 +75479,14 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -75062,6 +75519,14 @@
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
                 },
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -75090,6 +75555,14 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -75122,6 +75595,14 @@
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
                 },
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "RequiredValidator"
                 }
@@ -75150,6 +75631,14 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -75182,6 +75671,14 @@
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
                 },
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "CardinalityValidator"
                 }
@@ -75212,6 +75709,14 @@
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
                 },
                 {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "SliceValidator"
                 }
@@ -75240,6 +75745,14 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/bp"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",

@@ -866,6 +866,26 @@
               "expression": [
                 "Observation.performer[0]"
               ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation.device[forDevice]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-device'. (for slice forDevice)"
+              },
+              "expression": [
+                "Observation.contained[0], element Observation.device[forDevice]"
+              ]
             }
           ]
         }
@@ -8738,7 +8758,7 @@
                       "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Pattern).category[ResultType]"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown."
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "expression": [
                   "Observation.category[1], element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Pattern).category[ResultType]"
@@ -9086,7 +9106,7 @@
                       "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown."
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "expression": [
                   "Observation.category[1], element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
@@ -9494,7 +9514,7 @@
                       "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '104' (system 'http://myownsystem.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown."
+                  "text": "Terminology service failed while validating concept with coding(s) '104' (system 'http://myownsystem.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "expression": [
                   "Observation.category[0], element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
@@ -9532,7 +9552,7 @@
                       "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown."
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "expression": [
                   "Observation.category[1], element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
@@ -9570,7 +9590,7 @@
                       "code": "Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
                     }
                   ],
-                  "text": "Instance count at element 'category' is 2, which is not within the specified cardinality of 0..1"
+                  "text": "Instance count at element 'category' is 2, which is not within the specified cardinality of 0..1 (for slice ResultType)"
                 },
                 "expression": [
                   "Observation, element Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]"
@@ -20463,7 +20483,7 @@
                     "code": "Bundle.entry.resource->MessageHeader.extension->Extension.extension->Extension.value[Reference]"
                   }
                 ],
-                "text": "Cannot resolve reference https://fhir.nhs.uk/STU3/MessageDefinition/ITK-eDischarge-MessageDefinition-Instance-1"
+                "text": "Cannot resolve reference https://fhir.nhs.uk/STU3/MessageDefinition/ITK-eDischarge-MessageDefinition-Instance-1 (for slice Reference)"
               },
               "expression": [
                 "Bundle.entry[0].resource[0].extension[0].extension[3].value[0], element Bundle.entry.resource->MessageHeader.extension->Extension.extension->Extension.value[Reference]"
@@ -20483,7 +20503,7 @@
                     "code": "Bundle.entry.resource->MessageHeader.receiver[forOrganization]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1'."
+                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1'. (for slice forOrganization)"
               },
               "expression": [
                 "Bundle.entry[2].resource[0], element Bundle.entry.resource->MessageHeader.receiver[forOrganization]"
@@ -20503,7 +20523,7 @@
                     "code": "Bundle.entry.resource->MessageHeader.sender[forPractitioner]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1'."
+                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1'. (for slice forPractitioner)"
               },
               "expression": [
                 "Bundle.entry[1].resource[0], element Bundle.entry.resource->MessageHeader.sender[forPractitioner]"
@@ -20947,6 +20967,66 @@
               },
               "expression": [
                 "Bundle.entry[3].resource[0].entry[2].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->MessageHeader.focus->Bundle.entry.resource->List.subject[forPatient]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1'. (for slice forPatient)"
+              },
+              "expression": [
+                "Bundle.entry[3].resource[0].entry[3].resource[0], element Bundle.entry.resource->MessageHeader.focus->Bundle.entry.resource->List.subject[forPatient]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1'."
+              },
+              "expression": [
+                "Bundle.entry[1].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1'."
+              },
+              "expression": [
+                "Bundle.entry[2].resource[0]"
               ]
             }
           ]
@@ -29531,7 +29611,7 @@
                     "code": "Bundle.entry.resource->MessageHeader.sender[forOrganization]->Organization.contained->Endpoint.payloadMimeType"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
+                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forOrganization)"
               },
               "expression": [
                 "Bundle.entry[7].resource[0].contained[0].payloadMimeType[0], element Bundle.entry.resource->MessageHeader.sender[forOrganization]->Organization.contained->Endpoint.payloadMimeType"
@@ -29778,7 +29858,7 @@
                     "code": "Bundle.entry.resource->MessageHeader.sender[forOrganization]->Organization.contained->Endpoint.payloadMimeType"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
+                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forOrganization)"
               },
               "expression": [
                 "Bundle.entry[7].resource[0].contained[0].payloadMimeType[0], element Bundle.entry.resource->MessageHeader.sender[forOrganization]->Organization.contained->Endpoint.payloadMimeType"
@@ -32152,7 +32232,7 @@
                       "code": "Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry[Obs1]"
                     }
                   ],
-                  "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1"
+                  "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1 (for slice Obs1)"
                 },
                 "expression": [
                   "Bundle, element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry[Obs1]"
@@ -32352,7 +32432,7 @@
                       "code": "Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry[@default]"
                     }
                   ],
-                  "text": "Element does not match any slice and the group is closed."
+                  "text": "Element does not match any slice and the group is closed. (for slice @default)"
                 },
                 "expression": [
                   "Bundle.entry[0], element Bundle(http://hl7.org/fhir/test/StructureDefinition/bundle-slice-profile-master).entry[@default]"
@@ -34342,7 +34422,7 @@
                     "code": "Bundle.entry.resource->Patient.link.other[forPatient]->Patient.gender"
                   }
                 ],
-                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender)"
+                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender) (for slice forPatient)"
               },
               "expression": [
                 "Bundle.entry[1].resource[0].gender[0], element Bundle.entry.resource->Patient.link.other[forPatient]->Patient.gender"
@@ -38896,7 +38976,7 @@
                     "code": "Bundle.signature->Signature.who[Reference]"
                   }
                 ],
-                "text": "Cannot resolve reference Device/software"
+                "text": "Cannot resolve reference Device/software (for slice Reference)"
               },
               "expression": [
                 "Bundle.signature[0].who[0], element Bundle.signature->Signature.who[Reference]"
@@ -38930,7 +39010,7 @@
                     "code": "Bundle.signature->Signature.onBehalfOf[Reference]"
                   }
                 ],
-                "text": "Cannot resolve reference Organization/example"
+                "text": "Cannot resolve reference Organization/example (for slice Reference)"
               },
               "expression": [
                 "Bundle.signature[0].onBehalfOf[0], element Bundle.signature->Signature.onBehalfOf[Reference]"
@@ -44091,7 +44171,7 @@
                       "code": "List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry[slice1]"
                     }
                   ],
-                  "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1"
+                  "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1 (for slice slice1)"
                 },
                 "expression": [
                   "List, element List(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-type-resolve).entry[slice1]"
@@ -45115,7 +45195,7 @@
                     "code": "Bundle.entry.resource->Communication(http://example.com/fhir/StructureDefinition/profile-communication).payload.content[Reference][forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice Reference, subslice forDocumentReference)"
               },
               "expression": [
                 "Bundle.entry[1].resource[0].content[0].attachment[0].contentType[0], element Bundle.entry.resource->Communication(http://example.com/fhir/StructureDefinition/profile-communication).payload.content[Reference][forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType"
@@ -47236,7 +47316,7 @@
                     "code": "Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[forBinary]->Binary.contentType"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forBinary)"
               },
               "expression": [
                 "Bundle.entry[6].resource[0].contentType[0], element Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[forBinary]->Binary.contentType"
@@ -47489,7 +47569,7 @@
                     "code": "Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[forBinary]->Binary.contentType"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forBinary)"
               },
               "expression": [
                 "Bundle.entry[6].resource[0].contentType[0], element Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[forBinary]->Binary.contentType"
@@ -47527,7 +47607,7 @@
                     "code": "Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[Binary]"
                   }
                 ],
-                "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 0..1"
+                "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 0..1 (for slice Binary)"
               },
               "expression": [
                 "Bundle.entry[0].resource[0].section[0], element Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[Binary]"
@@ -49657,6 +49737,26 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.encounter->Encounter.subject[forPatient]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patient'. (for slice forPatient)"
+              },
+              "expression": [
+                "Bundle.entry[1].resource[0], element Bundle.entry.resource->Composition.encounter->Encounter.subject[forPatient]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Bundle.entry.resource->Composition.encounter->Encounter.basedOn"
                   }
                 ],
@@ -49720,10 +49820,30 @@
                     "code": "Bundle.entry.resource->Composition.section.entry->Coverage.payor[forOrganization]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'."
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. (for slice forOrganization)"
               },
               "expression": [
                 "Bundle.entry[8].resource[0], element Bundle.entry.resource->Composition.section.entry->Coverage.payor[forOrganization]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->Coverage.payor[forRelatedPerson]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'. (for slice forRelatedPerson)"
+              },
+              "expression": [
+                "Bundle.entry[7].resource[0].contained[0], element Bundle.entry.resource->Composition.section.entry->Coverage.payor[forRelatedPerson]"
               ]
             },
             {
@@ -49760,7 +49880,7 @@
                     "code": "Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[Reference]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'."
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'. (for slice Reference)"
               },
               "expression": [
                 "Bundle.entry[11].resource[0], element Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[Reference]"
@@ -49817,6 +49937,26 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[Reference]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'. (for slice Reference)"
+              },
+              "expression": [
+                "Bundle.entry[12].resource[0].contained[0], element Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[Reference]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Bundle.entry.resource->Composition.section.entry"
                   }
                 ],
@@ -49844,6 +49984,26 @@
               },
               "expression": [
                 "Bundle.entry[13].resource[0].contained[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[Reference]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'. (for slice Reference)"
+              },
+              "expression": [
+                "Bundle.entry[13].resource[0].contained[0], element Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[Reference]"
               ]
             },
             {
@@ -49960,7 +50120,7 @@
                     "code": "Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'."
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. (for slice forDocumentReference)"
               },
               "expression": [
                 "Bundle.entry[38].resource[0], element Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]"
@@ -49994,7 +50154,7 @@
                     "code": "Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forDocumentReference)"
               },
               "expression": [
                 "Bundle.entry[38].resource[0].content[0].attachment[0].contentType[0], element Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType"
@@ -50462,10 +50622,70 @@
                     "code": "Bundle.entry.resource"
                   }
                 ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'."
+              },
+              "expression": [
+                "Bundle.entry[8].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
+                  }
+                ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'."
               },
               "expression": [
                 "Bundle.entry[9].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'."
+              },
+              "expression": [
+                "Bundle.entry[11].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'."
+              },
+              "expression": [
+                "Bundle.entry[38].resource[0]"
               ]
             }
           ]
@@ -54448,7 +54668,7 @@
                     "code": "Bundle.signature->Signature.who[Reference]"
                   }
                 ],
-                "text": "Cannot resolve reference Device/software"
+                "text": "Cannot resolve reference Device/software (for slice Reference)"
               },
               "expression": [
                 "Bundle.signature[0].who[0], element Bundle.signature->Signature.who[Reference]"
@@ -54482,7 +54702,7 @@
                     "code": "Bundle.signature->Signature.onBehalfOf[Reference]"
                   }
                 ],
-                "text": "Cannot resolve reference Organization/example"
+                "text": "Cannot resolve reference Organization/example (for slice Reference)"
               },
               "expression": [
                 "Bundle.signature[0].onBehalfOf[0], element Bundle.signature->Signature.onBehalfOf[Reference]"
@@ -61407,7 +61627,7 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.sender[forOrganization]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'. (for slice forOrganization)"
               },
               "expression": [
                 "Bundle.entry[3].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.sender[forOrganization]"
@@ -61459,10 +61679,62 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.generalPractitioner[forPractitioner]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'."
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'. (for slice forPractitioner)"
               },
               "expression": [
                 "Bundle.entry[4].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.generalPractitioner[forPractitioner]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.managingOrganization"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
+              },
+              "expression": [
+                "Bundle.entry[3].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.managingOrganization"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'."
+              },
+              "expression": [
+                "Bundle.entry[4].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
               ]
             },
             {
@@ -61508,10 +61780,36 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.subject[forPatient]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'. (for slice forPatient)"
+              },
+              "expression": [
+                "Bundle.entry[2].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.subject[forPatient]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'."
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'. (for slice forCoverage)"
               },
               "expression": [
                 "Bundle.entry[5].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]"
@@ -61537,7 +61835,7 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'."
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'. (for slice forRelatedPerson)"
               },
               "expression": [
                 "Bundle.entry[6].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]"
@@ -61560,13 +61858,117 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]->RelatedPerson.patient"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'. (for slice forRelatedPerson)"
+              },
+              "expression": [
+                "Bundle.entry[2].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]->RelatedPerson.patient"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.beneficiary"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'. (for slice forCoverage)"
+              },
+              "expression": [
+                "Bundle.entry[2].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.beneficiary"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.payor[forOrganization]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'. (for slice forOrganization)"
+              },
+              "expression": [
+                "Bundle.entry[14].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.payor[forOrganization]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
                   }
                 ],
                 "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
               },
               "expression": [
-                "Bundle.entry[14].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.payor[forOrganization]"
+                "Bundle.entry[14].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'."
+              },
+              "expression": [
+                "Bundle.entry[5].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
               ]
             },
             {
@@ -61690,6 +62092,110 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'."
+              },
+              "expression": [
+                "Bundle.entry[6].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[messageheader].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-messageheader'. (for slice messageheader)"
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[messageheader].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[patient].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'. (for slice patient)"
+              },
+              "expression": [
+                "Bundle.entry[2].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[patient].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practitioner].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'. (for slice practitioner)"
+              },
+              "expression": [
+                "Bundle.entry[4].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practitioner].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
@@ -61717,10 +62223,36 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice]"
                   }
                 ],
-                "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1"
+                "text": "Instance count at element 'entry' is 2, which is not within the specified cardinality of 1..1 (for slice practice)"
               },
               "expression": [
                 "Bundle, element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'. (for slice practice)"
+              },
+              "expression": [
+                "Bundle.entry[3].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
               ]
             },
             {
@@ -61755,10 +62287,36 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
                   }
                 ],
-                "text": "Value '{\"coding\":{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"prov\",\"display\":\"Healthcare Provider\"}}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
+                "text": "Value '{\"coding\":{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"prov\",\"display\":\"Healthcare Provider\"}}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}' (for slice practice)"
               },
               "expression": [
                 "Bundle.entry[3].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'. (for slice practice)"
+              },
+              "expression": [
+                "Bundle.entry[14].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource"
               ]
             },
             {
@@ -61793,7 +62351,7 @@
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
                   }
                 ],
-                "text": "Value '{\"coding\":{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"ins\"}}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}'"
+                "text": "Value '{\"coding\":{\"system\":\"http://terminology.hl7.org/CodeSystem/organization-type\",\"code\":\"ins\"}}' is not exactly equal to fixed value '{\"coding\":[{\"code\":\"prov\"}]}' (for slice practice)"
               },
               "expression": [
                 "Bundle.entry[14].resource[0].type[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[practice].resource.type"
@@ -61816,10 +62374,36 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[medicationrequest].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-medicationrequest'. (for slice medicationrequest)"
+              },
+              "expression": [
+                "Bundle.entry[13].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[medicationrequest].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[condition].resource"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-condition'."
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-condition'. (for slice condition)"
               },
               "expression": [
                 "Bundle.entry[8].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[condition].resource"
@@ -61842,13 +62426,143 @@
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[coverage].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'. (for slice coverage)"
+              },
+              "expression": [
+                "Bundle.entry[5].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[coverage].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
                     "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[consent].resource"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-consent'."
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-consent'. (for slice consent)"
               },
               "expression": [
                 "Bundle.entry[9].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[consent].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[provenance].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-provenance'. (for slice provenance)"
+              },
+              "expression": [
+                "Bundle.entry[10].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[provenance].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest'. (for slice servicerequest)"
+              },
+              "expression": [
+                "Bundle.entry[11].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-servicerequest'. (for slice servicerequest)"
+              },
+              "expression": [
+                "Bundle.entry[12].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[servicerequest].resource"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
+                }
+              ],
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[relatedperson].resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'. (for slice relatedperson)"
+              },
+              "expression": [
+                "Bundle.entry[6].resource[0], element Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry[relatedperson].resource"
               ]
             }
           ]
@@ -61941,7 +62655,7 @@
                     "code": "AuditEvent(http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/SecondSliceProfile).agent[user].extension[otherId-npi].url"
                   }
                 ],
-                "text": "Value 'http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/OtherId' is not exactly equal to fixed value 'otherId-npi'"
+                "text": "Value 'http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/OtherId' is not exactly equal to fixed value 'otherId-npi' (for slice otherId-npi)"
               },
               "expression": [
                 "AuditEvent.agent[0].extension[0].url[0], element AuditEvent(http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/SecondSliceProfile).agent[user].extension[otherId-npi].url"
@@ -61979,7 +62693,7 @@
                     "code": "AuditEvent(http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/SecondSliceProfile).agent[user].extension[otherId-provider-id].url"
                   }
                 ],
-                "text": "Value 'http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/OtherId' is not exactly equal to fixed value 'otherId-provider-id'"
+                "text": "Value 'http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/OtherId' is not exactly equal to fixed value 'otherId-provider-id' (for slice otherId-provider-id)"
               },
               "expression": [
                 "AuditEvent.agent[0].extension[1].url[0], element AuditEvent(http://johnmoehrke.github.io/SlicingSlicedExtension/StructureDefinition/SecondSliceProfile).agent[user].extension[otherId-provider-id].url"
@@ -69606,7 +70320,7 @@
                     "code": "Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity]"
                   }
                 ],
-                "text": "Terminology service failed while validating coding '/min' (system 'http://unitsofmeasure.org'): Operation validate code failed: valueset 'http://fhir.de/ValueSet/UcumVitalsCommonDE' is unknown."
+                "text": "Terminology service failed while validating coding '/min' (system 'http://unitsofmeasure.org'): Operation validate code failed: valueset 'http://fhir.de/ValueSet/UcumVitalsCommonDE' is unknown. (for slice valueQuantity)"
               },
               "expression": [
                 "Observation.value[0], element Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity]"
@@ -69644,7 +70358,7 @@
                     "code": "Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity].code"
                   }
                 ],
-                "text": "Terminology service failed while validating code '/min': Operation validate code failed: valueset 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-breaths_per-minute' is unknown."
+                "text": "Terminology service failed while validating code '/min': Operation validate code failed: valueset 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-breaths_per-minute' is unknown. (for slice valueQuantity)"
               },
               "expression": [
                 "Observation.value[0].code[0], element Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity].code"
@@ -71033,7 +71747,7 @@
                     "code": "Bundle.entry.resource->MedicationStatement.extension->Extension.value[uri]->uri"
                   }
                 ],
-                "text": "Value 'urn:uuid:a6a8a8e6-415c-42e1-abf7-f8d876e5908b#MedicationSummary-d41ac499-c7e8-45fa-9246-69028bae178f' is not a valid URI"
+                "text": "Value 'urn:uuid:a6a8a8e6-415c-42e1-abf7-f8d876e5908b#MedicationSummary-d41ac499-c7e8-45fa-9246-69028bae178f' is not a valid URI (for slice uri)"
               },
               "expression": [
                 "Bundle.entry[2].resource[0].extension[0].value[0], element Bundle.entry.resource->MedicationStatement.extension->Extension.value[uri]->uri"
@@ -75696,7 +76410,7 @@
                     "code": "Observation(http://hl7.org/fhir/StructureDefinition/bp).value[valueQuantity]"
                   }
                 ],
-                "text": "Instance count at element 'value' is 1, which is not within the specified cardinality of 0..0"
+                "text": "Instance count at element 'value' is 1, which is not within the specified cardinality of 0..0 (for slice valueQuantity)"
               },
               "expression": [
                 "Observation, element Observation(http://hl7.org/fhir/StructureDefinition/bp).value[valueQuantity]"
@@ -79225,7 +79939,7 @@
                     "code": "Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"
                   }
                 ],
-                "text": "Missing required member: 'coding'"
+                "text": "Missing required member: 'coding' (for slice slice1)"
               },
               "expression": [
                 "Observation.category[2], element Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"
@@ -79263,7 +79977,7 @@
                     "code": "Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"
                   }
                 ],
-                "text": "Missing required member: 'coding'"
+                "text": "Missing required member: 'coding' (for slice slice1)"
               },
               "expression": [
                 "Observation.category[3], element Observation(http://hl7.org/fhir/test/StructureDefinition/profile-slicing-missing-profile1).category[slice1]"

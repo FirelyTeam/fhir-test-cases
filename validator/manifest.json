@@ -34272,23 +34272,41 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/test/StructureDefinition/profile-version-reference-test-profile"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "CardinalityValidator"
+                }
+              ],
               "severity": "error",
-              "code": "incomplete",
+              "code": "invalid",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
+                    "code": "1028"
                   },
                   {
                     "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
-                    "code": ""
+                    "code": "Patient(http://hl7.org/fhir/test/StructureDefinition/profile-version-reference-test-profile).name"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/test/StructureDefinition/profile-version-reference-test-profile|0.2'."
+                "text": "Instance count is 1, which is not within the specified cardinality of 0..0"
               },
               "expression": [
-                "Patient"
+                "Patient.name, element Patient(http://hl7.org/fhir/test/StructureDefinition/profile-version-reference-test-profile).name"
               ]
             }
           ]

@@ -129,7 +129,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -9779,7 +9779,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -9923,7 +9923,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -9997,7 +9997,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10071,7 +10071,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10145,7 +10145,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10219,7 +10219,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10328,7 +10328,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10402,7 +10402,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10476,7 +10476,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10550,7 +10550,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10624,7 +10624,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10698,7 +10698,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10772,7 +10772,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10846,7 +10846,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10920,7 +10920,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -10994,7 +10994,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -11739,7 +11739,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -11883,7 +11883,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -11957,7 +11957,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12031,7 +12031,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12105,7 +12105,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12179,7 +12179,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12288,7 +12288,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12362,7 +12362,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12436,7 +12436,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12510,7 +12510,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12584,7 +12584,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12658,7 +12658,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12732,7 +12732,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12806,7 +12806,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12880,7 +12880,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -12954,7 +12954,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -38679,7 +38679,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -38743,7 +38743,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -44535,7 +44535,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -75806,7 +75806,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -75871,7 +75871,7 @@
                     "valueString": "RegExValidator"
                   }
                 ],
-                "severity": "error",
+                "severity": "warning",
                 "code": "invalid",
                 "details": {
                   "coding": [
@@ -75925,7 +75925,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -75977,7 +75977,7 @@
                     "valueString": "RegExValidator"
                   }
                 ],
-                "severity": "error",
+                "severity": "warning",
                 "code": "invalid",
                 "details": {
                   "coding": [
@@ -76031,7 +76031,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -76135,7 +76135,7 @@
                     "valueString": "RegExValidator"
                   }
                 ],
-                "severity": "error",
+                "severity": "warning",
                 "code": "invalid",
                 "details": {
                   "coding": [
@@ -81871,7 +81871,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [
@@ -82037,7 +82037,7 @@
                   "valueString": "RegExValidator"
                 }
               ],
-              "severity": "error",
+              "severity": "warning",
               "code": "invalid",
               "details": {
                 "coding": [

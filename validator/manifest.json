@@ -2379,10 +2379,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "The 'onClick' attribute is not declared."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -2642,10 +2649,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "The element 'div' in namespace 'http://www.w3.org/1999/xhtml' has invalid child element 'object' in namespace 'http://www.w3.org/1999/xhtml'. List of possible elements expected: 'p, h1, h2, h3, h4, h5, h6, div, ul, ol, dl, pre, hr, blockquote, address, table, a, br, span, bdo, map, img, tt, i, b, big, small, em, strong, dfn, code, q, samp, kbd, var, cite, abbr, acronym, sub, sup' in namespace 'http://www.w3.org/1999/xhtml'."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -2706,10 +2720,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "Invalid Xml encountered. Details: The 'p' start tag on line 2 position 8 does not match the end tag of 'pa'. Line 2, position 34."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -2799,10 +2820,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "Root element of XHTML is not a <div> from the XHTML namespace (http://www.w3.org/1999/xhtml)."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -2892,10 +2920,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "Root element of XHTML is not a <div> from the XHTML namespace (http://www.w3.org/1999/xhtml)."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -2945,10 +2980,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "Invalid Xml encountered. Details: Unexpected DTD declaration. Line 2, position 9."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -14404,10 +14446,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "The 'onClick' attribute is not declared."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -14496,10 +14545,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "The element 'div' in namespace 'http://www.w3.org/1999/xhtml' has invalid child element 'object' in namespace 'http://www.w3.org/1999/xhtml'. List of possible elements expected: 'p, h1, h2, h3, h4, h5, h6, div, ul, ol, dl, pre, hr, blockquote, address, table, a, br, span, bdo, map, img, tt, i, b, big, small, em, strong, dfn, code, q, samp, kbd, var, cite, abbr, acronym, sub, sup' in namespace 'http://www.w3.org/1999/xhtml'."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -14538,10 +14594,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "Root element of XHTML is not a <div> from the XHTML namespace (http://www.w3.org/1999/xhtml)."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             },
             {
               "severity": "warning",
@@ -14593,10 +14656,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "The element 'div' in namespace 'http://www.w3.org/1999/xhtml' has invalid child element 'p' in namespace 'http://www.w3.org/1999/xhtmlx'. List of possible elements expected: 'p, h1, h2, h3, h4, h5, h6, div, ul, ol, dl, pre, hr, blockquote, address, table, a, br, span, bdo, map, img, tt, i, b, big, small, em, strong, dfn, code, q, samp, kbd, var, cite, abbr, acronym, sub, sup' in namespace 'http://www.w3.org/1999/xhtml'."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -14635,10 +14705,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "Root element of XHTML is not a <div> from the XHTML namespace (http://www.w3.org/1999/xhtml)."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             },
             {
               "severity": "warning",
@@ -21686,10 +21763,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.text->Narrative.div"
                   }
                 ],
                 "text": "The narrative SHALL have some non-whitespace content."
-              }
+              },
+              "expression": [
+                "Patient.text[0].div[0]"
+              ]
             },
             {
               "extension": [
@@ -21758,6 +21842,12 @@
             "resourceType": "OperationOutcome",
             "issue": [
               {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                    "valueUri": "http://hl7.org/fhir/StructureDefinition/extension-slice-profile"
+                  }
+                ],
                 "severity": "error",
                 "code": "invalid",
                 "details": {
@@ -21765,10 +21855,18 @@
                     {
                       "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                       "code": "1100"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).text->Narrative.div"
                     }
                   ],
                   "text": "The narrative SHALL have some non-whitespace content."
-                }
+                },
+                "diagnostics": "Patient(http://hl7.org/fhir/StructureDefinition/extension-slice-profile).text->Narrative.div",
+                "expression": [
+                  "Patient.text[0].div[0]"
+                ]
               },
               {
                 "extension": [
@@ -45110,10 +45208,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.text->Narrative.div"
                   }
                 ],
                 "text": "The element 'div' in namespace 'http://www.w3.org/1999/xhtml' has invalid child element 'script' in namespace 'http://www.w3.org/1999/xhtml'. List of possible elements expected: 'p, h1, h2, h3, h4, h5, h6, div, ul, ol, dl, pre, hr, blockquote, address, table, a, br, span, bdo, map, img, tt, i, b, big, small, em, strong, dfn, code, q, samp, kbd, var, cite, abbr, acronym, sub, sup' in namespace 'http://www.w3.org/1999/xhtml'."
-              }
+              },
+              "expression": [
+                "Patient.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -48857,10 +48962,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "The element 'p' in namespace 'http://www.w3.org/1999/xhtml' has invalid child element 'p' in namespace 'http://www.w3.org/1999/xhtml'. List of possible elements expected: 'a, br, span, bdo, map, img, tt, i, b, big, small, em, strong, dfn, code, q, samp, kbd, var, cite, abbr, acronym, sub, sup' in namespace 'http://www.w3.org/1999/xhtml'."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -79808,10 +79920,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.text->Narrative.div"
                   }
                 ],
                 "text": "The narrative SHALL have some non-whitespace content."
-              }
+              },
+              "expression": [
+                "List.text[0].div[0]"
+              ]
             }
           ]
         }
@@ -81994,10 +82113,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.text->Narrative.div"
                   }
                 ],
                 "text": "The 'id' attribute is invalid - The value 'AllergyIntolerance-urn:uuid:edf25255-bfcd-4e29-a797-e89ea4ef000c' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:ID' - The ':' character, hexadecimal value 0x3A, cannot be included in a name."
-              }
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0].text[0].div[0]"
+              ]
             },
             {
               "severity": "error",
@@ -82007,10 +82133,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.text->Narrative.div"
                   }
                 ],
                 "text": "The 'id' attribute is invalid - The value 'AllergyIntolerance-urn:uuid:01ea6a58-df5f-4455-b6b2-7a31492be6b1' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:ID' - The ':' character, hexadecimal value 0x3A, cannot be included in a name."
-              }
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0].text[0].div[0]"
+              ]
             },
             {
               "extension": [
@@ -82044,6 +82177,46 @@
               },
               "expression": [
                 "Bundle.entry[1].resource[0].identifier[0].value[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.text->Narrative.div"
+                  }
+                ],
+                "text": "The 'id' attribute is invalid - The value 'AllergyIntolerance-urn:uuid:edf25255-bfcd-4e29-a797-e89ea4ef000c' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:ID' - The ':' character, hexadecimal value 0x3A, cannot be included in a name."
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0].section[0].text[0].div[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.text->Narrative.div"
+                  }
+                ],
+                "text": "The 'id' attribute is invalid - The value 'AllergyIntolerance-urn:uuid:01ea6a58-df5f-4455-b6b2-7a31492be6b1' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:ID' - The ':' character, hexadecimal value 0x3A, cannot be included in a name."
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0].section[0].text[0].div[0]"
               ]
             },
             {
@@ -82173,10 +82346,17 @@
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
                     "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.text->Narrative.div"
                   }
                 ],
                 "text": "The 'idref' attribute is not declared."
-              }
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0].text[0].div[0]"
+              ]
             },
             {
               "extension": [
@@ -82210,6 +82390,26 @@
               },
               "expression": [
                 "Bundle.entry[1].resource[0].identifier[0].value[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1100"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.text->Narrative.div"
+                  }
+                ],
+                "text": "The 'idref' attribute is not declared."
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0].section[0].text[0].div[0]"
               ]
             }
           ]

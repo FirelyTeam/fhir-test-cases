@@ -409,7 +409,7 @@
                     "code": "Observation(http://example.org/fhir/StructureDefinition/MyObservation).value"
                   }
                 ],
-                "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units)"
+                "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units), but the binding is of strength 'required'"
               },
               "diagnostics": "Observation(http://example.org/fhir/StructureDefinition/MyObservation).value",
               "expression": [
@@ -475,7 +475,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/MyObservation).value"
                     }
                   ],
-                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units)"
+                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units), but the binding is of strength 'required'"
                 },
                 "diagnostics": "Observation(http://example.org/fhir/StructureDefinition/MyObservation).value",
                 "expression": [
@@ -560,7 +560,7 @@
                       "code": "Observation(http://example.org/fhir/StructureDefinition/MyObservation).value"
                     }
                   ],
-                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units)"
+                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units), but the binding is of strength 'required'"
                 },
                 "diagnostics": "Observation(http://example.org/fhir/StructureDefinition/MyObservation).value",
                 "expression": [
@@ -1203,17 +1203,35 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 10
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 20
+                }
+              ],
               "severity": "error",
-              "code": "unknown",
+              "code": "invalid",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "1011"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Group.characteristic.value[@default]"
                   }
                 ],
-                "text": "While building a POCO: value is a primitive of type System.Boolean, but the target POCO is a Hl7.Fhir.Model.DynamicDataType, which is not FHIR primitive. (at Group.characteristic[0].value[0])"
-              }
+                "text": "Element is of type 'UnknownType_Group.characteristic[0].value', which is not one of the allowed choice types ('CodeableConcept','boolean','Quantity','Range','Reference') (for slice @default)"
+              },
+              "diagnostics": "Group.characteristic.value[@default]",
+              "expression": [
+                "Group.characteristic[0].value[0]"
+              ]
             },
             {
               "severity": "warning",
@@ -1988,17 +2006,137 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 2
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ChildrenValidator"
+                }
+              ],
               "severity": "error",
-              "code": "unknown",
+              "code": "invalid",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "1001"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List"
                   }
                 ],
-                "text": "While building a POCO: value is a primitive of type System.String, but the target POCO is a Hl7.Fhir.Model.DynamicDataType, which is not FHIR primitive. (at List.status[0].extension[0].value[0])"
-              }
+                "text": "Encountered unknown child elements 'fhir_comments'"
+              },
+              "expression": [
+                "List"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ChildrenValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1001"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.id->id"
+                  }
+                ],
+                "text": "Encountered unknown child elements 'fhir_comments'"
+              },
+              "expression": [
+                "List.id[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ExtensionSchema"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4009"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.status->code.extension"
+                  }
+                ],
+                "text": "Unable to resolve reference to extension 'http://acme.com/some_url'."
+              },
+              "expression": [
+                "List.status[0].extension[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 17
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 29
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1011"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "List.status->code.extension->Extension.value[@default]"
+                  }
+                ],
+                "text": "Element is of type 'CodeX', which is not one of the allowed choice types ('base64Binary','boolean','canonical','code','date','dateTime','decimal','id','instant','integer','integer64','markdown','oid','positiveInt','string','time','unsignedInt','uri','url','uuid','Address','Age','Annotation','Attachment','CodeableConcept','CodeableReference','Coding','ContactPoint','Count','Distance','Duration','HumanName','Identifier','Money','Period','Quantity','Range','Ratio','RatioRange','Reference','SampledData','Signature','Timing','ContactDetail','DataRequirement','Expression','ParameterDefinition','RelatedArtifact','TriggerDefinition','UsageContext','Availability','ExtendedContactDetail','Dosage','Meta') (for slice @default)"
+              },
+              "diagnostics": "List.status->code.extension->Extension.value[@default]",
+              "expression": [
+                "List.status[0].extension[0].value[0]"
+              ]
             }
           ]
         }
@@ -2926,7 +3064,7 @@
                     "code": "Encounter.status"
                   }
                 ],
-                "text": "Code 'completed' does not exist in the value set 'EncounterStatus' (http://hl7.org/fhir/ValueSet/encounter-status)"
+                "text": "Code 'completed' does not exist in the value set 'EncounterStatus' (http://hl7.org/fhir/ValueSet/encounter-status), but the binding is of strength 'required'"
               },
               "expression": [
                 "Encounter.status[0]"
@@ -13065,17 +13203,35 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                }
+              ],
               "severity": "error",
-              "code": "unknown",
+              "code": "invalid",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "1011"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Group.characteristic.value[@default]"
                   }
                 ],
-                "text": "While building a POCO: value is a primitive of type System.String, but the target POCO is a Hl7.Fhir.Model.DynamicDataType, which is not FHIR primitive. (at Group.characteristic[0].value[0])"
-              }
+                "text": "Element is of type 'UnknownType_Group.characteristic[0]', which is not one of the allowed choice types ('CodeableConcept','boolean','Quantity','Range','Reference') (for slice @default)"
+              },
+              "diagnostics": "Group.characteristic.value[@default]",
+              "expression": [
+                "Group.characteristic[0].value[0]"
+              ]
             },
             {
               "severity": "warning",
@@ -13986,7 +14142,7 @@
                     "code": "List.status"
                   }
                 ],
-                "text": "Code 'current1' does not exist in the value set 'List Status' (http://hl7.org/fhir/ValueSet/list-status)"
+                "text": "Code 'current1' does not exist in the value set 'List Status' (http://hl7.org/fhir/ValueSet/list-status), but the binding is of strength 'required'"
               },
               "expression": [
                 "List.status[0]"
@@ -18105,7 +18261,7 @@
                     "code": "Patient.gender"
                   }
                 ],
-                "text": "Code 'asdfafafafd' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender)"
+                "text": "Code 'asdfafafafd' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required'"
               },
               "expression": [
                 "Patient.gender[0]"
@@ -18220,7 +18376,7 @@
                       "code": "Patient(http://hl7.org/fhir/StructureDefinition/patient-conform-profile).gender"
                     }
                   ],
-                  "text": "Code 'asdfafafafd' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender)"
+                  "text": "Code 'asdfafafafd' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required'"
                 },
                 "diagnostics": "Patient(http://hl7.org/fhir/StructureDefinition/patient-conform-profile).gender",
                 "expression": [
@@ -30764,7 +30920,7 @@
                       "code": "DocumentReference(http://fhir.ch/ig/ch-epr-term/StructureDefinition/ch-epr-term-documentreference).type"
                     }
                   ],
-                  "text": "Code '371532007' from system 'http://snomed.info/sct' has incorrect display 'Progress note', should be 'Progress report (record artifact)'"
+                  "text": "Code '371532007' (display 'Progress note') from system 'http://snomed.info/sct' has incorrect display 'Progress note', should be 'Progress report (record artifact)'"
                 },
                 "diagnostics": "DocumentReference(http://fhir.ch/ig/ch-epr-term/StructureDefinition/ch-epr-term-documentreference).type",
                 "expression": [
@@ -34423,7 +34579,7 @@
                     "code": "Bundle.entry.resource->Patient.gender"
                   }
                 ],
-                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender)"
+                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required'"
               },
               "expression": [
                 "Bundle.entry[0].resource[0].gender[0]"
@@ -34457,7 +34613,7 @@
                     "code": "Bundle.entry.resource->Patient.gender"
                   }
                 ],
-                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender)"
+                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required'"
               },
               "expression": [
                 "Bundle.entry[1].resource[0].gender[0]"
@@ -34544,7 +34700,7 @@
                     "code": "Bundle.entry.resource->Patient.gender"
                   }
                 ],
-                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender)"
+                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required'"
               },
               "expression": [
                 "Bundle.entry[0].resource[0].gender[0]"
@@ -34578,7 +34734,7 @@
                     "code": "Bundle.entry.resource->Patient.link.other[forPatient]->Patient.gender"
                   }
                 ],
-                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender) (for slice forPatient)"
+                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required' (for slice forPatient)"
               },
               "diagnostics": "Bundle.entry.resource->Patient.link.other[forPatient]->Patient.gender",
               "expression": [
@@ -44634,7 +44790,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+                "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Failed to convert ElementDefinition at Patient.extension:preferredPharmacy in profile http://fhir.nl/fhir/StructureDefinition/nl-core-patient: Resource could not be found."
               }
             }
           ]
@@ -44721,7 +44877,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+                "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Failed to convert ElementDefinition at Patient.extension:preferredPharmacy in profile http://fhir.nl/fhir/StructureDefinition/nl-core-patient: Resource could not be found."
               }
             }
           ]
@@ -45767,7 +45923,7 @@
                       "code": "Observation(https://bb/StructureDefinition/BBDemographicAge).value"
                     }
                   ],
-                  "text": "Code 'test' does not exist in the value set 'Babylon Demographic Age Unit' (https://bb/ValueSet/BBDemographicAgeUnit)"
+                  "text": "Code 'test' does not exist in the value set 'Babylon Demographic Age Unit' (https://bb/ValueSet/BBDemographicAgeUnit), but the binding is of strength 'required'"
                 },
                 "diagnostics": "Observation(https://bb/StructureDefinition/BBDemographicAge).value",
                 "expression": [
@@ -45926,7 +46082,7 @@
                       "code": "Observation(https://bb/StructureDefinition/BBDemographicAge).value"
                     }
                   ],
-                  "text": "Code 'cm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Babylon Demographic Age Unit' (https://bb/ValueSet/BBDemographicAgeUnit)"
+                  "text": "Code 'cm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Babylon Demographic Age Unit' (https://bb/ValueSet/BBDemographicAgeUnit), but the binding is of strength 'required'"
                 },
                 "diagnostics": "Observation(https://bb/StructureDefinition/BBDemographicAge).value",
                 "expression": [
@@ -56342,7 +56498,7 @@
                     "code": "Bundle.entry.resource->Immunization.status"
                   }
                 ],
-                "text": "Code 'Completed' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status)"
+                "text": "Code 'Completed' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status), but the binding is of strength 'required'"
               },
               "expression": [
                 "Bundle.entry[1].resource[0].status[0]"
@@ -56376,7 +56532,7 @@
                     "code": "Bundle.entry.resource->Immunization.status"
                   }
                 ],
-                "text": "Code 'COMPLETED' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status)"
+                "text": "Code 'COMPLETED' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status), but the binding is of strength 'required'"
               },
               "expression": [
                 "Bundle.entry[2].resource[0].status[0]"
@@ -56508,7 +56664,7 @@
                       "code": "Bundle.entry.resource->Immunization.status"
                     }
                   ],
-                  "text": "Code 'Completed' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status)"
+                  "text": "Code 'Completed' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status), but the binding is of strength 'required'"
                 },
                 "expression": [
                   "Bundle.entry[1].resource[0].status[0]"
@@ -56542,7 +56698,7 @@
                       "code": "Bundle.entry.resource->Immunization.status"
                     }
                   ],
-                  "text": "Code 'COMPLETED' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status)"
+                  "text": "Code 'COMPLETED' does not exist in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status), but the binding is of strength 'required'"
                 },
                 "expression": [
                   "Bundle.entry[2].resource[0].status[0]"
@@ -66694,7 +66850,7 @@
                     "code": "CapabilityStatement.fhirVersion"
                   }
                 ],
-                "text": "Code '5.0.0' does not exist in the value set 'FHIRVersion' (http://hl7.org/fhir/ValueSet/FHIR-version)"
+                "text": "Code '5.0.0' does not exist in the value set 'FHIRVersion' (http://hl7.org/fhir/ValueSet/FHIR-version), but the binding is of strength 'required'"
               },
               "expression": [
                 "CapabilityStatement.fhirVersion[0]"
@@ -66937,7 +67093,7 @@
                     "code": "Bundle.entry.resource->Endpoint.status"
                   }
                 ],
-                "text": "Code '[%status%]' does not exist in the value set 'EndpointStatus' (http://hl7.org/fhir/ValueSet/endpoint-status)"
+                "text": "Code '[%status%]' does not exist in the value set 'EndpointStatus' (http://hl7.org/fhir/ValueSet/endpoint-status), but the binding is of strength 'required'"
               },
               "expression": [
                 "Bundle.entry[0].resource[0].status[0]"
@@ -74367,7 +74523,7 @@
                     "code": "StructureDefinition.differential.element->ElementDefinition.slicing.discriminator.type"
                   }
                 ],
-                "text": "Code 'expression' does not exist in the value set 'DiscriminatorType' (http://hl7.org/fhir/ValueSet/discriminator-type)"
+                "text": "Code 'expression' does not exist in the value set 'DiscriminatorType' (http://hl7.org/fhir/ValueSet/discriminator-type), but the binding is of strength 'required'"
               },
               "expression": [
                 "StructureDefinition.differential[0].element[0].slicing[0].discriminator[0].type[0]"
@@ -81760,7 +81916,7 @@
                     "code": "SearchParameter.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value"
                   }
                 ],
-                "text": "Code 'pe' does not exist in the value set 'HL7Workgroup' (http://hl7.org/fhir/ValueSet/hl7-work-group)"
+                "text": "Code 'pe' does not exist in the value set 'HL7Workgroup' (http://hl7.org/fhir/ValueSet/hl7-work-group), but the binding is of strength 'required'"
               },
               "diagnostics": "SearchParameter.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value",
               "expression": [

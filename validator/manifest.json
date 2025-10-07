@@ -945,6 +945,19 @@
                   ],
                   "text": "Encountered an error while loading schema 'http://phr.kanta.fi/StructureDefinition/fiphr-pef-stu3': Compiler needs access to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-patient-stu3', but it cannot be resolved."
                 }
+              },
+              {
+                "severity": "error",
+                "code": "unknown",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "-1"
+                    }
+                  ],
+                  "text": "The schema returned for an extension should be of type ExtensionSchema, not Firely.Fhir.Validation.DatatypeSchema."
+                }
               }
             ]
           }
@@ -7531,6 +7544,128 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole': File was not found: 'hl7.fhir.us.core#4.0.0'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole': File was not found: 'hl7.fhir.us.core#4.0.0'."
+              },
+              "expression": [
+                "PractitionerRole"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 19
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "PractitionerRole.practitioner"
+                  }
+                ],
+                "text": "Cannot resolve reference urn:uuid:0000016e-8ae7-5aae-0000-0000000040a6"
+              },
+              "expression": [
+                "PractitionerRole.practitioner[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 12
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 19
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "PractitionerRole.organization"
+                  }
+                ],
+                "text": "Cannot resolve reference urn:uuid:279b2a85-ab64-3dec-90df-fbca8b479db5"
+              },
+              "expression": [
+                "PractitionerRole.organization[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 41
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 5
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "PractitionerRole.location"
+                  }
+                ],
+                "text": "Cannot resolve reference urn:uuid:21c80a53-b119-4193-8e29-1cf291595140"
+              },
+              "expression": [
+                "PractitionerRole.location[0]"
+              ]
             }
           ]
         }
@@ -11137,6 +11272,19 @@
                   ],
                   "text": "Encountered an error while loading schema 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note': Compiler needs access to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance', but it cannot be resolved."
                 }
+              },
+              {
+                "severity": "error",
+                "code": "unknown",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "-1"
+                    }
+                  ],
+                  "text": "Type checking the data: Encountered unknown element 'confidentiality' at location 'Composition.confidentiality[0]' while parsing"
+                }
               }
             ]
           }
@@ -11187,6 +11335,19 @@
                     }
                   ],
                   "text": "Encountered an error while loading schema 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note': Compiler needs access to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance', but it cannot be resolved."
+                }
+              },
+              {
+                "severity": "error",
+                "code": "unknown",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "-1"
+                    }
+                  ],
+                  "text": "Type checking the data: Encountered unknown element 'confidentiality' at location 'Composition.confidentiality[0]' while parsing"
                 }
               }
             ]
@@ -17533,6 +17694,26 @@
                   ],
                   "text": "Encountered an error while loading schema 'https://example.de/fhir/StructureDefinition/MyPractitioner': Failed to convert ElementDefinition at Practitioner in profile https://example.de/fhir/StructureDefinition/MyPractitioner: Encountered an invalid or incomplete slice at element 'Practitioner.gender', which cannot be understood by the validation."
                 }
+              },
+              {
+                "severity": "error",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4000"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": ""
+                    }
+                  ],
+                  "text": "Unable to resolve reference to profile 'https://example.de/fhir/StructureDefinition/MyPractitioner'. Details: Encountered an error while loading schema 'https://example.de/fhir/StructureDefinition/MyPractitioner': Failed to convert ElementDefinition at Practitioner in profile https://example.de/fhir/StructureDefinition/MyPractitioner: Encountered an invalid or incomplete slice at element 'Practitioner.gender', which cannot be understood by the validation."
+                },
+                "expression": [
+                  "Practitioner"
+                ]
               }
             ]
           }
@@ -31929,6 +32110,19 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient': File was not found: 'hl7.fhir.us.mcode#1.0.0'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "unknown",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "-1"
+                  }
+                ],
+                "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race': File was not found: 'hl7.fhir.us.mcode#1.0.0'."
+              }
             }
           ]
         }
@@ -35079,6 +35273,26 @@
                   ],
                   "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
                 }
+              },
+              {
+                "severity": "error",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4000"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": ""
+                    }
+                  ],
+                  "text": "Unable to resolve reference to profile 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient'. Details: Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+                },
+                "expression": [
+                  "Patient"
+                ]
               }
             ]
           }
@@ -35119,6 +35333,26 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient'. Details: Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+              },
+              "expression": [
+                "Patient"
+              ]
             }
           ]
         }
@@ -35206,6 +35440,60 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient'. Details: Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Cannot walk into unknown StructureDefinition with canonical 'http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy' at 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient#Patient.extension (Patient.extension:preferredPharmacy)'"
+              },
+              "expression": [
+                "Patient"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 39
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ExtensionSchema"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4009"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Patient.address->Address.country->string.extension"
+                  }
+                ],
+                "text": "Unable to resolve reference to extension 'http://nictiz.nl/fhir/StructureDefinition/some-other-extension'."
+              },
+              "expression": [
+                "Patient.address[0].country[0].extension"
+              ]
             }
           ]
         }
@@ -36090,6 +36378,196 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference': File was not found: 'hl7.fhir.us.core#3.1.0'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference': File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "DocumentReference"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 38
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.subject"
+                  }
+                ],
+                "text": "Resolution of external reference Device/foo failed. Message: File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "DocumentReference.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 38
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Device/foo"
+              },
+              "expression": [
+                "DocumentReference.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 44
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 5
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.author"
+                  }
+                ],
+                "text": "Resolution of external reference Practitioner/practitioner-1 failed. Message: File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "DocumentReference.author[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 44
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 5
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.author"
+                  }
+                ],
+                "text": "Cannot resolve reference Practitioner/practitioner-1"
+              },
+              "expression": [
+                "DocumentReference.author[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 53
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 35
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "BindingValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "6006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.content.attachment->Attachment.contentType"
+                  }
+                ],
+                "text": "Terminology service failed while validating code 'text/plain': File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "DocumentReference.content[0].attachment[0].contentType[0]"
+              ]
             }
           ]
         }
@@ -38469,6 +38947,94 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant': File was not found: 'hl7.fhir.us.core#3.1.0'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant': File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "Observation"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 28
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation.subject"
+                  }
+                ],
+                "text": "Resolution of external reference Patient/mCODEPatientExample01 failed. Message: File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "Observation.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 28
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/mCODEPatientExample01"
+              },
+              "expression": [
+                "Observation.subject[0]"
+              ]
             }
           ]
         }
@@ -38615,6 +39181,94 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant': File was not found: 'hl7.fhir.us.core#3.1.0'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant': File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "Observation"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 28
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation.subject"
+                  }
+                ],
+                "text": "Resolution of external reference Patient/mCODEPatientExample01 failed. Message: File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "Observation.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 28
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Observation.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/mCODEPatientExample01"
+              },
+              "expression": [
+                "Observation.subject[0]"
+              ]
             }
           ]
         }
@@ -42515,6 +43169,1056 @@
                 ],
                 "text": "Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-bundle': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-bundle'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-bundle': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-composition'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-composition': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.subject"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patient'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-patient': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[1].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.subject->Patient.contact.organization"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-organization': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[2].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.encounter"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-encounter'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-encounter': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[4].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.encounter->Encounter.basedOn"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-serviceRequest'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-serviceRequest': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[5].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.encounter->Encounter.basedOn->ServiceRequest.contained"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-organization': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[5].resource[0].contained[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 679
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 22
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.encounter->Encounter.basedOn->ServiceRequest.requester"
+                  }
+                ],
+                "text": "Resolution of external reference Practitioner/mni-practitioner-example1 failed. Message: File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[5].resource[0].requester[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 679
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 22
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.encounter->Encounter.basedOn->ServiceRequest.requester"
+                  }
+                ],
+                "text": "Cannot resolve reference Practitioner/mni-practitioner-example1"
+              },
+              "expression": [
+                "Bundle.entry[5].resource[0].requester[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-coverage'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-coverage': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[7].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->Coverage.contained"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[7].resource[0].contained[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->Coverage.contained"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-contract'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-contract': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[7].resource[0].contained[1]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->Coverage.payor[forOrganization]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-organization': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[8].resource[0], element Bundle.entry.resource->Composition.section.entry->Coverage.payor[forOrganization]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->Coverage.contract"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-contract'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-contract': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[7].resource[0].contained[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medicationStatement'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-medicationStatement': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[10].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[x][Reference]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-medication': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[11].resource[0], element Bundle.entry.resource->Composition.section.entry->MedicationStatement.medication[x][Reference]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medicationStatement'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-medicationStatement': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[12].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->MedicationStatement.contained"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-medication': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[12].resource[0].contained[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medicationStatement'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-medicationStatement': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[13].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->MedicationStatement.contained"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-medication'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-medication': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[13].resource[0].contained[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-allergyIntolerance'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-allergyIntolerance': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[14].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-allergyIntolerance'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-allergyIntolerance': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[15].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-condition'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-condition': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[16].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-condition'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-condition': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[17].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-procedure'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-procedure': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[18].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[38].resource[0], element Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 2338
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 46
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "BindingValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "6006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType"
+                  }
+                ],
+                "text": "Terminology service failed while validating code 'application/pdf': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[38].resource[0].content[0].attachment[0].contentType[0], element Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-procedure'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-procedure': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[19].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-laboratory'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-laboratory': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[20].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-laboratory'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-laboratory': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[21].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-laboratory'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-laboratory': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[22].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bodyWeight'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bodyWeight': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[23].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bodyHeight'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bodyHeight': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[24].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bodyMassIndex'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bodyMassIndex': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[25].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bloodPressure'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bloodPressure': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[26].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bloodGroup'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-bloodGroup': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[27].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-riskFactor'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-riskFactor': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[28].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-riskFactor'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-riskFactor': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[29].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-familyMemberHistory'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-familyMemberHistory': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[30].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-familyMemberHistory'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-familyMemberHistory': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[31].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-estimatedDateOfConception'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-estimatedDateOfConception': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[32].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-estimatedDateOfDelivery'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-estimatedDateOfDelivery': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[33].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-dateOfLastMenstruation'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-dateOfLastMenstruation': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[34].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-timeOfGestation'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-obs-timeOfGestation': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[35].resource[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[36].resource[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 2264
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 46
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "BindingValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "6006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->DocumentReference.content.attachment->Attachment.contentType"
+                  }
+                ],
+                "text": "Terminology service failed while validating code 'application/pdf': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[36].resource[0].content[0].attachment[0].contentType[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[37].resource[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 2311
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 46
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "BindingValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "6006"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource->Composition.section.entry->DocumentReference.content.attachment->Attachment.contentType"
+                  }
+                ],
+                "text": "Terminology service failed while validating code 'application/pdf': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[37].resource[0].content[0].attachment[0].contentType[0]"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
+              },
+              "expression": [
+                "Bundle.entry[9].resource[0]"
+              ]
             }
           ]
         }
@@ -44595,6 +46299,162 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference': File was not found: 'hl7.fhir.us.core#3.1.0'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference': File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "DocumentReference"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "BindingValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "code-invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "6005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.status"
+                  }
+                ],
+                "text": "No code found in code with a required binding."
+              },
+              "expression": [
+                "DocumentReference.status[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 34
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.subject"
+                  }
+                ],
+                "text": "Resolution of external reference Patient/example failed. Message: File was not found: 'hl7.fhir.us.core#3.1.0'."
+              },
+              "expression": [
+                "DocumentReference.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 34
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/example"
+              },
+              "expression": [
+                "DocumentReference.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 40
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 25
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "BindingValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "code-invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "6005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "DocumentReference.content.attachment->Attachment.contentType"
+                  }
+                ],
+                "text": "No code found in code with a required binding."
+              },
+              "expression": [
+                "DocumentReference.content[0].attachment[0].contentType[0]"
+              ]
             }
           ]
         }
@@ -45214,6 +47074,94 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition': File was not found: 'hl7.fhir.us.core#3.1.1'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition': File was not found: 'hl7.fhir.us.core#3.1.1'."
+              },
+              "expression": [
+                "Condition"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 48
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Condition.subject"
+                  }
+                ],
+                "text": "Resolution of external reference Patient/example failed. Message: File was not found: 'hl7.fhir.us.core#3.1.1'."
+              },
+              "expression": [
+                "Condition.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 48
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Condition.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/example"
+              },
+              "expression": [
+                "Condition.subject[0]"
+              ]
             }
           ]
         }
@@ -45333,6 +47281,19 @@
                   }
                 ],
                 "text": "Encountered an error while loading schema 'https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose': File was not found: 'de.medizininformatikinitiative.kerndatensatz.diagnose#1.0.4'."
+              }
+            },
+            {
+              "severity": "error",
+              "code": "unknown",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "-1"
+                  }
+                ],
+                "text": "Encountered an error while loading schema 'http://fhir.de/StructureDefinition/icd-10-gm-primaercode': File was not found: 'de.medizininformatikinitiative.kerndatensatz.diagnose#1.0.4'."
               }
             }
           ]
@@ -50203,6 +52164,19 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "unknown",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "-1"
+                  }
+                ],
+                "text": "Encountered an error while loading schema 'http://hl7.no/fhir/StructureDefinition/no-basis-middlename': File was not found: 'colonoscopyreport.no#0.7.4'."
+              }
             }
           ]
         }
@@ -53013,6 +54987,230 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://fhir.mimic.mit.edu/StructureDefinition/mimic-encounter': File was not found: 'mimic/mimic-0.1.2.tgz'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://fhir.mimic.mit.edu/StructureDefinition/mimic-encounter'. Details: Encountered an error while loading schema 'http://fhir.mimic.mit.edu/StructureDefinition/mimic-encounter': File was not found: 'mimic/mimic-0.1.2.tgz'."
+              },
+              "expression": [
+                "Encounter"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 659
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Encounter.identifier->Identifier.assigner"
+                  }
+                ],
+                "text": "Resolution of external reference Organization/ee172322-118b-5716-abbc-18e4c5437e15 failed. Message: File was not found: 'mimic/mimic-0.1.2.tgz'."
+              },
+              "expression": [
+                "Encounter.identifier[0].assigner[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 659
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Encounter.identifier->Identifier.assigner"
+                  }
+                ],
+                "text": "Cannot resolve reference Organization/ee172322-118b-5716-abbc-18e4c5437e15"
+              },
+              "expression": [
+                "Encounter.identifier[0].assigner[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 460
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Encounter.subject"
+                  }
+                ],
+                "text": "Resolution of external reference Patient/08fdadd0-70d8-59b4-902b-6b7a3b83d2cc failed. Message: File was not found: 'mimic/mimic-0.1.2.tgz'."
+              },
+              "expression": [
+                "Encounter.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 460
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Encounter.subject"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/08fdadd0-70d8-59b4-902b-6b7a3b83d2cc"
+              },
+              "expression": [
+                "Encounter.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 1051
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Encounter.serviceProvider"
+                  }
+                ],
+                "text": "Resolution of external reference Organization/ee172322-118b-5716-abbc-18e4c5437ecc failed. Message: File was not found: 'mimic/mimic-0.1.2.tgz'."
+              },
+              "expression": [
+                "Encounter.serviceProvider[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 1051
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Encounter.serviceProvider"
+                  }
+                ],
+                "text": "Cannot resolve reference Organization/ee172322-118b-5716-abbc-18e4c5437ecc"
+              },
+              "expression": [
+                "Encounter.serviceProvider[0]"
+              ]
             }
           ]
         }
@@ -53262,7 +55460,7 @@
                     "code": "-1"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'https://bla/StructureDefinition/MyKBV_PR_Base_Diagnosis': File was not found: 'kbv.basis#1.2.0'."
+                "text": "Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German': File was not found: 'kbv.basis#1.2.0'."
               }
             }
           ]
@@ -54058,6 +56256,468 @@
                   ],
                   "text": "Encountered an error while loading schema 'http://nictiz.nl/fhir/StructureDefinition/MedicationOverview': resolve() should only be called on elements of type Reference at 'http://hl7.org/fhir/StructureDefinition/Reference#Reference.reference (Reference.reference)'."
                 }
+              },
+              {
+                "severity": "error",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4000"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": ""
+                    }
+                  ],
+                  "text": "Unable to resolve reference to profile 'http://nictiz.nl/fhir/StructureDefinition/MedicationOverview'. Details: Encountered an error while loading schema 'http://nictiz.nl/fhir/StructureDefinition/MedicationOverview': resolve() should only be called on elements of type Reference at 'http://hl7.org/fhir/StructureDefinition/Reference#Reference.reference (Reference.reference)'."
+                },
+                "expression": [
+                  "List"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 18
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 16
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.subject"
+                    }
+                  ],
+                  "text": "Cannot resolve reference Patient/eHf0abZdMh9ePCrggd1RroA3"
+                },
+                "expression": [
+                  "List.subject[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 25
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationRequest/e5DE05RKFtFrO83ElUxJrww4k5UDIMDFVli7QPvZIICw3"
+                },
+                "expression": [
+                  "List.entry[0].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 31
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationRequest/e7dqLcHIEXOklMxldw9mOP14N9qXeSNvIzEy5MM8QY7w3"
+                },
+                "expression": [
+                  "List.entry[1].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 37
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationRequest/e9gFImErnLR9BvDFu9WvHGE3amuIWM333Kgf078UqgWk3"
+                },
+                "expression": [
+                  "List.entry[2].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 43
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationRequest/eC0O7AmF2EHZqHhVj2lUP7p18TTC1F0KzvKJYpk41OHw3"
+                },
+                "expression": [
+                  "List.entry[3].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 49
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationRequest/eOhCpUfdWH.cv9BN72wL.bKzdzvh3WjRXhX1ieqmBW-M3"
+                },
+                "expression": [
+                  "List.entry[4].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 55
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationRequest/erN5YugNHP1H2H.HNJCjQEIqQrsalSRMZLpkxRnMjIho3"
+                },
+                "expression": [
+                  "List.entry[5].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 61
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationStatement/e4o80JnSUZDOHA6WAEVCiiyaIGxPeVybkojS.NlEpFig3"
+                },
+                "expression": [
+                  "List.entry[6].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 67
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationStatement/eD3c0RCFB0z6W7eERX1cqyGAAIpfCOKo-ZxhQdW82TK03"
+                },
+                "expression": [
+                  "List.entry[7].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 73
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationStatement/eET55i6yWcHv6Hse7B-PCelDfqqaorhqVH4KJTnq71I83"
+                },
+                "expression": [
+                  "List.entry[8].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 79
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationStatement/eOAeWAXV3wsPSmHDxVsye2AA8Et7GbUgzsLBjRupw9kg3"
+                },
+                "expression": [
+                  "List.entry[9].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 85
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationStatement/efXBl5a8NpWftGF0QkpfXz.UqBVa55D.eWw6XhFT1BFE3"
+                },
+                "expression": [
+                  "List.entry[10].item[0]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 91
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "ReferencedInstanceValidator"
+                  }
+                ],
+                "severity": "warning",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4005"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": "List.entry.item"
+                    }
+                  ],
+                  "text": "Cannot resolve reference MedicationStatement/enbPCc88FbUQHRcAiQGyH8AoEhuNBkn3IPNH5aken.GU3"
+                },
+                "expression": [
+                  "List.entry[11].item[0]"
+                ]
               }
             ]
           }
@@ -54668,6 +57328,26 @@
                   ],
                   "text": "Encountered an error while loading schema 'http://hl7.org/fhir/test/StructureDefinition/Slice23': Cannot walk into unknown child 'type' at 'http://hl7.org/fhir/test/StructureDefinition/Slice23#AuditEvent.agent.extension (AuditEvent.agent:userorg.extension:extOtherId/npi)'."
                 }
+              },
+              {
+                "severity": "error",
+                "code": "incomplete",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "4000"
+                    },
+                    {
+                      "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                      "code": ""
+                    }
+                  ],
+                  "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/test/StructureDefinition/Slice23'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/test/StructureDefinition/Slice23': Cannot walk into unknown child 'type' at 'http://hl7.org/fhir/test/StructureDefinition/Slice23#AuditEvent.agent.extension (AuditEvent.agent:userorg.extension:extOtherId/npi)'."
+                },
+                "expression": [
+                  "AuditEvent"
+                ]
               }
             ]
           }
@@ -61410,6 +64090,46 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://example.org/other-patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/other-patient-profile: Encountered an invalid or incomplete slice at element 'Patient.identifier', which cannot be understood by the validation."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://example.org/patient-profile'. Details: Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract is a mandatory element."
+              },
+              "expression": [
+                "Patient"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://example.org/other-patient-profile'. Details: Encountered an error while loading schema 'http://example.org/other-patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/other-patient-profile: Encountered an invalid or incomplete slice at element 'Patient.identifier', which cannot be understood by the validation."
+              },
+              "expression": [
+                "Patient"
+              ]
             }
           ]
         }
@@ -61471,6 +64191,46 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://example.org/other-patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/other-patient-profile: Encountered an invalid or incomplete slice at element 'Patient.identifier', which cannot be understood by the validation."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://example.org/patient-profile'. Details: Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract is a mandatory element."
+              },
+              "expression": [
+                "Patient"
+              ]
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://example.org/other-patient-profile'. Details: Encountered an error while loading schema 'http://example.org/other-patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/other-patient-profile: Encountered an invalid or incomplete slice at element 'Patient.identifier', which cannot be understood by the validation."
+              },
+              "expression": [
+                "Patient"
+              ]
             }
           ]
         }
@@ -61981,6 +64741,94 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile'. Details: Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
+              },
+              "expression": [
+                "AuditEvent"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 27
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent.agent.who"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/Bob"
+              },
+              "expression": [
+                "AuditEvent.agent[0].who[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 43
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 17
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent.source.observer"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/Bob"
+              },
+              "expression": [
+                "AuditEvent.source[0].observer[0]"
+              ]
             }
           ]
         }
@@ -62352,6 +65200,19 @@
                 ],
                 "text": "Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Body_Weight|1.0.0': File was not found: 'kbv.basis#1.2.0'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "unknown",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "-1"
+                  }
+                ],
+                "text": "Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German': File was not found: 'kbv.basis#1.2.0'."
+              }
             }
           ]
         }
@@ -62522,6 +65383,19 @@
                   }
                 ],
                 "text": "Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Body_Weight|1.0.0': File was not found: 'kbv.basis#1.2.0'."
+              }
+            },
+            {
+              "severity": "error",
+              "code": "unknown",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "-1"
+                  }
+                ],
+                "text": "Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German': File was not found: 'kbv.basis#1.2.0'."
               }
             }
           ]
@@ -63990,6 +66864,94 @@
                 ],
                 "text": "Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
               }
+            },
+            {
+              "severity": "error",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": ""
+                  }
+                ],
+                "text": "Unable to resolve reference to profile 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile'. Details: Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
+              },
+              "expression": [
+                "AuditEvent"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 28
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent.agent.who"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/Bob"
+              },
+              "expression": [
+                "AuditEvent.agent[0].who[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 44
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 17
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "warning",
+              "code": "incomplete",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "4005"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "AuditEvent.source.observer"
+                  }
+                ],
+                "text": "Cannot resolve reference Patient/Bob"
+              },
+              "expression": [
+                "AuditEvent.source[0].observer[0]"
+              ]
             }
           ]
         }
@@ -64991,16 +67953,23 @@
           "issue": [
             {
               "severity": "error",
-              "code": "unknown",
+              "code": "incomplete",
               "details": {
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "-1"
+                    "code": "4000"
+                  },
+                  {
+                    "system": "http://fire.ly/dotnet-sdk-operation-outcome-structdef-reference",
+                    "code": "Bundle.entry.resource"
                   }
                 ],
-                "text": "Encountered an error while loading schema 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication': File was not found: 'de.medizininformatikinitiative.kerndatensatz.medikation#2.0.0-ballot1'."
-              }
+                "text": "Unable to resolve reference to profile 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication'. Details: Encountered an error while loading schema 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication': File was not found: 'de.medizininformatikinitiative.kerndatensatz.medikation#2.0.0-ballot1'."
+              },
+              "expression": [
+                "Bundle.entry[0].resource[0]"
+              ]
             }
           ]
         }

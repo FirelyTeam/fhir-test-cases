@@ -676,7 +676,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-pef-stu3'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -3689,7 +3688,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://api-v8-r4.hspconsortium.org/DrugFormulary0/open/StructureDefinition/usdrugformulary-FormularyDrug'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Medication"
               ]
@@ -7403,7 +7401,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-questionnaireresponse-stu3-Annantesti2'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "QuestionnaireResponse"
               ]
@@ -7934,7 +7931,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole': File was not found: 'hl7.fhir.us.core#4.0.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "PractitionerRole"
               ]
@@ -8323,7 +8319,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Pattern'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -8653,7 +8648,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -8983,7 +8977,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -14213,7 +14206,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Composition"
               ]
@@ -14935,7 +14927,6 @@
                   ],
                   "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note': Compiler needs access to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance', but it cannot be resolved."
                 },
-                "diagnostics": "ElementDefinition trace: ",
                 "expression": [
                   "Composition"
                 ]
@@ -15649,7 +15640,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Composition"
               ]
@@ -16433,7 +16423,6 @@
                   ],
                   "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note': Compiler needs access to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance', but it cannot be resolved."
                 },
-                "diagnostics": "ElementDefinition trace: ",
                 "expression": [
                   "Composition"
                 ]
@@ -20961,7 +20950,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Bundle"
               ]
@@ -24051,7 +24039,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://example.de/fhir/StructureDefinition/MyPractitioner'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Practitioner"
               ]
@@ -24108,7 +24095,6 @@
                   ],
                   "text": "Unable to resolve reference to profile 'https://example.de/fhir/StructureDefinition/MyPractitioner'. Details: Encountered an error while loading schema 'https://example.de/fhir/StructureDefinition/MyPractitioner': Failed to convert ElementDefinition at Practitioner in profile https://example.de/fhir/StructureDefinition/MyPractitioner: Encountered an invalid or incomplete slice at element 'Practitioner.gender', which cannot be understood by the validation."
                 },
-                "diagnostics": "ElementDefinition trace: ",
                 "expression": [
                   "Practitioner"
                 ]
@@ -25070,7 +25056,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/fhir/StructureDefinition/param-profile2'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Parameters"
               ]
@@ -25156,7 +25141,6 @@
                   ],
                   "text": "Unable to resolve reference to profile 'http://example.org/fhir/StructureDefinition/param-profile2'."
                 },
-                "diagnostics": "ElementDefinition trace: ",
                 "expression": [
                   "Parameters"
                 ]
@@ -26521,7 +26505,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://fhir.telstrahealth.com/th-ncsr/StructureDefinition/ncsr-questionnaire'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Questionnaire"
               ]
@@ -27079,7 +27062,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/fhir/StructureDefinition/demo-profile-1'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Composition"
               ]
@@ -27136,7 +27118,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/fhir/StructureDefinition/demo-profile-1'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Composition"
               ]
@@ -27194,7 +27175,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/fhir/StructureDefinition/demo-profile-1'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Composition"
               ]
@@ -39345,7 +39325,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient': File was not found: 'hl7.fhir.us.mcode#1.0.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -41597,7 +41576,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://fhir.org/guides/argonaut/questionnaire/StructureDefinition/argo-questionnaire'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Questionnaire"
               ]
@@ -43913,7 +43891,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -44044,7 +44021,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient'. Details: Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Failed to convert ElementDefinition at Patient.extension:preferredPharmacy in profile http://fhir.nl/fhir/StructureDefinition/nl-core-patient: Resource could not be found."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -44148,7 +44124,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient'. Details: Encountered an error while loading schema 'http://fhir.nl/fhir/StructureDefinition/nl-core-patient': Failed to convert ElementDefinition at Patient.extension:preferredPharmacy in profile http://fhir.nl/fhir/StructureDefinition/nl-core-patient: Resource could not be found."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -45088,7 +45063,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference': File was not found: 'hl7.fhir.us.core#3.1.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "DocumentReference"
               ]
@@ -45453,7 +45427,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://bb/StructureDefinition/BBDemographicAge'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -45662,7 +45635,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://fhir.cambio.se/StructureDefinition/ObservationBodyTemperaturePrehospital/v1'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -47609,7 +47581,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant': File was not found: 'hl7.fhir.us.core#3.1.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -47834,7 +47805,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-genetic-variant': File was not found: 'hl7.fhir.us.core#3.1.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -49552,7 +49522,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-bundle'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Bundle"
               ]
@@ -51805,7 +51774,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-bundle'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-patientOverview-bundle': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Bundle"
               ]
@@ -53191,7 +53159,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://electronichealth.se/fhir/StructureDefinition/NLLMedicationRequest'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "MedicationRequest"
               ]
@@ -53437,7 +53404,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://electronichealth.se/fhir/StructureDefinition/NLLMedicationRequest'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "MedicationRequest"
               ]
@@ -53673,7 +53639,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://electronichealth.se/fhir/StructureDefinition/NLLMedicationRequest'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "MedicationRequest"
               ]
@@ -54381,7 +54346,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://fkcfhir.org/fhir/StructureDefinition/FreseniusMirceraMedRequest'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "MedicationRequest"
               ]
@@ -54839,7 +54803,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference': File was not found: 'hl7.fhir.us.core#3.1.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "DocumentReference"
               ]
@@ -55665,7 +55628,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition': File was not found: 'hl7.fhir.us.core#3.1.1'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Condition"
               ]
@@ -55864,7 +55826,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose'. Details: Encountered an error while loading schema 'https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose': File was not found: 'de.medizininformatikinitiative.kerndatensatz.diagnose#1.0.4'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Condition"
               ]
@@ -60747,7 +60708,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Bundle"
               ]
@@ -64376,7 +64336,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://fhir.mimic.mit.edu/StructureDefinition/mimic-encounter'. Details: Encountered an error while loading schema 'http://fhir.mimic.mit.edu/StructureDefinition/mimic-encounter': File was not found: 'mimic/mimic-0.1.2.tgz'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Encounter"
               ]
@@ -65446,7 +65405,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://nictiz.nl/fhir/StructureDefinition/MedicationOverview'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "List"
               ]
@@ -66038,7 +65996,6 @@
                   ],
                   "text": "Unable to resolve reference to profile 'http://nictiz.nl/fhir/StructureDefinition/MedicationOverview'. Details: Encountered an error while loading schema 'http://nictiz.nl/fhir/StructureDefinition/MedicationOverview': resolve() should only be called on elements of type Reference at 'http://hl7.org/fhir/StructureDefinition/Reference#Reference.reference (Reference.reference)'."
                 },
-                "diagnostics": "ElementDefinition trace: ",
                 "expression": [
                   "List"
                 ]
@@ -67204,7 +67161,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/test/StructureDefinition/Slice23'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "AuditEvent"
               ]
@@ -67307,7 +67263,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/test/StructureDefinition/Slice23'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "AuditEvent"
               ]
@@ -67464,7 +67419,6 @@
                   ],
                   "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/test/StructureDefinition/Slice23'. Details: Encountered an error while loading schema 'http://hl7.org/fhir/test/StructureDefinition/Slice23': Cannot walk into unknown child 'type' at 'http://hl7.org/fhir/test/StructureDefinition/Slice23#AuditEvent.agent.extension (AuditEvent.agent:userorg.extension:extOtherId/npi)'."
                 },
-                "diagnostics": "ElementDefinition trace: ",
                 "expression": [
                   "AuditEvent"
                 ]
@@ -75362,7 +75316,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/patient-profile'. Details: Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract"
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -75379,7 +75332,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/other-patient-profile'. Details: Encountered an error while loading schema 'http://example.org/other-patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/other-patient-profile: Encountered an invalid or incomplete slice at element 'Patient.identifier', which cannot be understood by the validation."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -75457,7 +75409,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/patient-profile'. Details: Encountered an error while loading schema 'http://example.org/patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/patient-profile: Abstract"
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -75474,7 +75425,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/other-patient-profile'. Details: Encountered an error while loading schema 'http://example.org/other-patient-profile': Failed to convert ElementDefinition at Patient in profile http://example.org/other-patient-profile: Encountered an invalid or incomplete slice at element 'Patient.identifier', which cannot be understood by the validation."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -76025,7 +75975,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile'. Details: Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "AuditEvent"
               ]
@@ -76476,7 +76425,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Body_Weight|1.0.0'. Details: Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Body_Weight|1.0.0': File was not found: 'kbv.basis#1.2.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -76819,7 +76767,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Body_Weight|1.0.0'. Details: Encountered an error while loading schema 'https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Body_Weight|1.0.0': File was not found: 'kbv.basis#1.2.0'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]
@@ -78692,7 +78639,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile'. Details: Encountered an error while loading schema 'http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile': Failed to convert ElementDefinition at AuditEvent.agent.extension:altid in profile http://example.org/reslicedextension/StructureDefinition/MyAuditEventProfile: The pattern discriminator should have a 'fixed[x]', 'pattern[x]' or binding element set on 'Identifier.system'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "AuditEvent"
               ]
@@ -81614,7 +81560,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Patient"
               ]
@@ -82065,7 +82010,6 @@
                 ],
                 "text": "Unable to resolve reference to profile 'http://hl7.org/fhir/uv/cardx-htn/StructureDefinition/average-smbp'."
               },
-              "diagnostics": "ElementDefinition trace: ",
               "expression": [
                 "Observation"
               ]

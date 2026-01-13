@@ -104,7 +104,7 @@
                     "code": "6005"
                   }
                 ],
-                "text": "No code found in code with a required binding."
+                "text": "No code found in code with a required binding to valueset 'http://hl7.org/fhir/ValueSet/allergy-intolerance-category|4.0.1'."
               },
               "diagnostics": "ElementDefinition trace: AllergyIntolerance.category",
               "expression": [
@@ -7827,6 +7827,19 @@
                 "expression": [
                   "Observation"
                 ]
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.snapshot.element[39].mapping[3].map, line 1408, position 14."
+                }
               }
             ]
           }
@@ -10619,6 +10632,19 @@
               "expression": [
                 "Parameters.parameter[44].value[0].extension[0].value[0]"
               ]
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Parameters.parameter[28].value, line 116, position 20."
+              }
             }
           ]
         }
@@ -11100,6 +11126,32 @@
                   }
                 ],
                 "text": "Expected property to be a integer, but found a String."
+              }
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Parameters.parameter[23].value, line 96, position 16."
+              }
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Parameters.parameter[25].value, line 104, position 16."
               }
             }
           ]
@@ -12427,6 +12479,19 @@
               "expression": [
                 "Parameters.parameter[39].value[0].extension[0].value[0]"
               ]
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Parameters.parameter[23].value, line 96, position 20."
+              }
             }
           ]
         }
@@ -14891,6 +14956,45 @@
               "expression": [
                 "Composition.section[22].entry[0]"
               ]
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Composition.section[2].title, line 176, position 16."
+              }
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Composition.section[8].title, line 345, position 16."
+              }
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Composition.section[12].title, line 510, position 16."
+              }
             }
           ]
         }
@@ -15612,6 +15716,84 @@
                 "expression": [
                   "Composition.section[22].entry[0]"
                 ]
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[13].label, line 181, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[13].short, line 182, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[43].label, line 525, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[43].short, line 526, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[49].pattern.coding[0].display, line 598, position 30."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[66].pattern.coding[0].display, line 787, position 30."
+                }
               }
             ]
           }
@@ -16387,6 +16569,45 @@
               "expression": [
                 "Composition.section[23].entry[0]"
               ]
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Composition.section[3].title, line 231, position 16."
+              }
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Composition.section[9].title, line 400, position 16."
+              }
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Composition.section[13].title, line 565, position 16."
+              }
             }
           ]
         }
@@ -17170,6 +17391,84 @@
                 "expression": [
                   "Composition.section[23].entry[0]"
                 ]
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[13].label, line 181, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[13].short, line 182, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[43].label, line 525, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[43].short, line 526, position 20."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[49].pattern.coding[0].display, line 598, position 30."
+                }
+              },
+              {
+                "severity": "warning",
+                "code": "structure",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                      "code": "XML126"
+                    }
+                  ],
+                  "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At StructureDefinition.differential.element[66].pattern.coding[0].display, line 787, position 30."
+                }
               }
             ]
           }
@@ -17854,6 +18153,19 @@
               "expression": [
                 "Parameters.parameter[0].value[0]"
               ]
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Parameters.parameter[0].value, line 4, position 18."
+              }
             }
           ]
         }
@@ -21512,6 +21824,19 @@
               "expression": [
                 "Bundle.entry[2].resource[0]"
               ]
+            },
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At Bundle.entry[3].resource.entry[3].resource.address[0].line[0], line 480, position 23."
+              }
             }
           ]
         }
@@ -54831,7 +55156,7 @@
                     "code": "6005"
                   }
                 ],
-                "text": "No code found in code with a required binding."
+                "text": "No code found in code with a required binding to valueset 'http://hl7.org/fhir/ValueSet/document-reference-status|4.0.1'."
               },
               "diagnostics": "ElementDefinition trace: DocumentReference.status",
               "expression": [
@@ -54955,7 +55280,7 @@
                     "code": "6005"
                   }
                 ],
-                "text": "No code found in code with a required binding."
+                "text": "No code found in code with a required binding to valueset 'http://hl7.org/fhir/ValueSet/mimetypes|4.0.1'."
               },
               "diagnostics": "ElementDefinition trace: DocumentReference.content.attachment->Attachment.contentType",
               "expression": [
@@ -74818,7 +75143,22 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "structure",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "XML126"
+                  }
+                ],
+                "text": "Syntax error in source: Attribute 'value' should not contain leading or trailing whitespace. At CodeSystem.concept[0].code, line 49, position 11."
+              }
+            }
+          ]
         }
       }
     },

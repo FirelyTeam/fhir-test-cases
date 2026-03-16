@@ -30245,7 +30245,7 @@
                     "code": "1012"
                   }
                 ],
-                "text": "Instance failed constraint bdl-3a \"For collections of type document, message, searchset or collection, all entries must contain resources, and not have request or response element\""
+                "text": "Instance failed constraint bdl-3a \"For collections of type document, message, searchset or collection, all entries must contain resources, and not have request or response elements\""
               },
               "diagnostics": "ElementDefinition trace: Bundle",
               "expression": [

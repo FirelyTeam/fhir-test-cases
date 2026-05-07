@@ -84,37 +84,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 7
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 22
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "BindingValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "informational",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "6006"
-                  }
-                ],
-                "text": "Code 'active' (display 'active') from system 'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical' has incorrect display 'active', should be 'Active'"
-              },
-              "diagnostics": "ElementDefinition trace: AllergyIntolerance.clinicalStatus",
-              "expression": [
-                "AllergyIntolerance.clinicalStatus[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 26
                 },
                 {
@@ -138,37 +107,6 @@
                 "text": "No code found in code with a required binding to valueset 'http://hl7.org/fhir/ValueSet/allergy-intolerance-category|4.0.1'."
               },
               "diagnostics": "ElementDefinition trace: AllergyIntolerance.category",
-              "expression": [
-                "AllergyIntolerance.category[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 26
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[^\\s]+(\\s[^\\s]+)*'"
-              },
-              "diagnostics": "ElementDefinition trace: AllergyIntolerance.category->code",
               "expression": [
                 "AllergyIntolerance.category[0]"
               ]
@@ -3038,7 +2976,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'UNK': Unable to resolve ValueSet."
+                "text": "Terminology service failed while validating code 'UNK': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Encounter.reasonCode->CodeableConcept.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor).value",
               "expression": [
@@ -8517,7 +8455,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Unable to resolve ValueSet. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Pattern).category[ResultType]",
                 "expression": [
@@ -8846,7 +8784,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Unable to resolve ValueSet. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]",
                 "expression": [
@@ -9232,7 +9170,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '104' (system 'http://myownsystem.info/sct'): Unable to resolve ValueSet. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '104' (system 'http://myownsystem.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]",
                 "expression": [
@@ -9267,7 +9205,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Unable to resolve ValueSet. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]",
                 "expression": [
@@ -9518,37 +9456,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 121
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex 'true|false' (for slice boolean)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[boolean]->boolean",
-              "expression": [
-                "Parameters.parameter[29].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -9646,37 +9553,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 129
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[0]|[-+]?[1-9][0-9]*' (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[30].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -9707,37 +9583,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[30].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 137
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '-?(0|[1-9][0-9]{0,17})(\\.[0-9]{1,17})?([eE][+-]?[0-9]{1,9}})?' (for slice decimal)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[decimal]->decimal",
-              "expression": [
-                "Parameters.parameter[31].value[0]"
               ]
             },
             {
@@ -9778,37 +9623,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 145
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?' (for slice base64Binary)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[base64Binary]->base64Binary",
-              "expression": [
-                "Parameters.parameter[32].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -9844,37 +9658,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 153
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))' (for slice instant)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[instant]->instant",
-              "expression": [
-                "Parameters.parameter[33].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -9905,37 +9688,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[instant]->instant.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[33].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 161
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*' (for slice string)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[string]->string",
-              "expression": [
-                "Parameters.parameter[34].value[0]"
               ]
             },
             {
@@ -10007,37 +9759,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 169
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '\\S*' (for slice uri)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[uri]->uri",
-              "expression": [
-                "Parameters.parameter[35].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -10068,37 +9789,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[uri]->uri.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[35].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 177
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?' (for slice date)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[date]->date",
-              "expression": [
-                "Parameters.parameter[36].value[0]"
               ]
             },
             {
@@ -10139,37 +9829,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 185
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?)?)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)?)?)?' (for slice dateTime)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[dateTime]->dateTime",
-              "expression": [
-                "Parameters.parameter[37].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -10200,37 +9859,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[dateTime]->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[37].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 193
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?' (for slice time)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[time]->time",
-              "expression": [
-                "Parameters.parameter[38].value[0]"
               ]
             },
             {
@@ -10271,37 +9899,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 201
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[^\\s]+( [^\\s]+)*' (for slice code)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[code]->code",
-              "expression": [
-                "Parameters.parameter[39].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -10332,37 +9929,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[code]->code.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[39].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 209
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex 'urn:oid:[0-2](\\.(0|[1-9][0-9]*))+' (for slice oid)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[oid]->oid",
-              "expression": [
-                "Parameters.parameter[40].value[0]"
               ]
             },
             {
@@ -10403,37 +9969,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 217
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[A-Za-z0-9\\-\\.]{1,64}' (for slice id)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[id]->id",
-              "expression": [
-                "Parameters.parameter[41].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -10464,37 +9999,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[id]->id.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[41].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 225
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[0]|([1-9][0-9]*)' (for slice unsignedInt)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[unsignedInt]->unsignedInt",
-              "expression": [
-                "Parameters.parameter[42].value[0]"
               ]
             },
             {
@@ -10535,37 +10039,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 233
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[1-9][0-9]*' (for slice positiveInt)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[positiveInt]->positiveInt",
-              "expression": [
-                "Parameters.parameter[43].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -10596,37 +10069,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[positiveInt]->positiveInt.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[43].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 241
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*' (for slice markdown)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[markdown]->markdown",
-              "expression": [
-                "Parameters.parameter[44].value[0]"
               ]
             },
             {
@@ -11365,37 +10807,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 101
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex 'true|false' (for slice boolean)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[boolean]->boolean",
-              "expression": [
-                "Parameters.parameter[24].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -11493,37 +10904,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 109
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[0]|[-+]?[1-9][0-9]*' (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[25].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -11554,37 +10934,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[25].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 117
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '-?(0|[1-9][0-9]{0,17})(\\.[0-9]{1,17})?([eE][+-]?[0-9]{1,9}})?' (for slice decimal)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[decimal]->decimal",
-              "expression": [
-                "Parameters.parameter[26].value[0]"
               ]
             },
             {
@@ -11625,37 +10974,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 125
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?' (for slice base64Binary)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[base64Binary]->base64Binary",
-              "expression": [
-                "Parameters.parameter[27].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -11691,37 +11009,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 133
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))' (for slice instant)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[instant]->instant",
-              "expression": [
-                "Parameters.parameter[28].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -11752,37 +11039,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[instant]->instant.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[28].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 141
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*' (for slice string)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[string]->string",
-              "expression": [
-                "Parameters.parameter[29].value[0]"
               ]
             },
             {
@@ -11854,37 +11110,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 149
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '\\S*' (for slice uri)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[uri]->uri",
-              "expression": [
-                "Parameters.parameter[30].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -11915,37 +11140,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[uri]->uri.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[30].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 157
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?' (for slice date)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[date]->date",
-              "expression": [
-                "Parameters.parameter[31].value[0]"
               ]
             },
             {
@@ -11986,37 +11180,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 165
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?)?)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)?)?)?' (for slice dateTime)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[dateTime]->dateTime",
-              "expression": [
-                "Parameters.parameter[32].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -12047,37 +11210,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[dateTime]->dateTime.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[32].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 173
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?' (for slice time)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[time]->time",
-              "expression": [
-                "Parameters.parameter[33].value[0]"
               ]
             },
             {
@@ -12118,37 +11250,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 181
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[^\\s]+( [^\\s]+)*' (for slice code)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[code]->code",
-              "expression": [
-                "Parameters.parameter[34].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -12179,37 +11280,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[code]->code.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[34].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 189
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex 'urn:oid:[0-2](\\.(0|[1-9][0-9]*))+' (for slice oid)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[oid]->oid",
-              "expression": [
-                "Parameters.parameter[35].value[0]"
               ]
             },
             {
@@ -12250,37 +11320,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 197
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[A-Za-z0-9\\-\\.]{1,64}' (for slice id)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[id]->id",
-              "expression": [
-                "Parameters.parameter[36].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -12311,37 +11350,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[id]->id.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[36].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 205
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[0]|([1-9][0-9]*)' (for slice unsignedInt)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[unsignedInt]->unsignedInt",
-              "expression": [
-                "Parameters.parameter[37].value[0]"
               ]
             },
             {
@@ -12382,37 +11390,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 213
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[1-9][0-9]*' (for slice positiveInt)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[positiveInt]->positiveInt",
-              "expression": [
-                "Parameters.parameter[38].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -12443,37 +11420,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[positiveInt]->positiveInt.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[38].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 221
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*' (for slice markdown)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[markdown]->markdown",
-              "expression": [
-                "Parameters.parameter[39].value[0]"
               ]
             },
             {
@@ -12830,7 +11776,7 @@
             {
               "severity": "fatal",
               "code": "invalid",
-              "diagnostics": "The 'id' start tag on line 4 position 4 does not match the end tag of 'List'. Line 7, position 3."
+              "diagnostics": "Can only exit from a resource part."
             }
           ]
         }
@@ -14068,7 +13014,7 @@
             {
               "severity": "fatal",
               "code": "invalid",
-              "diagnostics": "Unexpected DTD declaration. Line 6, position 10."
+              "diagnostics": "Can only exit from a resource part."
             }
           ]
         }
@@ -24870,7 +23816,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) 'C' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Unable to resolve ValueSet."
+                  "text": "Terminology service failed while validating concept with coding(s) 'C' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Operation validate code failed: valueset '#relationships' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship",
                 "expression": [
@@ -24905,7 +23851,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) 'N' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Unable to resolve ValueSet."
+                  "text": "Terminology service failed while validating concept with coding(s) 'N' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Operation validate code failed: valueset '#relationships' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship",
                 "expression": [
@@ -26430,7 +25376,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -26465,7 +25411,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's2' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's2' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -26500,7 +25446,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -27860,7 +26806,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -27895,7 +26841,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -27930,7 +26876,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -28006,7 +26952,7 @@
             {
               "severity": "fatal",
               "code": "invalid",
-              "diagnostics": "'\u000B', hexadecimal value 0x0B, is an invalid character. Line 28, position 34."
+              "diagnostics": "Can only exit from a resource part."
             }
           ]
         }
@@ -30276,7 +29222,7 @@
                     "code": "1012"
                   }
                 ],
-                "text": "Instance failed constraint bdl-3a \"For collections of type document, message, searchset or collection, all entries must contain resources, and not have request or response elements\""
+                "text": "Instance failed constraint bdl-3a \"For collections of type document, message, searchset or collection, all entries must contain resources, and not have request or response element\""
               },
               "diagnostics": "ElementDefinition trace: Bundle",
               "expression": [
@@ -38305,7 +37251,7 @@
             {
               "severity": "fatal",
               "code": "invalid",
-              "diagnostics": "'\u001D', hexadecimal value 0x1D, is an invalid character. Line 23, position 76."
+              "diagnostics": "Can only exit from a resource part."
             }
           ]
         }
@@ -38573,40 +37519,7 @@
       "java": {},
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '-?([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?'"
-              },
-              "diagnostics": "ElementDefinition trace: MedicationDispense.whenHandedOver->dateTime",
-              "expression": [
-                "MedicationDispense.whenHandedOver[0]"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       }
     },
@@ -38636,37 +37549,6 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 7
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 25
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '-?([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?'"
-              },
-              "diagnostics": "ElementDefinition trace: MedicationDispense.whenHandedOver->dateTime",
-              "expression": [
-                "MedicationDispense.whenHandedOver[0]"
-              ]
-            },
             {
               "severity": "warning",
               "code": "structure",
@@ -39117,7 +37999,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'image/jpg': Unable to resolve ValueSet."
+                "text": "Terminology service failed while validating code 'image/jpg': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Bundle.signature->Signature.contentType",
               "expression": [
@@ -43652,7 +42534,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Unable to resolve ValueSet."
+                  "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Operation validate code failed: valueset '#vs' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use",
                 "expression": [
@@ -43722,7 +42604,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Unable to resolve ValueSet."
+                "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Operation validate code failed: valueset '#vs' is unknown."
               },
               "diagnostics": "ElementDefinition trace: ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use",
               "expression": [
@@ -44249,37 +43131,6 @@
               },
               "expression": [
                 "Patient"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 26
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*'"
-              },
-              "diagnostics": "ElementDefinition trace: Patient.address->Address.country->string",
-              "expression": [
-                "Patient.address[0].country[0]"
               ]
             }
           ]
@@ -55198,37 +54049,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 8
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 15
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[^\\s]+(\\s[^\\s]+)*'"
-              },
-              "diagnostics": "ElementDefinition trace: DocumentReference.status->code",
-              "expression": [
-                "DocumentReference.status[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 34
                 },
                 {
@@ -55316,68 +54136,6 @@
               "diagnostics": "ElementDefinition trace: DocumentReference.content.attachment->Attachment.contentType",
               "expression": [
                 "DocumentReference.content[0].attachment[0].contentType[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 40
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 26
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[^\\s]+(\\s[^\\s]+)*'"
-              },
-              "diagnostics": "ElementDefinition trace: DocumentReference.content.attachment->Attachment.contentType->code",
-              "expression": [
-                "DocumentReference.content[0].attachment[0].contentType[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 48
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 19
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '(\\s*([0-9a-zA-Z\\+/=]){4}\\s*)+'"
-              },
-              "diagnostics": "ElementDefinition trace: DocumentReference.content.attachment->Attachment.data->base64Binary",
-              "expression": [
-                "DocumentReference.content[0].attachment[0].data[0]"
               ]
             }
           ]
@@ -55918,7 +54676,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'image/jpg': Unable to resolve ValueSet."
+                "text": "Terminology service failed while validating code 'image/jpg': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Bundle.signature->Signature.contentType",
               "expression": [
@@ -57244,7 +56002,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Unable to resolve ValueSet."
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
               },
               "diagnostics": "ElementDefinition trace: DocumentManifest.contained->DocumentReference.content.attachment->Attachment.contentType",
               "expression": [
@@ -62642,7 +61400,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'fhir': Unable to resolve ValueSet."
+                "text": "Terminology service failed while validating code 'fhir': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/hl7-work-group' is unknown."
               },
               "diagnostics": "ElementDefinition trace: StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value",
               "expression": [
@@ -73005,7 +71763,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating coding '/min' (system 'http://unitsofmeasure.org'): Unable to resolve ValueSet. (for slice valueQuantity)"
+                "text": "Terminology service failed while validating coding '/min' (system 'http://unitsofmeasure.org'): Operation validate code failed: valueset 'http://fhir.de/ValueSet/UcumVitalsCommonDE' is unknown. (for slice valueQuantity)"
               },
               "diagnostics": "ElementDefinition trace: Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity]",
               "expression": [
@@ -73040,7 +71798,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code '/min': Unable to resolve ValueSet. (for slice valueQuantity)"
+                "text": "Terminology service failed while validating code '/min': Operation validate code failed: valueset 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-breaths_per-minute' is unknown. (for slice valueQuantity)"
               },
               "diagnostics": "ElementDefinition trace: Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity].code",
               "expression": [
@@ -78387,40 +77145,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex 'true|false'"
-              },
-              "diagnostics": "ElementDefinition trace: Patient.active->boolean",
-              "expression": [
-                "Patient.active[0]"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       },
       "profile": {
@@ -78445,44 +77170,7 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome",
-            "issue": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-present"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 3
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "RegExValidator"
-                  }
-                ],
-                "severity": "warning",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1006"
-                    }
-                  ],
-                  "text": "Value '' does not match regex 'true|false'"
-                },
-                "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-present).active->boolean",
-                "expression": [
-                  "Patient.active[0]"
-                ]
-              }
-            ]
+            "resourceType": "OperationOutcome"
           }
         }
       }
@@ -78499,40 +77187,7 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome",
-          "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex 'true|false'"
-              },
-              "diagnostics": "ElementDefinition trace: Patient.active->boolean",
-              "expression": [
-                "Patient.active[0]"
-              ]
-            }
-          ]
+          "resourceType": "OperationOutcome"
         }
       },
       "profile": {
@@ -78544,44 +77199,7 @@
         },
         "firely-dotnet": {
           "outcome": {
-            "resourceType": "OperationOutcome",
-            "issue": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-alternative"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 3
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "RegExValidator"
-                  }
-                ],
-                "severity": "warning",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1006"
-                    }
-                  ],
-                  "text": "Value '' does not match regex 'true|false'"
-                },
-                "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-alternative).active->boolean",
-                "expression": [
-                  "Patient.active[0]"
-                ]
-              }
-            ]
+            "resourceType": "OperationOutcome"
           }
         }
       }
@@ -78600,37 +77218,6 @@
         "outcome": {
           "resourceType": "OperationOutcome",
           "issue": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex 'true|false'"
-              },
-              "diagnostics": "ElementDefinition trace: Patient.active->boolean",
-              "expression": [
-                "Patient.active[0]"
-              ]
-            },
             {
               "extension": [
                 {
@@ -78659,7 +77246,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'MSK': Unable to resolve ValueSet."
+                "text": "Terminology service failed while validating code 'MSK': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Patient.active->boolean.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor).value",
               "expression": [
@@ -78697,41 +77284,6 @@
                 "extension": [
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                    "valueUri": "http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-alternative"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                    "valueInteger": 3
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                    "valueInteger": 4
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                    "valueString": "RegExValidator"
-                  }
-                ],
-                "severity": "warning",
-                "code": "invalid",
-                "details": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                      "code": "1006"
-                    }
-                  ],
-                  "text": "Value '' does not match regex 'true|false'"
-                },
-                "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-alternative).active->boolean",
-                "expression": [
-                  "Patient.active[0]"
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                     "valueUri": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
                   },
                   {
@@ -78756,7 +77308,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating code 'MSK': Unable to resolve ValueSet."
+                  "text": "Terminology service failed while validating code 'MSK': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-alternative).active->boolean.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor).value",
                 "expression": [
@@ -79944,7 +78496,7 @@
             {
               "severity": "fatal",
               "code": "invalid",
-              "diagnostics": "'\u0013', hexadecimal value 0x13, is an invalid character. Line 4, position 37."
+              "diagnostics": "Can only exit from a resource part."
             }
           ]
         }
@@ -84336,37 +82888,6 @@
               ]
             },
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 69
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 20
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*'"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.subject->Patient.identifier->Identifier.value->string",
-              "expression": [
-                "Bundle.entry[1].resource[0].identifier[0].value[0]"
-              ]
-            },
-            {
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -84526,37 +83047,6 @@
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.text->Narrative.div",
               "expression": [
                 "Bundle.entry[0].resource[0].text[0].div[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 71
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 20
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' does not match regex '[\\r\\n\\t\\u0020-\\uFFFF]*'"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.subject->Patient.identifier->Identifier.value->string",
-              "expression": [
-                "Bundle.entry[1].resource[0].identifier[0].value[0]"
               ]
             },
             {

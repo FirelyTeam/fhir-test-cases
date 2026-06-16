@@ -26217,41 +26217,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 293
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 7
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "ExtensionContextValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1028"
-                  }
-                ],
-                "text": "Extension used outside of appropriate contexts. Expected context to be one of: {ELEMENT,Questionnaire.item}, {ELEMENT,Questionnaire.item.item}"
-              },
-              "diagnostics": "ElementDefinition trace: Questionnaire.item.item.item.item.extension->Extension(http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl)",
-              "expression": [
-                "Questionnaire.item[2].item[0].item[0].item[2].extension[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
                   "valueInteger": 434
                 },

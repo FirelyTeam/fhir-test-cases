@@ -3007,7 +3007,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'UNK': Unable to resolve ValueSet http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1."
+                "text": "Terminology service failed while validating code 'UNK': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Encounter.reasonCode->CodeableConcept.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor).value",
               "expression": [
@@ -3516,7 +3516,7 @@
                       "code": "-1"
                     }
                   ],
-                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/StructureDefinition/au-patient': Type checking the data: Encountered unknown element 'xpath' at location 'StructureDefinition.snapshot[0].element[0].constraint[0].xpath[0]' while parsing"
+                  "text": "Encountered an error while loading schema 'http://hl7.org.au/fhir/StructureDefinition/au-patient': While building a POCO: Encountered unknown member 'xpath' while de-serializing (at StructureDefinition.snapshot[0].element[0].constraint[0].xpath[0])"
                 }
               },
               {
@@ -8486,7 +8486,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Unable to resolve ValueSet http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Pattern).category[ResultType]",
                 "expression": [
@@ -8815,7 +8815,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Unable to resolve ValueSet http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]",
                 "expression": [
@@ -9201,7 +9201,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '104' (system 'http://myownsystem.info/sct'): Unable to resolve ValueSet http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '104' (system 'http://myownsystem.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]",
                 "expression": [
@@ -9236,7 +9236,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Unable to resolve ValueSet http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000. (for slice ResultType)"
+                  "text": "Terminology service failed while validating concept with coding(s) '275711006' (system 'http://snomed.info/sct'): Operation validate code failed: valueset 'http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000' is unknown. (for slice ResultType)"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation-Value).category[ResultType]",
                 "expression": [
@@ -23847,7 +23847,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) 'C' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Unable to resolve ValueSet #relationships."
+                  "text": "Terminology service failed while validating concept with coding(s) 'C' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Operation validate code failed: valueset '#relationships' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship",
                 "expression": [
@@ -23882,7 +23882,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating concept with coding(s) 'N' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Unable to resolve ValueSet #relationships."
+                  "text": "Terminology service failed while validating concept with coding(s) 'N' (system 'http://terminology.hl7.org/CodeSystem/v2-0131'): Operation validate code failed: valueset '#relationships' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/StructureDefinition/patient-translated-codes).contact.relationship",
                 "expression": [
@@ -25407,7 +25407,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet #v1. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -25442,7 +25442,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's2' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet #v1. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's2' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -25477,7 +25477,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet #v1. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -26802,7 +26802,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet #v1. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -26837,7 +26837,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet #v1. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's1' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -26872,7 +26872,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Unable to resolve ValueSet #v1. (for slice slice1)"
+                  "text": "Terminology service failed while validating coding 's3' (system 'http://tst.org/fhir/CodeSystem/test-meds'): Operation validate code failed: valueset '#v1' is unknown. (for slice slice1)"
                 },
                 "diagnostics": "ElementDefinition trace: Medication(http://test.org/fhir/StructureDefinition/meds-test).code.coding[slice1]",
                 "expression": [
@@ -37995,7 +37995,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'image/jpg': Unable to resolve ValueSet http://www.rfc-editor.org/bcp/bcp13.txt."
+                "text": "Terminology service failed while validating code 'image/jpg': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Bundle.signature->Signature.contentType",
               "expression": [
@@ -42530,7 +42530,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Unable to resolve ValueSet #vs."
+                  "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Operation validate code failed: valueset '#vs' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use",
                 "expression": [
@@ -42600,7 +42600,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Unable to resolve ValueSet #vs."
+                "text": "Terminology service failed while validating coding 'something' (system 'http://hl7.org/fhir/test/CodeSystem/something'): Operation validate code failed: valueset '#vs' is unknown."
               },
               "diagnostics": "ElementDefinition trace: ValueSet(http://hl7.org/fhir/test/ValueSet/tx-extensible-suppression).compose.include.concept.designation.use",
               "expression": [
@@ -54672,7 +54672,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'image/jpg': Unable to resolve ValueSet http://www.rfc-editor.org/bcp/bcp13.txt."
+                "text": "Terminology service failed while validating code 'image/jpg': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Bundle.signature->Signature.contentType",
               "expression": [
@@ -55998,7 +55998,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Unable to resolve ValueSet http://www.rfc-editor.org/bcp/bcp13.txt."
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: valueset 'http://www.rfc-editor.org/bcp/bcp13.txt' is unknown."
               },
               "diagnostics": "ElementDefinition trace: DocumentManifest.contained->DocumentReference.content.attachment->Attachment.contentType",
               "expression": [
@@ -61396,7 +61396,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'fhir': Unable to resolve ValueSet http://terminology.hl7.org/ValueSet/hl7-work-group."
+                "text": "Terminology service failed while validating code 'fhir': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/hl7-work-group' is unknown."
               },
               "diagnostics": "ElementDefinition trace: StructureDefinition.extension->Extension(http://hl7.org/fhir/StructureDefinition/structuredefinition-wg).value",
               "expression": [
@@ -71759,7 +71759,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating coding '/min' (system 'http://unitsofmeasure.org'): Unable to resolve ValueSet http://fhir.de/ValueSet/UcumVitalsCommonDE. (for slice valueQuantity)"
+                "text": "Terminology service failed while validating coding '/min' (system 'http://unitsofmeasure.org'): Operation validate code failed: valueset 'http://fhir.de/ValueSet/UcumVitalsCommonDE' is unknown. (for slice valueQuantity)"
               },
               "diagnostics": "ElementDefinition trace: Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity]",
               "expression": [
@@ -71794,7 +71794,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code '/min': Unable to resolve ValueSet https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-breaths_per-minute. (for slice valueQuantity)"
+                "text": "Terminology service failed while validating code '/min': Operation validate code failed: valueset 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-breaths_per-minute' is unknown. (for slice valueQuantity)"
               },
               "diagnostics": "ElementDefinition trace: Observation(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz).value[valueQuantity].code",
               "expression": [
@@ -77242,7 +77242,7 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'MSK': Unable to resolve ValueSet http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1."
+                "text": "Terminology service failed while validating code 'MSK': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1' is unknown."
               },
               "diagnostics": "ElementDefinition trace: Patient.active->boolean.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor).value",
               "expression": [
@@ -77304,7 +77304,7 @@
                       "code": "6006"
                     }
                   ],
-                  "text": "Terminology service failed while validating code 'MSK': Unable to resolve ValueSet http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1."
+                  "text": "Terminology service failed while validating code 'MSK': Operation validate code failed: valueset 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|4.0.1' is unknown."
                 },
                 "diagnostics": "ElementDefinition trace: Patient(http://hl7.org/fhir/test/StructureDefinition/Patient-profile-value-alternative).active->boolean.extension->Extension(http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor).value",
                 "expression": [

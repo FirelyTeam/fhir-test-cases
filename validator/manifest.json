@@ -1028,6 +1028,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-10"
                 }
               ],
               "severity": "error",
@@ -1374,6 +1378,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "vsd-0"
                 }
               ],
               "severity": "warning",
@@ -1523,6 +1531,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "dom-3"
                 }
               ],
               "severity": "error",
@@ -1554,6 +1566,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ref-1"
                 }
               ],
               "severity": "error",
@@ -1638,6 +1654,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ele-1"
                 }
               ],
               "severity": "error",
@@ -2259,6 +2279,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 125
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -2508,6 +2546,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 132
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -2576,6 +2632,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 108
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -2667,6 +2741,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 108
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -2758,6 +2850,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 14
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 68
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -2815,6 +2925,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 184
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -3876,6 +4004,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ctm-1"
                 }
               ],
               "severity": "error",
@@ -3998,6 +4130,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ctm-1"
                 }
               ],
               "severity": "error",
@@ -4120,6 +4256,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ctm-1"
                 }
               ],
               "severity": "error",
@@ -5188,6 +5328,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-10"
                 }
               ],
               "severity": "error",
@@ -5808,6 +5952,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "cmp-1"
                 }
               ],
               "severity": "error",
@@ -9759,37 +9907,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 169
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "FhirUriValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' is not a valid URI (for slice uri)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[uri]->uri",
-              "expression": [
-                "Parameters.parameter[35].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -11110,37 +11227,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 149
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "FhirUriValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' is not a valid URI (for slice uri)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[uri]->uri",
-              "expression": [
-                "Parameters.parameter[30].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -11716,6 +11802,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ele-1"
                 }
               ],
               "severity": "error",
@@ -11873,6 +11963,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "dom-3"
                 }
               ],
               "severity": "error",
@@ -11904,6 +11998,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ref-1"
                 }
               ],
               "severity": "error",
@@ -12020,6 +12118,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ele-1"
                 }
               ],
               "severity": "error",
@@ -12122,6 +12224,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ele-1"
                 }
               ],
               "severity": "error",
@@ -12703,6 +12809,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -12799,6 +12923,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -12845,6 +12987,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -12904,6 +13064,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -12950,6 +13128,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -17729,6 +17925,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ident-1"
                 }
               ],
               "severity": "warning",
@@ -17976,6 +18176,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ident-1"
                 }
               ],
               "severity": "warning",
@@ -18137,6 +18341,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "FhirPathValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "ck-1"
                   }
                 ],
                 "severity": "warning",
@@ -18284,6 +18492,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "FhirPathValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "ck-1"
                   }
                 ],
                 "severity": "warning",
@@ -18319,6 +18531,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "FhirPathValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "ck-2"
                   }
                 ],
                 "severity": "warning",
@@ -20417,6 +20633,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-10"
                 }
               ],
               "severity": "error",
@@ -20496,6 +20716,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ext-1"
                 }
               ],
               "severity": "error",
@@ -20888,6 +21112,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ident-1"
                 }
               ],
               "severity": "warning",
@@ -20950,6 +21178,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "ident-1"
                   }
                 ],
                 "severity": "warning",
@@ -20985,6 +21217,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "ident-1"
                   }
                 ],
                 "severity": "warning",
@@ -21271,6 +21507,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 5
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -21354,6 +21608,22 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                     "valueUri": "http://hl7.org/fhir/StructureDefinition/extension-slice-profile"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 5
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 6
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueString": "FhirTxt1Validator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "txt-1"
                   }
                 ],
                 "severity": "error",
@@ -28226,6 +28496,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-7"
                 }
               ],
               "severity": "error",
@@ -28257,6 +28531,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-10"
                 }
               ],
               "severity": "error",
@@ -28288,6 +28566,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-15"
                 }
               ],
               "severity": "error",
@@ -28467,6 +28749,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "cpt-2"
                 }
               ],
               "severity": "error",
@@ -29207,6 +29493,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-3a"
                 }
               ],
               "severity": "error",
@@ -29238,6 +29528,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-5"
                 }
               ],
               "severity": "error",
@@ -34203,6 +34497,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "ExtensionContextValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "Patient.active.not()"
                 }
               ],
               "severity": "error",
@@ -34314,6 +34612,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "bc-mm-1"
                   }
                 ],
                 "severity": "error",
@@ -34701,6 +35003,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "pat-cnt-2or3-char"
                   }
                 ],
                 "severity": "warning",
@@ -34779,6 +35085,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "pat-cnt-2or3-char"
                   }
                 ],
                 "severity": "warning",
@@ -34904,6 +35214,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "eld-19"
                 }
               ],
               "severity": "error",
@@ -34935,6 +35249,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "eld-20"
                 }
               ],
               "severity": "warning",
@@ -35850,6 +36168,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "cpb-0"
                 }
               ],
               "severity": "warning",
@@ -36189,6 +36511,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "eld-13"
                 }
               ],
               "severity": "error",
@@ -36380,6 +36706,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirPathValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "tim-9"
                 }
               ],
               "severity": "warning",
@@ -37113,6 +37443,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "min-digits-sor"
                   }
                 ],
                 "severity": "warning",
@@ -37716,6 +38050,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "qrs-1"
                 }
               ],
               "severity": "error",
@@ -37829,6 +38167,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-10"
                 }
               ],
               "severity": "error",
@@ -38761,6 +39103,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "exp-1"
                 }
               ],
               "severity": "error",
@@ -40244,6 +40590,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "mea-0"
                 }
               ],
               "severity": "warning",
@@ -40827,6 +41177,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "que-2"
                 }
               ],
               "severity": "error",
@@ -42348,6 +42702,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-15"
                 }
               ],
               "severity": "error",
@@ -43426,6 +43784,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "vsd-2"
                 }
               ],
               "severity": "error",
@@ -43457,6 +43819,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "vsd-1"
                 }
               ],
               "severity": "error",
@@ -43579,6 +43945,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 143
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -47523,6 +47907,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -49926,6 +50328,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "sdf-0"
                 }
               ],
               "severity": "warning",
@@ -49988,6 +50394,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "sdf-0"
                 }
               ],
               "severity": "warning",
@@ -52090,6 +52500,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ele-1"
                 }
               ],
               "severity": "error",
@@ -52472,6 +52886,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ref-1"
                 }
               ],
               "severity": "error",
@@ -52717,6 +53135,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ref-1"
                 }
               ],
               "severity": "error",
@@ -54537,6 +54959,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-10"
                 }
               ],
               "severity": "error",
@@ -55343,6 +55769,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "test1"
                   }
                 ],
                 "severity": "error",
@@ -55378,6 +55808,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "InvariantValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "test2"
                   }
                 ],
                 "severity": "error",
@@ -57408,6 +57842,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ras-2"
                 }
               ],
               "severity": "error",
@@ -57500,6 +57938,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ras-2"
                 }
               ],
               "severity": "error",
@@ -58571,6 +59013,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "dom-3"
                 }
               ],
               "severity": "error",
@@ -58695,6 +59141,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "dom-3"
                 }
               ],
               "severity": "error",
@@ -60846,6 +61296,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "per-1"
                 }
               ],
               "severity": "error",
@@ -61208,6 +61662,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "sdf-0"
                 }
               ],
               "severity": "warning",
@@ -61350,6 +61808,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "sdf-0"
                 }
               ],
               "severity": "warning",
@@ -64089,6 +64551,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "con-4"
                 }
               ],
               "severity": "error",
@@ -65661,6 +66127,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "eld-18"
                 }
               ],
               "severity": "error",
@@ -67548,6 +68018,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "pat-de-kbv-1"
                 }
               ],
               "severity": "error",
@@ -67603,6 +68077,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "pat-de-kbv-1"
                 }
               ],
               "severity": "error",
@@ -67664,6 +68142,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "ele-1"
                 }
               ],
               "severity": "error",
@@ -67678,37 +68160,6 @@
                 "text": "Instance failed constraint ele-1 \"All FHIR elements must have a @value or children\""
               },
               "diagnostics": "ElementDefinition trace: Patient.implicitRules",
-              "expression": [
-                "Patient.implicitRules[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 3
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 4
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "FhirUriValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1006"
-                  }
-                ],
-                "text": "Value '' is not a valid URI"
-              },
-              "diagnostics": "ElementDefinition trace: Patient.implicitRules->uri",
               "expression": [
                 "Patient.implicitRules[0]"
               ]
@@ -71129,6 +71580,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "dom-3"
                 }
               ],
               "severity": "error",
@@ -73293,6 +73748,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "sdf-20"
                 }
               ],
               "severity": "error",
@@ -74100,6 +74559,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "spd-1"
                 }
               ],
               "severity": "error",
@@ -75218,6 +75681,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "cnl-0"
                 }
               ],
               "severity": "warning",
@@ -75322,6 +75789,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "sdf-0"
                 }
               ],
               "severity": "warning",
@@ -78123,6 +78594,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirPathValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "variables-test"
                 }
               ],
               "severity": "warning",
@@ -78158,6 +78633,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirPathValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "variables-test"
                 }
               ],
               "severity": "warning",
@@ -78214,6 +78693,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirPathValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "cont-1"
                 }
               ],
               "severity": "warning",
@@ -78249,6 +78732,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirPathValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "cont-2"
                 }
               ],
               "severity": "warning",
@@ -78284,6 +78771,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "FhirPathValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "cont-3"
                 }
               ],
               "severity": "warning",
@@ -78866,6 +79357,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "eld-24"
                 }
               ],
               "severity": "warning",
@@ -78970,6 +79465,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "eld-24"
                 }
               ],
               "severity": "warning",
@@ -80593,6 +81092,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "FhirPathValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "spt-1"
                   }
                 ],
                 "severity": "warning",
@@ -80628,6 +81131,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "FhirPathValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "spt-1"
                   }
                 ],
                 "severity": "warning",
@@ -80663,6 +81170,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "FhirPathValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "spt-1"
                   }
                 ],
                 "severity": "warning",
@@ -80698,6 +81209,10 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                     "valueString": "FhirPathValidator"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "spt-1"
                   }
                 ],
                 "severity": "warning",
@@ -80749,6 +81264,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -81946,6 +82479,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-9"
                 }
               ],
               "severity": "error",
@@ -81977,6 +82514,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "bdl-10"
                 }
               ],
               "severity": "error",
@@ -82225,6 +82766,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "sdf-21"
                 }
               ],
               "severity": "error",
@@ -82850,6 +83395,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 798
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -82867,6 +83430,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 798
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -82884,6 +83465,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 45
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 751
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -82901,6 +83500,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 45
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 751
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -83029,6 +83646,24 @@
           "resourceType": "OperationOutcome",
           "issue": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 701
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {
@@ -83046,6 +83681,24 @@
               ]
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 45
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 635
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "FhirTxt1Validator"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                  "valueString": "txt-1"
+                }
+              ],
               "severity": "error",
               "code": "invalid",
               "details": {

@@ -820,23 +820,6 @@
               "expression": [
                 "Observation.performer[0]"
               ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://phr.kanta.fi/StructureDefinition/fiphr-device'. (for slice forDevice)"
-              },
-              "diagnostics": "ElementDefinition trace: Observation.device[forDevice]",
-              "expression": [
-                "Observation.contained[0]"
-              ]
             }
           ]
         }
@@ -20579,9 +20562,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1'. (for slice forOrganization)"
+                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.receiver[forOrganization]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.receiver",
               "expression": [
                 "Bundle.entry[2].resource[0]"
               ]
@@ -20596,9 +20579,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1'. (for slice forPractitioner)"
+                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.sender[forPractitioner]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.sender",
               "expression": [
                 "Bundle.entry[1].resource[0]"
               ]
@@ -21004,57 +20987,6 @@
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.focus->Bundle.entry.resource",
               "expression": [
                 "Bundle.entry[3].resource[0].entry[2].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1'. (for slice forPatient)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.focus->Bundle.entry.resource->List.subject[forPatient]",
-              "expression": [
-                "Bundle.entry[3].resource[0].entry[3].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[1].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[2].resource[0]"
               ]
             },
             {
@@ -28717,7 +28649,7 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "FhirTypeLabelValidator"
+                  "valueString": "ReferencedInstanceValidator"
                 }
               ],
               "severity": "error",
@@ -28726,12 +28658,12 @@
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1003"
+                    "code": "1011"
                   }
                 ],
-                "text": "The declared type of the element (Organization) is incompatible with that of the instance (Composition)."
+                "text": "Referenced resource '2f527a27-9fc8-497e-abe0-6d1412f0347b' is of type 'Composition', which is not one of the allowed target types ('Organization')."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Patient.managingOrganization->Organization",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Patient.managingOrganization",
               "expression": [
                 "Bundle.entry[0].resource[0]"
               ]
@@ -28780,6 +28712,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
                   "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
                 }
               ],
               "severity": "error",
@@ -28791,9 +28727,9 @@
                     "code": "1011"
                   }
                 ],
-                "text": "Referenced resource '' does not validate against any of the expected target profiles (http://hl7.org/fhir/StructureDefinition/Practitioner, http://hl7.org/fhir/StructureDefinition/PractitionerRole, http://hl7.org/fhir/StructureDefinition/RelatedPerson, http://hl7.org/fhir/StructureDefinition/Patient, http://hl7.org/fhir/StructureDefinition/Organization, http://hl7.org/fhir/StructureDefinition/CareTeam). None of these are profiles on type Composition of the resource. (for slice @default)"
+                "text": "Referenced resource '73ce0386-82d1-4db6-8ec7-71c1bcc0fdfe' is of type 'Composition', which is not one of the allowed target types ('Practitioner', 'PractitionerRole', 'RelatedPerson', 'Patient', 'Organization', 'CareTeam')."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->CareTeam.participant.member[@default]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->CareTeam.participant.member",
               "expression": [
                 "Bundle.entry[0].resource[0]"
               ]
@@ -28869,6 +28805,10 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
                   "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
                 }
               ],
               "severity": "error",
@@ -28880,9 +28820,9 @@
                     "code": "1011"
                   }
                 ],
-                "text": "Referenced resource '' does not validate against any of the expected target profiles (http://hl7.org/fhir/StructureDefinition/Condition, http://hl7.org/fhir/StructureDefinition/Procedure). None of these are profiles on type Composition of the resource. (for slice @default)"
+                "text": "Referenced resource 'ca645ab4-0a86-4bed-b5a8-78937f835a8a' is of type 'Composition', which is not one of the allowed target types ('Condition', 'Procedure')."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Encounter.diagnosis.condition[@default]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Encounter.diagnosis.condition",
               "expression": [
                 "Bundle.entry[0].resource[0]"
               ]
@@ -28965,34 +28905,7 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "FhirTypeLabelValidator"
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1003"
-                  }
-                ],
-                "text": "The declared type of the element (Practitioner) is incompatible with that of the instance (Composition)."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->PractitionerRole.practitioner->Practitioner",
-              "expression": [
-                "Bundle.entry[0].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 8
+                  "valueString": "ReferencedInstanceValidator"
                 }
               ],
               "severity": "error",
@@ -29004,36 +28917,9 @@
                     "code": "1011"
                   }
                 ],
-                "text": "Referenced resource '' does not validate against any of the expected target profiles (http://hl7.org/fhir/StructureDefinition/Patient, http://hl7.org/fhir/StructureDefinition/Group, http://hl7.org/fhir/StructureDefinition/Device, http://hl7.org/fhir/StructureDefinition/Location). None of these are profiles on type Composition of the resource. (for slice @default)"
+                "text": "Referenced resource '50b36085-27a7-4f9d-a45c-05349ce457bc' is of type 'Composition', which is not one of the allowed target types ('Practitioner')."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Observation.subject[@default]",
-              "expression": [
-                "Bundle.entry[0].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 10
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 8
-                }
-              ],
-              "severity": "error",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1011"
-                  }
-                ],
-                "text": "Referenced resource '' does not validate against any of the expected target profiles (http://hl7.org/fhir/StructureDefinition/Patient, http://hl7.org/fhir/StructureDefinition/Group). None of these are profiles on type Composition of the resource. (for slice @default)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.subject[@default]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->PractitionerRole.practitioner",
               "expression": [
                 "Bundle.entry[0].resource[0]"
               ]
@@ -29050,7 +28936,7 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "FhirTypeLabelValidator"
+                  "valueString": "ReferencedInstanceValidator"
                 }
               ],
               "severity": "error",
@@ -29059,12 +28945,74 @@
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1003"
+                    "code": "1011"
                   }
                 ],
-                "text": "The declared type of the element (Encounter) is incompatible with that of the instance (Composition)."
+                "text": "Referenced resource 'c282c3ec-6bd3-4826-b654-5a171776e296' is of type 'Composition', which is not one of the allowed target types ('Patient', 'Group', 'Device', 'Location')."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.encounter->Encounter",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Observation.subject",
+              "expression": [
+                "Bundle.entry[0].resource[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 10
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1011"
+                  }
+                ],
+                "text": "Referenced resource 'c282c3ec-6bd3-4826-b654-5a171776e296' is of type 'Composition', which is not one of the allowed target types ('Patient', 'Group')."
+              },
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.subject",
+              "expression": [
+                "Bundle.entry[0].resource[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 10
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 8
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "ReferencedInstanceValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1011"
+                  }
+                ],
+                "text": "Referenced resource '1c46f165-cb84-4931-9e34-318f459d9782' is of type 'Composition', which is not one of the allowed target types ('Encounter')."
+              },
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.encounter",
               "expression": [
                 "Bundle.entry[0].resource[0]"
               ]
@@ -29347,9 +29295,9 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forOrganization)"
+                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.sender[forOrganization]->Organization.contained->Endpoint.payloadMimeType",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.sender->Organization.contained->Endpoint.payloadMimeType",
               "expression": [
                 "Bundle.entry[7].resource[0].contained[0].payloadMimeType[0]"
               ]
@@ -29590,9 +29538,9 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forOrganization)"
+                "text": "Terminology service failed while validating code 'text/xml': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.sender[forOrganization]->Organization.contained->Endpoint.payloadMimeType",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->MessageHeader.sender->Organization.contained->Endpoint.payloadMimeType",
               "expression": [
                 "Bundle.entry[7].resource[0].contained[0].payloadMimeType[0]"
               ]
@@ -33956,9 +33904,9 @@
                     "code": "6007"
                   }
                 ],
-                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required' (for slice forPatient)"
+                "text": "Code 'invalid' does not exist in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender), but the binding is of strength 'required'"
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Patient.link.other[forPatient]->Patient.gender",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Patient.link.other->Patient.gender",
               "expression": [
                 "Bundle.entry[1].resource[0].gender[0]"
               ]
@@ -44426,9 +44374,9 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice Reference, subslice forDocumentReference)"
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice Reference)"
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Communication(http://example.com/fhir/StructureDefinition/profile-communication).payload.content[Reference][forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Communication(http://example.com/fhir/StructureDefinition/profile-communication).payload.content[Reference]->DocumentReference.content.attachment->Attachment.contentType",
               "expression": [
                 "Bundle.entry[1].resource[0].content[0].attachment[0].contentType[0]"
               ]
@@ -46650,9 +46598,9 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forBinary)"
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
               },
-              "diagnostics": "ElementDefinition trace: Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[forBinary]->Binary.contentType",
+              "diagnostics": "ElementDefinition trace: Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry->Binary.contentType",
               "expression": [
                 "Bundle.entry[6].resource[0].contentType[0]"
               ]
@@ -46897,9 +46845,9 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forBinary)"
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
               },
-              "diagnostics": "ElementDefinition trace: Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry[forBinary]->Binary.contentType",
+              "diagnostics": "ElementDefinition trace: Bundle(http://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentBundle).entry.resource->Composition(http://nrces.in/ndhm/fhir/r4/StructureDefinition/PrescriptionRecord).section.entry->Binary.contentType",
               "expression": [
                 "Bundle.entry[6].resource[0].contentType[0]"
               ]
@@ -49209,23 +49157,6 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patient'. (for slice forPatient)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.encounter->Encounter.subject[forPatient]",
-              "expression": [
-                "Bundle.entry[1].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-serviceRequest'."
               },
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.encounter->Encounter.basedOn",
@@ -49277,28 +49208,11 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. (for slice forOrganization)"
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Coverage.payor[forOrganization]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Coverage.payor",
               "expression": [
                 "Bundle.entry[8].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'. (for slice forRelatedPerson)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Coverage.payor[forRelatedPerson]",
-              "expression": [
-                "Bundle.entry[7].resource[0].contained[0]"
               ]
             },
             {
@@ -49532,9 +49446,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. (for slice forDocumentReference)"
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report",
               "expression": [
                 "Bundle.entry[38].resource[0]"
               ]
@@ -49563,9 +49477,9 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\". (for slice forDocumentReference)"
+                "text": "Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message \"The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.\"."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report->DocumentReference.content.attachment->Attachment.contentType",
               "expression": [
                 "Bundle.entry[38].resource[0].content[0].attachment[0].contentType[0]"
               ]
@@ -49965,23 +49879,6 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[8].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'."
               },
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
@@ -50004,23 +49901,6 @@
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
               "expression": [
                 "Bundle.entry[11].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[38].resource[0]"
               ]
             }
           ]
@@ -51469,23 +51349,6 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-patient'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-patient': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'. (for slice forPatient)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.encounter->Encounter.subject[forPatient]",
-              "expression": [
-                "Bundle.entry[1].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-serviceRequest'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-serviceRequest': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               },
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.encounter->Encounter.basedOn",
@@ -51582,23 +51445,6 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-organization': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'. (for slice forOrganization)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.encounter->Encounter.basedOn->ServiceRequest.performer[forOrganization]",
-              "expression": [
-                "Bundle.entry[5].resource[0].contained[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-coverage'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-coverage': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               },
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry",
@@ -51650,28 +51496,11 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-organization': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'. (for slice forOrganization)"
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-organization': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Coverage.payor[forOrganization]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Coverage.payor",
               "expression": [
                 "Bundle.entry[8].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'. (for slice forRelatedPerson)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Coverage.payor[forRelatedPerson]",
-              "expression": [
-                "Bundle.entry[7].resource[0].contained[0]"
               ]
             },
             {
@@ -51905,9 +51734,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'. (for slice forDocumentReference)"
+                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report",
               "expression": [
                 "Bundle.entry[38].resource[0]"
               ]
@@ -51936,9 +51765,9 @@
                     "code": "6006"
                   }
                 ],
-                "text": "Terminology service failed while validating code 'application/pdf': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'. (for slice forDocumentReference)"
+                "text": "Terminology service failed while validating code 'application/pdf': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report[forDocumentReference]->DocumentReference.content.attachment->Attachment.contentType",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Composition.section.entry->Procedure.report->DocumentReference.content.attachment->Attachment.contentType",
               "expression": [
                 "Bundle.entry[38].resource[0].content[0].attachment[0].contentType[0]"
               ]
@@ -52338,23 +52167,6 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-organization'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-organization': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[8].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
                 "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-relatedPerson': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
               },
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
@@ -52377,23 +52189,6 @@
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
               "expression": [
                 "Bundle.entry[11].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference'. Details: Encountered an error while loading schema 'https://mednet.swiss/fhir/StructureDefinition/mni-documentReference': File was not found: 'swiss.mednet.fhir#0.5.0.tgz'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[38].resource[0]"
               ]
             }
           ]
@@ -60595,26 +60390,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-patient-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-patient-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forPatient)"
+                "text": "Unable to resolve reference to profile 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner'. Details: Encountered an error while loading schema 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.subject[forPatient]",
-              "expression": [
-                "Bundle.entry[0].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner'. Details: Encountered an error while loading schema 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forPractitioner)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.performer.actor[forPractitioner]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.performer.actor",
               "expression": [
                 "Bundle.entry[10].resource[0]"
               ]
@@ -60629,9 +60407,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner'. Details: Encountered an error while loading schema 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forPractitioner)"
+                "text": "Unable to resolve reference to profile 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner'. Details: Encountered an error while loading schema 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.performer.actor[forPractitioner]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.performer.actor",
               "expression": [
                 "Bundle.entry[11].resource[0]"
               ]
@@ -60680,9 +60458,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forDiagnosticReport)"
+                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report[forDiagnosticReport]",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report",
               "expression": [
                 "Bundle.entry[2].resource[0]"
               ]
@@ -60697,9 +60475,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forDiagnosticReport)"
+                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report[forDiagnosticReport]->DiagnosticReport.result",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report->DiagnosticReport.result",
               "expression": [
                 "Bundle.entry[4].resource[0]"
               ]
@@ -60714,9 +60492,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forDiagnosticReport)"
+                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report[forDiagnosticReport]->DiagnosticReport.result",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report->DiagnosticReport.result",
               "expression": [
                 "Bundle.entry[5].resource[0]"
               ]
@@ -60731,9 +60509,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forDiagnosticReport)"
+                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report[forDiagnosticReport]->DiagnosticReport.result",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report->DiagnosticReport.result",
               "expression": [
                 "Bundle.entry[3].resource[0]"
               ]
@@ -60748,9 +60526,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'. (for slice forDiagnosticReport)"
+                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report[forDiagnosticReport]->DiagnosticReport.result",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report->DiagnosticReport.result",
               "expression": [
                 "Bundle.entry[6].resource[0]"
               ]
@@ -60779,96 +60557,11 @@
                     "code": "4009"
                   }
                 ],
-                "text": "Unable to resolve reference to extension 'http://kreftregisteret.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis'. (for slice forDiagnosticReport)"
+                "text": "Unable to resolve reference to extension 'http://kreftregisteret.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report[forDiagnosticReport]->DiagnosticReport.conclusionCode->CodeableConcept.extension",
+              "diagnostics": "ElementDefinition trace: Bundle.entry.resource->Procedure.report->DiagnosticReport.conclusionCode->CodeableConcept.extension",
               "expression": [
                 "Bundle.entry[2].resource[0].conclusionCode[0].extension[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[2].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[3].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[4].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[5].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet'. Details: Encountered an error while loading schema 'http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet': File was not found: 'colonoscopyreport.no#0.7.4'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[6].resource[0]"
               ]
             },
             {
@@ -60920,40 +60613,6 @@
               "diagnostics": "ElementDefinition trace: Bundle.entry.resource->List.entry.item",
               "expression": [
                 "Bundle.entry[9].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner'. Details: Encountered an error while loading schema 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner': File was not found: 'colonoscopyreport.no#0.7.4'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[10].resource[0]"
-              ]
-            },
-            {
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner'. Details: Encountered an error while loading schema 'http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner': File was not found: 'colonoscopyreport.no#0.7.4'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle.entry.resource",
-              "expression": [
-                "Bundle.entry[11].resource[0]"
               ]
             }
           ]
@@ -62819,9 +62478,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'. (for slice forOrganization)"
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.sender[forOrganization]",
+              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.sender",
               "expression": [
                 "Bundle.entry[3].resource[0]"
               ]
@@ -62865,55 +62524,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'. (for slice forPractitioner)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.generalPractitioner[forPractitioner]",
-              "expression": [
-                "Bundle.entry[4].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.managingOrganization",
-              "expression": [
-                "Bundle.entry[3].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
                 "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-practitioner'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item",
+              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->Patient.generalPractitioner",
               "expression": [
                 "Bundle.entry[4].resource[0]"
               ]
@@ -62957,32 +62570,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'. (for slice forPatient)"
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.subject[forPatient]",
-              "expression": [
-                "Bundle.entry[2].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'. (for slice forCoverage)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]",
+              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance",
               "expression": [
                 "Bundle.entry[5].resource[0]"
               ]
@@ -63003,9 +62593,9 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'. (for slice forRelatedPerson)"
+                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]",
+              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance->Coverage.subscriber",
               "expression": [
                 "Bundle.entry[6].resource[0]"
               ]
@@ -63026,103 +62616,11 @@
                     "code": "4000"
                   }
                 ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'. (for slice forRelatedPerson)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.subscriber[forRelatedPerson]->RelatedPerson.patient",
-              "expression": [
-                "Bundle.entry[2].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-patient'. (for slice forCoverage)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.beneficiary",
-              "expression": [
-                "Bundle.entry[2].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'. (for slice forOrganization)"
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance[forCoverage]->Coverage.payor[forOrganization]",
-              "expression": [
-                "Bundle.entry[14].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
                 "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-organization'."
               },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item",
+              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item->MedicationRequest.insurance->Coverage.payor",
               "expression": [
                 "Bundle.entry[14].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-coverage'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item",
-              "expression": [
-                "Bundle.entry[5].resource[0]"
               ]
             },
             {
@@ -63227,29 +62725,6 @@
               "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item",
               "expression": [
                 "Bundle.entry[12].resource[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
-                  "valueUri": "http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle"
-                }
-              ],
-              "severity": "error",
-              "code": "incomplete",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "4000"
-                  }
-                ],
-                "text": "Unable to resolve reference to profile 'http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-relatedPerson'."
-              },
-              "diagnostics": "ElementDefinition trace: Bundle(http://dev.gene.com/fhir/uapi/StructureDefinition/uapi-as-enrollment-bundle).entry.resource->MessageHeader.focus->List.entry.item",
-              "expression": [
-                "Bundle.entry[6].resource[0]"
               ]
             },
             {

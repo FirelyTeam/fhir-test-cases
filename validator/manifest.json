@@ -1548,6 +1548,37 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "CardinalityValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  }
+                ],
+                "text": "Element 'subject' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
+              },
+              "diagnostics": "ElementDefinition trace: List.subject",
+              "expression": [
+                "List.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 12
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "InvariantValidator"
                 },
                 {
@@ -1612,7 +1643,40 @@
       "java": {},
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 12
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 15
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "CardinalityValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  }
+                ],
+                "text": "Element 'subject' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
+              },
+              "diagnostics": "ElementDefinition trace: List.subject",
+              "expression": [
+                "List.subject[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -3088,6 +3152,37 @@
               "diagnostics": "ElementDefinition trace: Encounter.subject",
               "expression": [
                 "Encounter.subject[0]"
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 25
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 18
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "CardinalityValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  }
+                ],
+                "text": "Element 'reasonCode' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
+              },
+              "diagnostics": "ElementDefinition trace: Encounter.reasonCode",
+              "expression": [
+                "Encounter.reasonCode[0]"
               ]
             },
             {
@@ -37463,7 +37558,44 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
+                  "valueUri": "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 4
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 77
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "CardinalityValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1028"
+                  }
+                ],
+                "text": "Element 'profile' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
+              },
+              "diagnostics": "ElementDefinition trace: CodeSystem(http://hl7.org/fhir/StructureDefinition/shareablecodesystem).meta->Meta.profile",
+              "expression": [
+                "CodeSystem.meta[0].profile[0]"
+              ]
+            }
+          ]
         }
       }
     },

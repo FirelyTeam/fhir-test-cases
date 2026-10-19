@@ -1560,7 +1560,7 @@
                     "code": "1028"
                   }
                 ],
-                "text": "Element 'subject' repeats, so its value must be a list, not a single value"
+                "text": "Element 'subject' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
               },
               "diagnostics": "ElementDefinition trace: List.subject",
               "expression": [
@@ -1669,7 +1669,7 @@
                     "code": "1028"
                   }
                 ],
-                "text": "Element 'subject' repeats, so its value must be a list, not a single value"
+                "text": "Element 'subject' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
               },
               "diagnostics": "ElementDefinition trace: List.subject",
               "expression": [
@@ -3178,7 +3178,7 @@
                     "code": "1028"
                   }
                 ],
-                "text": "Element 'reasonCode' repeats, so its value must be a list, not a single value"
+                "text": "Element 'reasonCode' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
               },
               "diagnostics": "ElementDefinition trace: Encounter.reasonCode",
               "expression": [
@@ -37588,7 +37588,7 @@
                     "code": "1028"
                   }
                 ],
-                "text": "Element 'profile' repeats, so its value must be a list, not a single value"
+                "text": "Element 'profile' must be an array, but a single value was found. Repeating elements are always arrays in FHIR JSON, even with only one value or when a profile allows at most one"
               },
               "diagnostics": "ElementDefinition trace: CodeSystem(http://hl7.org/fhir/StructureDefinition/shareablecodesystem).meta->Meta.profile",
               "expression": [

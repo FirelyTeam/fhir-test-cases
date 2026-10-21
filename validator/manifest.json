@@ -1285,7 +1285,7 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "RegExValidator"
+                  "valueString": "PrimitiveLiteralTypeValidator"
                 }
               ],
               "severity": "error",
@@ -1297,7 +1297,7 @@
                     "code": "1006"
                   }
                 ],
-                "text": "Value '1' does not match regex 'true|false' (for slice boolean)"
+                "text": "integer 1 is not the right type of literal for a boolean. (for slice boolean)"
               },
               "diagnostics": "ElementDefinition trace: Group.characteristic.value[boolean]->boolean",
               "expression": [

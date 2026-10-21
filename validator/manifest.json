@@ -387,7 +387,7 @@
                     "code": "6007"
                   }
                 ],
-                "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units), but the binding is of strength 'required'"
+                "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units); A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated, but the binding is of strength 'required'"
               },
               "diagnostics": "ElementDefinition trace: Observation(http://example.org/fhir/StructureDefinition/MyObservation).value",
               "expression": [
@@ -449,7 +449,7 @@
                       "code": "6007"
                     }
                   ],
-                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units), but the binding is of strength 'required'"
+                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units); A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated, but the binding is of strength 'required'"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://example.org/fhir/StructureDefinition/MyObservation).value",
                 "expression": [
@@ -530,7 +530,7 @@
                       "code": "6007"
                     }
                   ],
-                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units), but the binding is of strength 'required'"
+                  "text": "Code 'm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Common UCUM Codes for Age' (http://hl7.org/fhir/ValueSet/age-units); A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated, but the binding is of strength 'required'"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(http://example.org/fhir/StructureDefinition/MyObservation).value",
                 "expression": [
@@ -36764,7 +36764,7 @@
                     "code": "2009"
                   }
                 ],
-                "text": "Evaluation of FhirPath for constraint 'tim-9' failed: Invocation of operator 'or' failed: Invocation of operator 'and' failed: Invocation of function 'not' failed: Invocation of operator 'in' failed: Cannot cast from 'collection of code' to 'collection' (for slice Timing)"
+                "text": "Evaluation of FhirPath for constraint 'tim-9' failed: Invocation of operator 'or' failed: Invocation of operator 'and' failed: Invocation of function 'not' failed: Invocation of operator 'in' failed: Cannot cast from 'collection of code' to 'any type' (for slice Timing)"
               },
               "diagnostics": "ElementDefinition trace: CarePlan.activity.detail.scheduled[Timing]->Timing.repeat",
               "expression": [
@@ -45156,7 +45156,7 @@
                       "code": "6007"
                     }
                   ],
-                  "text": "Code 'cm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Babylon Demographic Age Unit' (https://bb/ValueSet/BBDemographicAgeUnit), but the binding is of strength 'required'"
+                  "text": "Code 'cm' from system 'http://unitsofmeasure.org' does not exist in the value set 'Babylon Demographic Age Unit' (https://bb/ValueSet/BBDemographicAgeUnit); A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the code cannot be validated, but the binding is of strength 'required'"
                 },
                 "diagnostics": "ElementDefinition trace: Observation(https://bb/StructureDefinition/BBDemographicAge).value",
                 "expression": [

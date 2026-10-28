@@ -56856,7 +56856,40 @@
       },
       "firely-dotnet": {
         "outcome": {
-          "resourceType": "OperationOutcome"
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                  "valueInteger": 6
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                  "valueInteger": 1257320
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                  "valueString": "MaxLengthValidator"
+                }
+              ],
+              "severity": "error",
+              "code": "invalid",
+              "details": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
+                    "code": "1005"
+                  }
+                ],
+                "text": "Value 'foobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoobarfoob...' is too long (1257306 characters, maximum length is 1048576)"
+              },
+              "diagnostics": "ElementDefinition trace: Location.position.id",
+              "expression": [
+                "Location.position[0].id[0]"
+              ]
+            }
+          ]
         }
       }
     },
@@ -62146,7 +62179,7 @@
                     "code": "1006"
                   }
                 ],
-                "text": "Value 'PFBh cmFtZXRlcnMgeG1sbnM9Imh0dHA6Ly9obDcub3JnL2ZoaXIiPgogIDxwYXJhbWV0ZXI+IDwhLS0gMTAgLS0+CiAgICA8bmFtZSB2YWx1ZT0icGFyYW1CYXNlNjRCaW5hcnkiLz4KICAgIDx2YWx1ZUJhc2U2NEJpbmFyeSB2YWx1ZT0iIi8+CiAgPC9wYXJhbWV0ZXI+CjwvUGFyYW1ldGVycz4KCg==' does not match regex '(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?' (for slice base64Binary)"
+                "text": "Value 'PFBh cmFtZXRlcnMgeG1sbnM9Imh0dHA6Ly9obDcub3JnL2ZoaXIiPgogIDxwYXJhbWV0ZXI+IDwhLS0gMTAgLS0+CiAgICA8bmF...' (229 characters) does not match regex '(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?' (for slice base64Binary)"
               },
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[base64Binary]->base64Binary",
               "expression": [
@@ -67888,7 +67921,7 @@
                     "code": "1006"
                   }
                 ],
-                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
+                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very...' (115 characters) does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
               },
               "diagnostics": "ElementDefinition trace: Patient.id->id",
               "expression": [
@@ -67949,7 +67982,7 @@
                     "code": "1006"
                   }
                 ],
-                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
+                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very...' (115 characters) does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
               },
               "diagnostics": "ElementDefinition trace: Patient.id->id",
               "expression": [
@@ -68010,7 +68043,7 @@
                     "code": "1006"
                   }
                 ],
-                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
+                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very...' (115 characters) does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
               },
               "diagnostics": "ElementDefinition trace: Patient.id->id",
               "expression": [
@@ -68071,7 +68104,7 @@
                     "code": "1006"
                   }
                 ],
-                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long' does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
+                "text": "Value 'bad-id-too-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very-long-very...' (115 characters) does not match regex '[A-Za-z0-9\\-\\.]{1,64}'"
               },
               "diagnostics": "ElementDefinition trace: Patient.id->id",
               "expression": [

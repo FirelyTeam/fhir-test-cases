@@ -9748,68 +9748,6 @@
             {
               "extension": [
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 129
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '' cannot be compared with -2147483648. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[30].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 129
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '' cannot be compared with 2147483647. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[30].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority",
                   "valueUri": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
                 },
@@ -10919,68 +10857,6 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '34534536346345345345' cannot be compared with -2147483648. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[3].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 16
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '34534536346345345345' cannot be compared with 2147483647. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[3].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 16
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "PrimitiveLiteralTypeValidator"
                 }
               ],
@@ -11012,68 +10888,6 @@
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '$0' cannot be compared with -2147483648. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[4].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 20
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '$0' cannot be compared with 2147483647. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[4].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 20
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
                   "valueString": "PrimitiveLiteralTypeValidator"
                 }
               ],
@@ -11091,68 +10905,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
               "expression": [
                 "Parameters.parameter[4].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 24
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '1e4' cannot be compared with -2147483648. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[5].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 24
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '1e4' cannot be compared with 2147483647. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[5].value[0]"
               ]
             },
             {
@@ -12135,68 +11887,6 @@
               "diagnostics": "ElementDefinition trace: Parameters.parameter.value[boolean]->boolean.extension->Extension(http://hl7.org/fhir/StructureDefinition/data-absent-reason).value",
               "expression": [
                 "Parameters.parameter[24].value[0].extension[0].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 109
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '' cannot be compared with -2147483648. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[25].value[0]"
-              ]
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                  "valueInteger": 109
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                  "valueInteger": 6
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                  "valueString": "MinMaxValueValidator"
-                }
-              ],
-              "severity": "warning",
-              "code": "invalid",
-              "details": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/dotnet-api-operation-outcome",
-                    "code": "1021"
-                  }
-                ],
-                "text": "Value '' cannot be compared with 2147483647. (for slice integer)"
-              },
-              "diagnostics": "ElementDefinition trace: Parameters.parameter.value[integer]->integer",
-              "expression": [
-                "Parameters.parameter[25].value[0]"
               ]
             },
             {
